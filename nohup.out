@@ -1,0 +1,177 @@
+
+(firefox:16059): GnomeUI-WARNING **: While connecting to session manager:
+Could not open network socket.
+
+(firefox:16059): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-lVvC88BSlj: Connection refused
+
+(firefox:16059): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-lVvC88BSlj: Connection refused
+
+(firefox:16059): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-lVvC88BSlj: Connection refused
+
+(firefox:16059): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-lVvC88BSlj: Connection refused
+FoxyProxy settingsDir: /home/ms/.mozilla/firefox/d6m36vfx.default/foxyproxy.xml
+
+** (firefox:16059): WARNING **: Could not connect: Connection refused
+
+(firefox:16059): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-lVvC88BSlj: Connection refused
+
+(firefox:16059): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-lVvC88BSlj: Connection refused
+console.error: idderall: 
+  DEPRECATED: Module 'sdk/page-mod/match-pattern' is deprecated use 'sdk/util/match-pattern' instead
+Traceback (most recent call last):
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 185, in resolve
+    result.then(observer.resolve, observer.reject);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 43, in then
+    return { then: function then(fulfill) { fulfill(value); } };
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 118, in resolve
+    deferred.resolve(onFulfill ? onFulfill(value) : value);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 185, in resolve
+    result.then(observer.resolve, observer.reject);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 43, in then
+    return { then: function then(fulfill) { fulfill(value); } };
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 118, in resolve
+    deferred.resolve(onFulfill ? onFulfill(value) : value);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 185, in resolve
+    result.then(observer.resolve, observer.reject);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 43, in then
+    return { then: function then(fulfill) { fulfill(value); } };
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 118, in resolve
+    deferred.resolve(onFulfill ? onFulfill(value) : value);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 185, in resolve
+    result.then(observer.resolve, observer.reject);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 43, in then
+    return { then: function then(fulfill) { fulfill(value); } };
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 118, in resolve
+    deferred.resolve(onFulfill ? onFulfill(value) : value);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 185, in resolve
+    result.then(observer.resolve, observer.reject);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 43, in then
+    return { then: function then(fulfill) { fulfill(value); } };
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 118, in resolve
+    deferred.resolve(onFulfill ? onFulfill(value) : value);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 185, in resolve
+    result.then(observer.resolve, observer.reject);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 153, in then
+    result.then(resolve, reject);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 43, in then
+    return { then: function then(fulfill) { fulfill(value); } };
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 118, in resolve
+    deferred.resolve(onFulfill ? onFulfill(value) : value);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 118, in resolve
+    deferred.resolve(onFulfill ? onFulfill(value) : value);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 185, in resolve
+    result.then(observer.resolve, observer.reject);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 43, in then
+    return { then: function then(fulfill) { fulfill(value); } };
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 118, in resolve
+    deferred.resolve(onFulfill ? onFulfill(value) : value);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 185, in resolve
+    result.then(observer.resolve, observer.reject);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 153, in then
+    result.then(resolve, reject);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 43, in then
+    return { then: function then(fulfill) { fulfill(value); } };
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 118, in resolve
+    deferred.resolve(onFulfill ? onFulfill(value) : value);
+  File "resource://gre/modules/commonjs/sdk/core/promise.js", line 118, in resolve
+    deferred.resolve(onFulfill ? onFulfill(value) : value);
+  File "resource://gre/modules/commonjs/sdk/addon/runner.js", line 113, in null
+    run(options);
+  File "resource://gre/modules/commonjs/sdk/addon/runner.js", line 146, in run
+    let program = main(options.loader, options.main);
+  File "resource://gre/modules/commonjs/toolkit/loader.js", line 434, in main
+    return loader.load(loader, module).exports;
+  File "resource://gre/modules/commonjs/sdk/loader/cuddlefish.js", line 129, in null
+    result = load(loader, module);
+  File "resource://gre/modules/commonjs/toolkit/loader.js", line 283, in load
+    evaluate(sandbox, module.uri);
+  File "resource://gre/modules/commonjs/toolkit/loader.js", line 243, in evaluate
+    : loadSubScript(uri, sandbox, encoding);
+  File "resource://jid1-u6nqdbys4zjday-at-jetpack/idderall/lib/main.js", line 7, in null
+    const Menu = require('menu.js');
+  File "resource://gre/modules/commonjs/toolkit/loader.js", line 420, in require
+    freeze(load(loader, module));
+  File "resource://gre/modules/commonjs/sdk/loader/cuddlefish.js", line 129, in null
+    result = load(loader, module);
+  File "resource://gre/modules/commonjs/toolkit/loader.js", line 283, in load
+    evaluate(sandbox, module.uri);
+  File "resource://gre/modules/commonjs/toolkit/loader.js", line 243, in evaluate
+    : loadSubScript(uri, sandbox, encoding);
+  File "resource://jid1-u6nqdbys4zjday-at-jetpack/idderall/lib/menu.js", line 18, in null
+    const Settings = require('settings');
+  File "resource://gre/modules/commonjs/toolkit/loader.js", line 420, in require
+    freeze(load(loader, module));
+  File "resource://gre/modules/commonjs/sdk/loader/cuddlefish.js", line 129, in null
+    result = load(loader, module);
+  File "resource://gre/modules/commonjs/toolkit/loader.js", line 283, in load
+    evaluate(sandbox, module.uri);
+  File "resource://gre/modules/commonjs/toolkit/loader.js", line 243, in evaluate
+    : loadSubScript(uri, sandbox, encoding);
+  File "resource://jid1-u6nqdbys4zjday-at-jetpack/idderall/lib/settings.js", line 14, in null
+    const Governor = require('block-governor');
+  File "resource://gre/modules/commonjs/toolkit/loader.js", line 420, in require
+    freeze(load(loader, module));
+  File "resource://gre/modules/commonjs/sdk/loader/cuddlefish.js", line 129, in null
+    result = load(loader, module);
+  File "resource://gre/modules/commonjs/toolkit/loader.js", line 283, in load
+    evaluate(sandbox, module.uri);
+  File "resource://gre/modules/commonjs/toolkit/loader.js", line 243, in evaluate
+    : loadSubScript(uri, sandbox, encoding);
+  File "resource://jid1-u6nqdbys4zjday-at-jetpack/idderall/lib/block-governor.js", line 18, in null
+    } = require('match-pattern');
+  File "resource://gre/modules/commonjs/toolkit/loader.js", line 420, in require
+    freeze(load(loader, module));
+  File "resource://gre/modules/commonjs/sdk/loader/cuddlefish.js", line 129, in null
+    result = load(loader, module);
+  File "resource://gre/modules/commonjs/toolkit/loader.js", line 283, in load
+    evaluate(sandbox, module.uri);
+  File "resource://gre/modules/commonjs/toolkit/loader.js", line 243, in evaluate
+    : loadSubScript(uri, sandbox, encoding);
+  File "resource://gre/modules/commonjs/sdk/page-mod/match-pattern.js", line 3, in null
+    deprecateUsage("Module 'sdk/page-mod/match-pattern' is deprecated use 'sdk/util/match-pattern' instead");
+  File "resource://gre/modules/commonjs/sdk/util/deprecate.js", line 18, in deprecateUsage
+    let stack = get().slice(2);
+
+(firefox:16059): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-lVvC88BSlj: Connection refused
+
+(firefox:16059): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-lVvC88BSlj: Connection refused
+
+(firefox:16059): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-lVvC88BSlj: Connection refused
+
+(firefox:16059): GConf-WARNING **: Client failed to connect to the D-BUS daemon:
+Failed to connect to socket /tmp/dbus-lVvC88BSlj: Connection refused
+Failed to open VDPAU backend libvdpau_nvidia.so: cannot open shared object file: No such file or directory
+Failed to open VDPAU backend libvdpau_nvidia.so: cannot open shared object file: No such file or directory
+Failed to open VDPAU backend libvdpau_nvidia.so: cannot open shared object file: No such file or directory
+
+(firefox:16059): GVFS-RemoteVolumeMonitor-WARNING **: cannot connect to the session bus: org.freedesktop.DBus.Error.NoServer: Failed to connect to socket /tmp/dbus-lVvC88BSlj: Connection refused
+
+(firefox:16059): GVFS-RemoteVolumeMonitor-WARNING **: cannot connect to the session bus: org.freedesktop.DBus.Error.NoServer: Failed to connect to socket /tmp/dbus-lVvC88BSlj: Connection refused
+
+(firefox:16059): GVFS-RemoteVolumeMonitor-WARNING **: cannot connect to the session bus: org.freedesktop.DBus.Error.NoServer: Failed to connect to socket /tmp/dbus-lVvC88BSlj: Connection refused
+Failed to open VDPAU backend libvdpau_nvidia.so: cannot open shared object file: No such file or directory
+
+** (gnome-mplayer:16418): WARNING **: Could not connect: Connection refused
+
+** (gnome-mplayer:16418): WARNING **: Could not connect: Connection refused
+
+(gnome-mplayer:16418): Gtk-WARNING **: gtk_widget_size_allocate(): attempt to allocate widget with width -23 and height 24
+
+** (gnome-mplayer:16418): WARNING **: Could not connect: Connection refused
+Failed to open connection to session message bus: Failed to connect to socket /tmp/dbus-lVvC88BSlj: Connection refused
+in media state change with state = 0
+Failed to open VDPAU backend libvdpau_nvidia.so: cannot open shared object file: No such file or directory
+Failed to open VDPAU backend libvdpau_nvidia.so: cannot open shared object file: No such file or directory
+Failed to open VDPAU backend libvdpau_nvidia.so: cannot open shared object file: No such file or directory
+Failed to open VDPAU backend libvdpau_nvidia.so: cannot open shared object file: No such file or directory
+plugin-container: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.0.
+firefox: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.0.

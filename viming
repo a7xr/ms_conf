@@ -1,0 +1,4 @@
+" don_t know yet the use of recording then when I hit q it will quit
+
+"	%001
+nnoremap Q :q! <CR>

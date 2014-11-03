@@ -1,0 +1,312 @@
+# to #revert the last commit 							%001
+# git #instaweb									%002
+# some #stat of git								%003
+# to get the #key, #commiter, #dateRel, #comment 				%004
+# to get the files #list which are #tracked by your git 			%005
+# to list files which are not #tracked #only					%006
+# to #unstage a file which is #staged						%007
+# to create a new branch of git							%008
+# to change the #last_comment #last_commit #comment #commit			%009
+# to #clone a repo in the #net							%010
+#	like %010 but will add a name to that #clone				%011
+# to #commit all #modified files and which are #staged				%012
+# to show files which are #modified and which are #staged			%013
+# some #help about #format of #log						%014
+# some #help about #log								%015
+# some #help in #general of git							%016
+# some #useful cmd								%017
+# to get the #remote url which will #push when u push ur repo			%018
+# to change the #remote #url of #push						%019
+# to #delete #remove an existing #remoteRepo					%020
+# to #add an url for #remoteRepo						%021
+# some #notes about git								%022
+
+
+
+
+
+#	%022
+# when u did a #remoteRepo, then it's not yet really in my hability to change 
+#	to change it to another
+
+# 	%021
+git_add_remoteRepo(){
+	if1
+		git remote add origin $1
+	else
+		echo to add a remote repo for ur local repo
+		echo 'ex_	this_ https://github.com/daktakk/all01'
+	fi
+}
+
+#	%020
+alias git_del_remoteRepo='git remote rm origin'
+
+#	%019
+git_chg_remoteURl(){
+	if1
+		git remote set-url origin git://$1
+	else
+		echo 'to change the remoteRepo_url'
+		echo 'ex_	this_ https://github.com/daktakk/all01'
+	fi
+}
+
+
+#git_alias
+#	%001
+alias git_rev_last_commit="git reset --hard HEAD"
+
+#	%002
+alias git_instaweb="git instaweb --httpd=webrick"
+
+#	%003
+alias git_log_stat="git log --stat"
+
+#	%004
+alias git_log_cmit_auth_dtrel='git log --pretty=format:"%h — %an, %ar : %s"'
+
+#	%005
+alias git_ls_files_tracked='git ls-tree -r master --name-only'
+
+#git_alias_end
+
+#	%007
+#git_function
+git_canc_file_added() {
+    if [ $1 ]
+    then
+	git reset HEAD -- $1
+    else
+	error_arg
+	echo "explanation: use this if you added a file with: 'git add file00'"
+	echo -e "\t and after you want to delete file00 in the status of git\n"
+	echo "usage: this_ file_added_in_git_not_yet_commited"
+	echo
+	echo -e 'real cmd: git reset HEAD -- $1'
+	echo
+	echo "author: Mamitiana_Solofo"
+    fi
+
+}
+
+# 	%006
+alias git_untr='git ls-files . --exclude-standard --others'
+
+
+#	%008:s
+git_br_new() {
+    if [ $1 ]
+    then
+	git checkout -b $1
+    else
+	error_arg
+	echo "explanation: use this to create a new branch of the project"
+	echo 
+	echo 'usage: git_br_new [branch00]'
+	echo 'author: Mamitiana_Solofo'
+    fi
+}
+#	%008:e
+
+
+git_merge() {
+    if [ $1 ]
+    then
+	git merge $1
+    else
+	error_arg
+	echo "explanation: if you've made a branch and you finished your modification in that branch"
+	echo -e "\tuse this combine those 2branches"
+	echo "usage: git_merge branch00"
+    fi
+}
+
+#	%009
+git_change_last_commit_and_last_comment() {
+    if [ $1 ]
+    then
+	git commit -a --amend -m "$1"
+    else
+	error_arg
+	echo "explanation: this is to change the last commit to the last modification of the file which are added and to change the comment of the last commit"
+	echo
+	echo "usage: this_ comment00"
+	echo
+	echo "cmd: git commit -a --amend -m \"$1\""
+    fi
+}
+
+#	%010
+git_clone() {
+    if [ $1 ]
+    then
+	git clone "git://$1"
+	echo
+	echo "cloning $1 done"
+    else
+	error_arg
+	echo "explanation: use this to clone a repository in the net"
+	echo
+	echo "usage: git_clone git_repo_url00"
+	echo "ex: git_clone github.com/mamtina/my_conf.git"
+	echo
+	echo 'cmd: git clone "git://$1"'
+	auth_me
+    fi
+}
+
+#	%011
+git_clone_w_name() {
+    if [ $1 ] && [ $2 ]
+    then
+	git clone "git://$1" $2
+	echo
+	echo "cloning $1 done"
+    else
+	error_arg
+	echo "explanation: use this to clone a repository in the net, and to set the name of the folder which will contain the repos_file"
+	echo
+	echo "usage: git_clone git_repo_url00 new_folder_name00"
+	echo "ex: git_clone github.com/mamtina/my_conf.git mamt_conf"
+	echo
+	echo 'cmd:  git clone "$1" "$2"'
+	auth_me
+    fi
+}
+
+#	%013
+alias git_modif_staged='git diff --name-only'
+
+#	%012
+git_commit_without_add() {
+    if [ $1 ]
+    then
+	git commit -m -a $1
+    else
+	error_arg
+	echo "explanation: use this if you modified a tracked file but you didn't stage it; which means, you didn't 'git add' AGAIN"
+	echo
+	echo "usage: this_ comment00"
+	auth_me
+    fi
+}
+
+
+#	%014:s
+git_help_log_format() {
+    echo "explanation: to see the log of git"
+    echo ""
+    echo 'ex: git log --pretty=format"%h - %an - %ar: %s"'
+    echo
+    echo "Option Description du formatage "
+    echo "-------------------------------"
+    echo inside the \"\" of the format
+    echo
+    echo %H Somme de contrôle du commit
+    echo %h Somme de contrôle abrégée du commit
+    echo %T Somme de contrôle de l\'arborescence
+    echo %t Somme de contrôle abrégée de l\'arborescence
+    echo %P Sommes de contrôle des parents
+    echo %p Sommes de contrôle abrégées des parents
+    echo %an Nom de l\'auteur
+    echo %ae e-mail de l\'auteur
+    echo %ad Date de l\'auteur \(au format de l\'option -date=\)
+    echo %ar Date relative de l\'auteur
+    echo %cn Nom du validateur
+    echo %ce e-mail du validateur
+    echo %cd Date du validateur
+    echo %cr Date relative du validateur
+    echo %s Sujet
+    echo
+    echo 'ex:	git log --pretty="%h - %an - %ar: %s"'
+}
+#	%014:e
+
+#	%015
+git_help_log() {
+    echo Option Description
+    echo ------------------
+    echo -p:		Affiche le patch appliqué par chaque commit
+    e '	eg: git log -p -2'
+    echo --stat :	Affiche les statistiques de chaque fichier pour chaque commit
+    e '	eg: git log --stat'
+    echo --shortstat:	N\'affiche que les ligne modifiées/insérées/effacées de l\'option --stat
+    echo --name-only:	Affiche la liste des fichiers modifiés après les informations du commit
+    echo --name-status: Affiche la liste des fichiers affectés accompagnés des informations d\'ajout/ modification/suppression
+    echo --abbrev-commit:N\'affiche que les premiers caractères de la somme de contrôle SHA-1
+    echo --relative-date:Affiche la date en format relatif \(par exemple "2 weeks ago" : il y a deux semaines\) au lieu du
+    echo --graph Affiche en caractère ASCII le graphe de branches et fusions en vis-à-vis de l\'historique
+    echo --pretty= \<format\>Affiche les commits dans un format alternatif. Les formats incluent oneline, short, full, fu
+    echo
+    echo "#useful"
+    echo -e '\tgit log --pretty="%h — %s" --author=Mamitiana_Solofo --since="2008-10-01"'
+}
+
+
+#	%016
+git_help_stuff() {
+    echo "to check the branch which are already merged in the current branch"
+    echo "  git branch --merged"
+    echo "and to check the branchs which are not yet merge: --no-merged"
+    echo ""
+    echo "it is important to see the log which are dependant by the time"
+    echo "that will give us the commit done from 2weeks ago 'till today"
+    echo "  git log --since=2.weeks"
+    echo
+    echo "to get the commit done by author"
+    echo "  git log --author=Mamitiana_Solofo"
+    echo
+    echo "if you commited and you modified, so you want that the modification will "
+    echo "change the previous commit"
+    echo "  git commit --amend"
+    echo
+    echo "to check the repo which contain the project"
+    echo "  git remote -v"
+    echo
+    echo "to check tags which are in the project, will be listed by alphabetic order"
+    echo "  git tag"
+    echo
+    echo "to create a tag"
+    echo "  git tag -a v0.0 -m \"this is a comment of this tag\""
+    echo 
+    echo "to create an alias of git"
+    echo "  git config --global alias.alias00 'long command git'"
+    echo "so, when you type:	git alias00"
+    echo "that is equivalent to:	git long command git"
+    echo
+    echo "if you modified file00 in the 2branches and you want to merge these 2branches"
+    echo "so, there is conflict between; this will appear when you typed:"
+    echo "  git merge br_to_merge"
+    echo "so, check 'git status'"
+    echo "to merge those 2branches, you have to do it MANUALLY"
+    echo "it will be divided in 2 by sth like: ==========="
+    echo "the one which is in the master branch will be above of ======"
+    echo "the one which is in the modified branch will be under the ====="
+    echo "I hope you understand"
+    echo
+    echo "to check the last commit of each branch"
+    echo "  git branch -v"
+}
+
+#	%017
+git_help_useful() {
+    # I'm going to put in a this function all functionnality of git which are just one command
+    # but which are useful
+    # this
+    echo "check this one ^^"
+    echo 'git log --pretty=format"%h - %an - %ar: %s"'
+    echo
+    echo "to get the commit by searching in the comment of the commit"
+    echo '  git log --grep="criterion to search in the comment of commit"'
+    echo
+    # this_end
+}
+
+#git_function_end
+
+#	%018
+# to get the url remote where ur push will go
+alias git_remote_ls='git remote -v'
+
+

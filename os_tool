@@ -1,0 +1,2260 @@
+home00=/root
+##########function which are used in general in this #########################
+# alias which repeat too #often when #programming #script			%001
+# to #extract mp3 from "flv|webm|........"					%002
+# to view all #function in a confFile(ex: thisFile)				%003
+# to get the #size of #ALL files|folder in $PWD					%004
+# to #print sth in your terminal which look like s1 is #typing it, #spy		%005
+# to #dl a link from #yt, #youtube, and convert it immediately to mp3		%006
+# to #dl a link from #yt #youtube, the format is webm				%007
+# to #dl a link from #yt #youtube, the format is 3gp				%008
+# to take a #picture from your #shell						%009
+# to #print the #date with this form:	mm.dd.yyyy_hh:mn:ss			%010
+# to #print only #dotfiles in $PWD						%011
+# to #print files which are modified #today					%012
+# to get the #interface of network with their #ip				%013
+# to get the #interface of network with their #status				%014
+# to do a #grep in $PWD and the result will be played in #mplayer		%015
+# to do a #grep in $PWD and the result will be played in #gnome-mplayer	%016
+# to make going in the #parent folder easier #alias				%017
+# sth about the #clock								%018
+# to #print only folder in $PWD, without #dotfiles				%019
+# to #print folders in $PWD, with #dotfiles					%020
+# to #disconnect the current user(ms)						%021
+# some stuff about #alias							%022
+# to do a #cmd and upload the result to #imgur					%023
+#	the cmd with arg or option doesn't work
+# to upload a file(pic) to #imgur						%024
+# to #print(in live) what u did in the terminal one by one #history		%025
+# to start #netbeans from ur terminal						%026
+# to print the list of installed package with size				%027
+# to #create a file and add the #date in the name of #newFile			%028
+# to #grep and colorize the result of a cmd00					%029
+# to get the #ip of a site							%030
+# to #save all modification in $all						%031
+# some cmd which I #often exe when I start my computer				%032
+# to exe some cmd in #parallel							%033
+# to #print the #distro name							%034
+# to get the #ip of my other pc							%035
+# to get the #username and #ip of my other pc					%036
+# to go in the folder where my doc of cisco is					%037
+# to read some of my #important books quickly					%038
+# using #cat, u can display the #line_number					%039
+# to get some links from #google						%040
+# to find all #symlinks in $PWD							%041
+# to do a research of files with find and get absolultepat of files		%042
+# 	like %042 but u will be able to set the depth of the research		%043
+# if there are many mp3 and you want to get the size of all of them		%044
+# to #print sth in the terminal with #color #style #reverse			%045
+# to #refresh bash when u did a modif in bashConf				%046
+# to #extract a #tar #gz #tgz file						%047
+#	but it is better to use dtrx						%047
+# to create a new folder and setting a user to it immediately #mkdir		%048
+# to create a new folder and go inside it immediately	#mkdir			%057
+# u can do a #select on #mysql without going inside mysql			%049
+# to #load the #configuration of my #git #tools #gittools			%050
+# to #upload a #pic to #imgur							%051
+# to #upload file to #omploader.org						%052
+# to #count the number of #music which are in $PWD				%053	
+# #tip to create a #checkpoint a ur cmd						%054
+# #tip to type '*'(5times)							%058
+# #list #application which use internet						%055
+# -----#-------#--------#-------#-----						%056
+# and create a #newfolder and go inside inside it immediately			%057
+# #tip to print some car quicker						%058
+# to set some #function #fct of #rsync						%059
+# to set some #fct of #mplayer							%060
+# when u did a modif in ur conf of #rxvt and u want to #refresh the rxvt	%061
+#	conf of rxvt is ~/.Xdefaults/.Xresources
+# when u want to get all #hashtags in file00					%062
+#todo
+#	%062
+# for #saving files which are important, bcz I'm going to play kali		%063
+# to turn off the #color of #ls							%064
+# to get the balise								%065
+# to #automount #auto_mount the iso of debian					%066
+# set debRepo into path								%067
+#	so i just type: cd $deb_repo
+# to #export txt to #pdf from #vim										%068
+# to run a #service in the #boot #starting								%069
+# to connect in jack via #ssh											%070
+# to go in folder where I set my #script								%071
+# to go in #sdz_doc immediately											%072
+# to #update ur repo bcz u added sth in ur #repo						%073
+# to show a #pop_up msg													%074
+# to warn that bash will run a cmd instead of simple echo				%075
+# to warn that the cmd above will not be run							%076
+# to repair broken package												%077
+# to #compile #cprogram													%078
+# to #compile #cppprogram												%079
+# to mount the $1 into $2
+# to make it easier to write on #vimrc									%080
+# to load a #session, #view of #vim in ~/.vim/nonicken/views			%081
+# to set the file #forOs00 quicker to get								%082
+# to define the #home #path of my #script								%083
+#
+#
+
+#	%083
+PATH=$PATH:$home00/dvl/lin/
+
+# 	%082
+export forOs="$home00/doc/sctd/forOs00"
+
+#	%081
+alias vims='vim -S'
+
+#	%080
+export vimrc="$HOME/.vimrc"
+
+mount_bind(){
+
+	echo "read carefully, bcz u are still studying"
+	read
+	echo "are u sure that all files in $1 will replace all files in $2"
+	echo "	while the mount is on"
+	read -p "y/n" y_n
+	if [ "$y_n" = 'y' ]
+		then
+		echo	'yes'
+	else
+		echo 	'nada'
+	fi
+	# mount --bind "$1" "$2"
+}
+# 	%079
+comp_runCpp(){
+# http://www.cyberciti.biz/faq/howto-compile-and-run-c-cplusplus-code-in-linux/
+	if [[ $1 ]]
+		then
+		g++ -g -Wall "$1" -o ${1/.cpp/}
+		./${1/.cpp/}
+	else
+		echo 'to compile c program'
+		echo ' 	ex : this_ cPPprog00.cpp'
+	fi
+}
+
+# 	%078
+comp_runC() {
+# http://www.cyberciti.biz/faq/howto-compile-and-run-c-cplusplus-code-in-linux/
+	if [[ $1 ]]
+		then
+		cc -g -Wall "$1" -o ${1/.c/}
+		./${1/.c/}
+	else
+		echo 'to compile c program'
+		echo ' 	ex : this_ cprog00.c'
+	fi
+}
+# 	%077
+brk_pkg01(){
+	apt-get -f install
+}
+
+#	%076
+warn_notrun(){
+	echo 'the prev cmd will not be run'
+	read
+}
+
+#	%075
+warn_cmd(){
+	echo '.....cmd.....'
+	read
+}
+
+#	%074
+pop_up_info(){
+	if [[ "$1" ]] && [[ "$2" ]]
+		then
+		zenity --title "$1" --info "$2"
+	else
+		echo 'to show a pop up message'
+		echo '	ex : this_ title00 msg00'
+	fi
+}
+
+#	%073
+up_repo(){
+	if [[ "$1" ]]
+		then
+		echo 'make sure that u are in the repo where u save all ur debFiles'
+		read
+		dpkg-scanpackages . /dev/null | gzip -9c > Packages.gz
+	else
+		echo 'to update the repo'
+		echo '	ex : this_	nonSense'
+	fi
+}
+
+#	%072
+export sdz='/media/hdd_sda7/ms/doc4lin/sdz'
+
+# 	%071
+export scr_lin='/root/dvl/lin'
+
+#	%070
+ssh_jack(){
+	ssh jack@192.168.1.5
+}
+
+#	%069
+srvcOnBoot(){
+	if [[ $1 ]]
+		then
+		chkconfig --level 345 "$1" on
+	else 
+		echo 'add service in $1'
+		echo 'ex:	this_ mysql'
+	fi
+}
+
+#	%068
+vim2pdf(){
+	echo 'inside ur vim: '
+	echo '	:hardcopy >/tmp/filename.ps'
+	echo '$ps2pdf /tmp/filename.ps'
+}
+
+#	%067
+deb_repo='/media/hdd_sda5/deb7/packages/i686'
+
+#	%066
+alias repo_up='/root/dvl/lin/repo-up.sh'
+#	%065
+get_balise(){
+	echo '<>'
+}
+
+#	%063
+export t_conf="/media/HDD0/mmt/save/conf"
+export t_mmedia="/media/HDD0/mmt/save/mmedia"
+export t_opt="/media/HDD0/mmt/save/otp"
+export t_doc="/media/HDD0/mmt/save/doc"
+export t_dvl="/media/HDD0/mmt/save/dvl"
+export t_save="/media/HDD0/mmt/save/save"
+#	%060
+alias src_mplayer='source /home/ms/ms_conf/mplayer.fct'
+
+#	%059
+alias src_rsync='source /home/ms/ms_conf/rsync.fct'
+
+#	%058
+# this is just a tip
+# if u want to print '*' 5times
+#	<alt-5>-	<enter>
+#	
+
+# #	%057
+# mkdircd(){
+# 	if1
+# 		mkdir $1
+# 		cd $1
+# 	else
+# 		echo 'to create a new folder and go inside of that folder'
+# 		echo '	immediately u will be set inside that newfolder'
+# 		echo '		ex :	this_ newFolder00'
+# 	fi
+# }
+
+#	%056
+alias apps_use_net01='ss -p'
+
+# 	%054
+# this is a just a tip
+#	type some cmd in ur terminal
+# 		that was cmd wasnt right but u will need it later
+#	
+
+
+#	%053
+#http://www.commandlinefu.com/commands/view/13017/count-music-files-in-each-directory
+#this is how to count music, 
+count_music() {
+    find . -maxdepth 1 -type d -print0 | xargs -0 -I{} sh -c 'find "{}" -type f | grep "ogg\|mp3\|wav\|flac\|MP3\|webm$" | wc -l | tr -d "\n"; echo " {}"'
+}
+
+
+#	%051
+upl-imgur() {
+curl -# -F image=@"$1" -F "key=1913b4ac473c692372d108209958fd15" \
+http://api.imgur.com/2/upload.xml | grep -Eo "<original>(.)*</original>" \
+| grep -Eo "http://i.imgur.com/[^<]*"
+}
+
+#	%052
+# http://www.commandlinefu.com/commands/view/4004
+upl-ompldr() {
+curl -u# -F file1=@"$1" http://ompldr.org/upload|awk '/File:/' | cut -d\> -f5- | cut -d\/ -f1-4
+}
+
+#	%050
+alias src_git='source /home/ms/ms_conf/git_tools'
+
+#	%001:e
+alias echoe="echo -e"
+alias if2='if [[ $1 ]] && [[ $2 ]] ; then  '
+alias if1='if [[ $1 ]] ; then '
+alias err='2>'
+alias if3='if [[ $1 ]] && [[ $3 ]] && [[ $3 ]] ; then '
+#	%001:e
+
+
+e(){
+    echo "$1"
+    # this will work only if you set $1 inside "".
+    # therefore, 
+    #	>$ e this is a test
+    #	will display 
+    #	    this
+    #	only
+}
+
+bar_(){
+    echo "################################################################################"
+}
+
+#########end_____function which are used in general in thi______end##############
+
+#to extract mp3 from 'flv\|webm\|...'
+#	%002:s
+ffmpeg_extr_mp3() {
+    if [ "$1" ]  && [ "$2" ]
+    then
+         avconv -y -i "$1" -vn -acodec libmp3lame "$2"
+    else
+	 echo 'to extract audio from flv, .... videos'
+	 e 'eg: ffmpeg_extr_mp3 video.flv video.mp3'
+    fi
+}
+#	%002:e
+
+#os_dev00
+# in a conf file where there are functions, use this to get all the functions which are in the $1_file, 
+# #for_dev
+#	%003:s
+view_function () {
+    if [ $1 ]
+    then
+	cat $1 | grep \(\)
+    else
+	e 'explanation	:use this to view all functions(for programming) in file which is an extention of .bashrc'
+	e
+	e 'usage:   this_ filewithfunction'
+	e
+	e 'cmd:'
+	e ' $1 | grep \(\)'
+    fi
+}
+#	%003:e
+#this is to get the the size of all repertories in the $PWD
+
+
+#	%004:s
+du_sort_file_size() {
+    du -hkx | egrep -v "\./.+/" | sort -n
+}
+#	%004:e
+
+#to print something in a fancy manner on you terminal
+#http://www.commandlinefu.com/commands/view/10236/echo-text-in-fancy-manner
+#	%005:s
+sayspeed() { 
+    for i in $(seq 1 `echo "$1"|wc -c`); #this will go through $1
+	# |wc -c	    # count the number of caracter
+	# `cmd0`	    # so cmd0 will be performed
+	# seq 1 4	    # will display the number 1 till 4
+	# seq 1 2 10	    # to set the number of incrmentation
+	#   so here it is 2
+    
+    do echo -n "`echo $1 |cut -c ${i}`"; 
+    
+    sleep 0.1s; done; echo "";
+}
+#	%005:e
+
+#youtube
+#this is to extract only mp3 of some video on youtube
+#http://www.commandlinefu.com/commands/view/9701/convert-youtube-videos-to-mp3
+#	%006:s
+dl_youtube_mp3() {
+    if1
+	youtube-dl -t --extract-audio --audio-format mp3 $1
+    
+    else
+	echo 'to extract audio from youtube'
+	echo 'ex;   this_ linkFromYt'
+    fi
+}
+#	%006:e
+
+# to dl from youtube and the format is webm
+#	%007:s
+dl_youtube_webm() {
+    # for a in "$@"
+	# do
+	    # youtube-dl -f webm $a
+	# done
+    youtube-dl -f webm $1
+}
+#	%007:e
+
+#	%008:s
+dl_youtube_3gp() {
+    youtube-dl -f 3gp $1
+    
+}
+#	%008:e
+
+#youtube_end
+
+crypt_ssl(){
+    # if[[  ]]
+    openssl aes-256-cbc -salt -in $1 -out $2
+}
+
+dcrypt_ssl(){
+    openssl aes-256-cbc -d -in $1 -out $2
+}
+
+#to take pic from the shell
+#http://www.commandlinefu.com/commands/view/11774/press-enter-and-take-a-webcam-picture.
+#	%009:s
+pic_webcam(){
+    if1
+	# read && ffmpeg -y -r 1 -t 3 -f video4linux2 -vframes 1 -s sxga -i /dev/video0 ~/webcam-$(date +%m_%d_%Y_%H_%M).jpeg
+	read && ffmpeg -y -r 1 -t 3 -f video4linux2 -vframes 1 -s sxga -i /dev/video0 $1
+    else
+	echo 'to take a pic from webcam'
+	echo 'eg: this_ coucou.jpg'
+    fi
+}
+#	%009:e
+
+#to split mp3music and take just the sound after $1
+cut_mp(){
+    # avconv -ss 00:00:30 -t 00:02:58 -i $1 -acodec copy $2
+    avconv -ss 00:00:30 -i $1 -acodec copy $2
+}
+
+#	%010:s
+date_now(){
+    date "+%m.%d.%Y_%H:%M:%S"
+}
+#	%010:e
+
+#	%011:s
+ls_dot_files(){
+    if1
+	ls -d .*
+    else
+	echo 'to list only dot files'
+	echo 'ex:   this_ whatever00'
+    fi
+}
+#	%011:e
+
+#	%012:s
+ls_file_modified_today() {
+    ls -al --time-style=+%D | grep `date +%D`
+}
+#	%012:e
+
+# to check interface if they are up or down
+#	%014:s
+netInterf_status() {
+    for i in `ls /sys/class/net/`; do echo $i: `cat /sys/class/net/$i/operstate`; done
+}
+#	%014:e
+
+#to check each interface of network and each ip which is with
+#	%013:s
+netInterf_ip(){
+    ip -o -4 addr show | awk -F '[ /]+' '/global/ {print $2, $4}'
+}
+#	%013:e
+
+#	%015:s
+pl_grepMpl() {
+    if1
+	if [[ -e tmp_mpl ]]	# tmp_mpl is the file where the result of grep that u want to play is stored
+	then
+	    rm tmp_mpl
+	    ls|grep -i "$1" | grep -i "mp3\|webm\|flv\|avi\|mp4" >> tmp_mpl
+	    mplayer -loop 100 -shuffle -playlist tmp_mpl
+	    rm tmp_mpl
+
+	else
+	    ls|grep -i "$1" | grep -i "mp3\|webm\|flv\|avi\|mp4" >> tmp_mpl
+	    mplayer -shuffle -loop 100 -playlist tmp_mpl
+	    rm tmp_mpl
+	fi
+    else
+	echo 'to do a grep in $PWD, the result of the grep will be played in gnome-mplayer'
+	echo 'eg:   this_ metallica'
+    fi
+}
+#	%015:e
+
+#	%016:s
+pl_grepGmpl() {
+    if1
+	if [[ -e tmp_mpl ]]	# tmp_mpl is the file where the result of research that u want to play is stored
+	then
+	    rm tmp_mpl
+	    ls|grep -i "$1" | grep -i "mp3\|webm\|flv\|avi\|mp4" >> tmp_mpl
+	    gnome-mplayer --random --loop --playlist tmp_mpl
+	    rm tmp_mpl
+
+	else
+	    ls|grep -i "$1" | grep -i "mp3\|webm\|flv\|avi\|mp4" >> tmp_mpl
+	    gnome-mplayer --random --loop --playlist tmp_mpl
+	    rm tmp_mpl
+	fi
+    else
+	echo 'to do a research in $PWD, the result of the research will be played in gnome-mplayer'
+	echo 'eg:   this_ metallica'
+    fi
+}
+#	%016:e
+
+#alias
+# d amzai mlai b le navig
+#	%017:s
+alias ..="echo 'just to show that you can put many instr in an alias';cd .."
+alias ..2="cd ../../"
+alias ..3="cd ../../../"
+alias ..4="cd ../../../../"
+alias ..5="cd ../../../../../"
+alias ..6="cd ../../../../../../"
+#	%017:e
+
+#to display a clock in the terminal
+#	%018:s
+alias clock='watch -t -n1 "date +%T|figlet"'
+alias clock00="watch -t -n1 'date \"+%r %F %A\"'"
+#	%018:e
+alias mysql_connection_nbr='mysql -u root -p -BNe "select host,count(host) from processlist group by host;" information_schema'
+
+
+# alias findd="find -maxdepth 1 -iname '*' -type d" deprecated
+# use this to check all directories which are in the current position
+#	%019
+alias findd="ls -d */"
+
+# use this to check all direc
+#	%020
+alias findd_a="find -maxdepth 1 -iname '*' -type d"
+
+# pour deconnecter ms
+#	%021
+alias disconnect="pkill -KILL -u ms"
+
+# pour avoir plus de maniabilite avec info
+alias info="info --vi-keys"
+
+alias grep="grep --color=auto"
+
+# alias python='/usr/bin/python3.2'
+
+#stuff_alias
+#	%022:s
+#pastebinit
+alias pastebinit='pastebinit -b http://sprunge.us'
+alias lsnew='ls -al --time-style=+%D | grep `date +%D`'
+alias pgo='ping google.com'
+alias mplayerloop='mplayer -loop 25'
+alias gnome-mplayer_pl='gnome-mplayer --playlist --random --loop'
+alias gnome-mplayer_pl_loop='gnome-mplayer --playlist --loop'
+alias gn_mpl_rnd_pl='gnome-mplayer --random --playlist --loop'
+
+alias stuff_check_shells="cat /etc/shells"
+alias stuff_check_users="cat /etc/passwd | cut -d: -f1"
+
+alias lsf='ls -F'
+#	%022:e
+
+cat_n() {
+    if [ "$1" ]
+    then
+	$1 | cat -n
+    else
+	echo "explanation: this is to display the content of something and display the line number "
+	echo ""
+	echo "usage: cat_n cmd_ive_done"
+    fi
+}
+alias pc_model='sudo dmidecode | grep Product'
+alias purge_unused_conf="sudo aptitude purge '~c'"
+
+#	%061
+alias xrdb_refr='xrdb -merge /home/ms/.Xdefaults/.Xresources'
+
+alias serve_PWD='echo "check on http://0.0.0.0:8000"; python -m SimpleHTTPServer; '
+alias ls_fold_size='du -h --max-depth=1'
+
+alias starwar='telnet towel.blinkenlights.nl'
+
+alias ffg="nohup firefox google.com &"
+alias ffb="nohup firefox bing.com &"
+alias ffc='nohup firefox commandlinefu.com &'
+
+# to get your external ip
+alias ip_ext='curl ifconfig.me'
+
+# this is used for mamtina kali-linux only
+
+alias thunderbird='/optms/thunderbird/thunderbird-24.3.0/thunderbird/thunderbird'
+
+alias firefox='/opt/firefox/firefox'
+
+
+#	%034
+alias os_distro_name='cat /etc/issue'
+
+alias pl_shf='mplayer -shuffle -playlist'
+
+alias grep='grep -n --color=always'
+alias gitloga='git log --all --oneline'
+
+
+alias msfconsole='/media/__80G__/opt/metasploit/metasploit347M/msfconsole'
+alias armitage="$metasp/armitage"
+
+alias txt2pdf='/home/ms/.vim/plugin/txt2pdfvim/newDl/txt2pdf-10.2/txt2pdf.pl'
+
+alias eclipse='/home/ms/Downloads/androidSDK/adt-bundle-linux-x86-20140321/eclipse/eclipse'
+
+#alias_end
+
+#export
+
+#	%035
+export ipo='192.168.21.2'	    # ip of my otherPc
+
+#	%036
+export iuo='jack@192.168.21.2'	    # ip_userOther
+export forOs00="$all/forOs00"
+export os_tool='/root/ms_conf/os_tool'
+
+#	%037
+export cisco='/media/__80G__/yt/cisco/'
+
+#	%038
+export book_uml='/home/ms/doc4lin/uml/uml2analyseetconception.pdf'
+export book_java='/home/ms/doc4lin/j2se/Programmer_en_Java_5-6Edition_816p.pdf'
+export dia_uml="$all/umlCourse.dia"
+
+#export_end
+
+#function
+
+#	%039
+cat_n() {
+    if [ "$1" ]
+    then
+	$1 | cat -n
+    else
+	echo "explanation: this is to display the content of something and display the line number "
+	echo ""
+	echo "usage: cat_n cmd_ive_done"
+    fi
+}
+
+#	%040
+#google.com
+#to do research on google from shell and it will open firefox
+google() { gg="https://www.google.com/search?q="; ff="firefox"; if [[ $1 ]]; then "$ff" -new-tab "$gg"$(echo ${1//[^a-zA-Z0-9]/+}); else echo 'Usage: google "[seach term]"'; fi }
+
+#duckduckgo.com
+ddg(){ search=""; bang=""; for term in $@; do if [[ "$term" =~ -([A-Za-z0-9._%+-]*) ]]; then bang="\!${BASH_REMATCH[1]}" ; else search="$search%20$term" ; fi ; done ; firefox "https://www.duckduckgo.com/?q=$bang$search" ;}
+#gen_function
+root_need() {
+    echo '===========to use this, you should be root'
+    echo
+}
+
+error_arg() {
+    echo -e "error: argument missing\n"
+}
+
+auth_me() {
+    echo
+    echo "author: Mamitiana_Solofo"
+}
+
+#gen_function_end
+
+#find_function
+#	041
+find_symlinks () {
+    if1
+	find ./ -maxdepth 1 -type l -ls | grep -i ' '
+	# find ./ -type l -print0 | xargs -0 ls -plah | grep -i "$1" # this is one ok too
+    else
+	echo 'to do a research of all _symlinks_'
+	echo 'eg:   this_ bash'
+	echo 'to list all symlinks in $PWD'
+	echo "eg:   this_ whatever00"
+    fi
+}
+
+#	%042
+# so the research with #find will give the absolute path
+find_abs() {
+    # if [ $1 ]
+    # then
+    if1
+	find . -iname "*$1*" -exec readlink -m {} \;
+    else
+	error_arg
+	echo "explanation: use this to find ONE file and to get the absolute path of the file"
+	echo
+	echo "usage: find_abs file00"
+    fi
+}
+
+
+#	%043
+find_abs_maxdepth() {
+    # if [ $2 ] && [ $1 ]
+    if2
+		find ./ -maxdepth "$2" -iname  "*$1*" -exec readlink -m {} \;
+    else
+		error_arg
+		echo "explanation: this is to find ONE file and to get the absolute path of the file which is searched. "
+		echo -e "\tyou have to set the name of file which is searched and the depth of the research into the directories"
+		echo
+		echo "usage: find_abs_maxdepth file_searched00 nb_depth"
+		echo "ex: find_abs_maxdepth file00 3"
+    fi
+}
+
+# search() { cd /home/ms/doc4lin/linux || return 1; find . -name "$1"; }
+
+#	%044
+find_cal_size(){
+    if1
+	find . -maxdepth 1 -name "*$1*" -type f -exec du -ch {} + | tail -n1
+    else
+	echo 'to research some files and doing the sum of the size'
+	echo '	ex: this_ mp3'
+    fi
+}
+
+#find_function_end
+
+
+
+#	%045:s
+#echo_fct
+echo_color_blue(){
+    echo -e "\e[34m$1\e[0m"
+}
+
+echo_color_darkGray(){
+    echo -e "\e[90m$1\e[0m"
+}
+
+echo_color_red(){
+    echo -e "\e[31m$1\e[0m"
+}
+
+echo_underl(){
+    echo -e "\e[4m$1\e[0m"
+}
+echo_rev(){
+    echo -e "\e[7m$1\e[0m"
+}
+
+#echo_fct_end
+#	%045:e
+
+refr_bash () {
+    # this is to refresh bash when you've made a modif in ~/.bashrc and you want that your modification will work without restarting your shell
+    echo -n "bash refreshed"
+    exec -l bash
+}
+
+#	%046:s
+tar_dec_tar() {
+    if [ $1 ]
+    then
+	tar -zxvf $1
+    else
+	error_arg
+	echo "explanation: use this to decompress a .tar_file"
+	echo
+	echo "usage: tar_dec_tar file00.tar"
+	echo
+	echo 'cmd: tar xvzf $1'
+	auth_me
+    fi
+}
+
+tar_dec_gz() {
+    if [ $1 ]
+    then
+	# tar -zxvf $1
+	gunzip $1
+    else
+	error_arg
+	echo "explanation: use this to decompress a .gz_file"
+	echo
+	echo "usage: tar_dec_gz file00.gz"
+	echo
+	# echo 'cmd: tar -zxvf $1'
+	echo "cmd: gunzip $1"
+	auth_me
+    fi
+}
+
+tar_dec_tgz() {
+    if [ $1 ]
+    then
+	tar xzf $1
+    else
+	error_arg
+	echo "explanation: use this to unzip a .tgz_file"
+	echo
+	echo "usage: tar_dec_tgz file00.tgz"
+	echo
+	echo 'cmd: tar xzf $1'
+	auth_me
+    fi
+}
+
+#	%047:e
+
+#stuff_function
+#
+dhclient_release() {
+    if [ $1 ]
+    then
+	dhclient -r $1
+    else
+	root_need
+	error_arg
+	echo 'explanation: this is to release the ip of an interface network'
+	echo
+	echo 'usage: this_ eth0'
+	auth_me
+    fi
+}
+
+# to check if a process is running
+#not yet done
+hib_if_not_playing_process(){
+case "$(pidof $1 | wc -w)" in
+0)
+echo nada 0
+# 0)  echo "Restarting Amadeus:     $(date)" >> /var/log/amadeus.txt
+#     /etc/amadeus/amadeus.x86 &
+    ;;
+1)  # all ok
+echo all is ok
+    ;;
+*)
+echo nada star
+# *)  echo "Removed double Amadeus: $(date)" >> /var/log/amadeus.txt
+#     kill $(pidof amadeus.x86 | awk '{print $1}')
+    ;;
+esac
+}
+#stuff_function_end
+
+
+
+#	%048
+# to create a folder00 with an owner of that folder00
+mkdiru(){
+    mkdir "$2"
+    chown -R "$1". "$2"
+}
+
+#	%049
+mysql__selWithoutEntering(){
+    echo 'mysql -u nom_utilisateur -pmot_de_passe -s base_donnee -e "select * from nom_table;"'
+}
+
+#	%033:s
+pll_cmd(){
+    for cmd in "$@"; do {
+  	echo "Process \"$cmd\" started";
+  	$cmd & pid=$!
+  	PID_LIST+=" $pid";
+    } done
+
+trap "kill $PID_LIST" SIGINT
+
+echo "Parallel processes have started";
+
+wait $PID_LIST
+
+echo
+echo "All processes have completed";
+}
+#	%033:e
+
+#	%032:s
+sw(){
+    #	netbeans:'/usr/local/netbeans-8.0/bin/netbeans' 
+    # dia_pentest='dia /home/ms/doc4lin/all/penTestStudy01.dia'
+    # dia_mysql='dia /home/ms/doc4lin/autoDoc/all/mysqlStudy01.dia'
+    # dia_dbstudy='dia /home/ms/doc4lin/autoDoc/all/dbStudy.dia '
+    # dia_eng='dia /home/ms/doc4lin/autoDoc/all/engStudying.dia'
+    # dia_linShell='dia /home/ms/doc4lin/autoDoc/all/linuxShell.dia'
+
+
+    # okular_mysql_sdz='okular /home/ms/doc4lin/sdz/464494-administrez-vos-bases-de-donnees-avec-mysql.pdf'
+    # okular_mysql='okular /home/ms/doc4lin/mysql/refman-5.0-fr.a4.pdf'
+    # okular_metasploit='okular /home/ms/doc4lin/.h/metasploitJul2011.pdf'
+
+    # diacmd="$dia_pentest "
+    # diacmd="$diacmd $dia_mysql"
+    # diacmd="$diacmd $dia_dbstudy"
+    # diacmd="$diacmd $dia_linShell"
+    # diacmd="$diacmd $dia_eng"
+
+    # okular_cmd="$okular_mysql_sdz"
+    # okular_cmd="$okular_cmd $okular_mysql"
+    # okular_cmd="$okular_cmd $okular_metasploit"
+
+    # 
+    # cmd01="$diacmd $okular_cmd "
+    # # cmd01="$cmd01 '/usr/local/netbeans-8.0/bin/netbeans'"	#adding netbeans
+
+    # pll_cmd "$cmd01"
+
+    # the previous cmd is testing mode
+    pll_cmd 'dia /home/ms/doc4lin/autoDoc/all/penTestStudy01.dia /home/ms/doc4lin/autoDoc/all/mysqlStudy01.dia /home/ms/doc4lin/autoDoc/all/dbStudy.dia /home/ms/doc4lin/autoDoc/all/engStudying.dia /home/ms/doc4lin/autoDoc/all/linuxShell.dia /home/ms/doc4lin/autoDoc/all/umlCourse.dia' 'okular /home/ms/doc4lin/sdz/464494-administrez-vos-bases-de-donnees-avec-mysql.pdf' 'okular /home/ms/doc4lin/j2se/Programmer_en_Java_5-6Edition_816p.pdf' 'okular /home/ms/doc4lin/sdz/119239-programmation-en-java-api.pdf'  'okular /home/ms/doc4lin/mysql/refman-5.0-fr.a4.pdf' 'okular /home/ms/doc4lin/.h/metasploitJul2011.pdf' 
+}
+#	%032:e
+
+
+h_svwork(){ #this is a static one, it will be used for svwork function ONLY
+    echo 'unrecognized option: ' 
+    echo "$1"
+    echo 
+    echo --newcomment
+    echo '	ex: this_ --newcomment thisisthenewcommentforgit'
+    echo
+    echo -h
+    echo '	to print this help'
+    echo
+    echo --amend
+    echo '	to redo the last commit'
+    echo '  '
+    echo '-a'
+    echo '  to do a default commit and adding the files which is actually:'
+    echo "  $files01"
+    echo
+    echo '-d'
+    echo '  to git some documentation that I_read as: mysql, pentest, ...'
+    echo '	bcz there are some notes which I marked '
+    echo ""
+}
+
+
+#	%031:s
+svwork(){
+    files01="$all/all.txt $all/*.dia $all/forBash $all/forBtR3_00 $all/love_feel $all/*.sql"
+    marked='/home/ms/doc4lin/marked'
+    file02="$marked/*.pdf"
+    if [ "$1" = '--amend' ]
+	then
+	mysqldump -u ms -p --opt dds_honey > ddsDb.sql
+	#git add $all/all.txt $all/*.dia $all/forBash $all/forBtR3_00 $all/love_feel $all/Study.sql $all/forOs00 $all/ddsDb.sql
+	git commit --amend -m "auto commit"
+    
+    elif [ "$1" = '--newcomment' ]
+	then
+	if [ "$2" ]
+	    then
+	    mysqldump -u ms -p --opt dds_honey > ddsDb.sql
+	    #git add $all/all.txt $all/*.dia $all/forBash $all/forBtR3_00 $all/love_feel $all/Study.sql $all/forOs00 $all/ddsDb.sql
+	    git commit --amend -m "$2"
+	else
+	    echo 'u decided to set a _newcomment_ of the commit'
+	    echo '  but u didnt set any new comment'
+	    echo '  ex:	this_ --newcomment thisisthenewcomment'
+	fi
+	
+    elif [ "$1" = '-h' ]
+	then
+	h_svwork 
+    elif [ "$1" =  '-a' ]
+	then
+	mysqldump -u ms -p --opt dds_honey > /home/ms/doc4lin/autoDoc/all/ddsDb.sql
+	mysqldump -u ms -p --opt Study > /home/ms/doc4lin/autoDoc/all/Study.sql
+	cd /home/ms/doc4lin/autoDoc/all/
+	git add $files01
+	git commit -m "auto commit $(date)"
+	cd -
+    elif [ "$1" = '-d' ]
+	then
+	if [ "$PWD" = '/home/ms/doc4lin/marked' ]
+	    then
+	    git add  "$file02"
+	    git commit -m "auto commit"
+	else
+	    echo "u are not in $marked"
+	    echo
+	    cd "$marked"
+	    git add "$file02"
+	    git commit -m "auto commit"
+	    cd -
+	    echo 'gitted ur documentation which are marked in $marked and now '
+	    echo "  u_re actually in: $PWD"
+	fi
+
+    else
+	# mysqldump -u ms -p --opt dds_honey > ddsDb.sql
+	# git add $all/all.txt $all/*.dia $all/forBash $all/forBtR3_00 $all/love_feel $all/Study.sql $all/forOs00 $all/ddsDb.sql
+	# git commit -m "auto commit"
+	h_svwork
+    fi
+}
+#	%031:e
+testing(){
+    if1
+	echo param01
+	if [ "$1" = '-a' ]
+	    then
+	    echo -a is the param
+	elif [ "$1" = 'a' ]
+	    then
+	    echo without minus
+	else
+	    echo nada inside
+	fi
+    else 
+	echo nada
+    fi
+
+}
+
+#	%030:s
+ip_ns(){
+    if [ "$1" ]
+	then
+	nslookup "$1"
+    else
+	echo 'use this to get the ip of a site'
+	echo '	ex: this_ testing.com'
+    fi
+}
+#	%030:e
+
+
+
+#	%029:s
+grep_col_patt(){
+	egrep --color "\b$1|$"
+}
+#	%029:e
+#function_end
+
+#path
+export all='/root/doc/sctd'
+#path_end
+##############END of  conf that I've done   END############################
+#to start with awk
+lssize(){
+    ls -lh "$1" | awk '{print $5}'
+}
+
+# use this to convert video to mp3
+conv_all_vid_toMp3() {
+    if [ $1 ]
+	then
+	# for to_convert in /media/2b023182-a68c-480f-8f7f-e4925fe84c7f/ms/Music/songs/*.$1
+	for to_convert in *.$1
+	    do
+		ffmpeg_extr_mp3 "$to_convert" "${to_convert/$1/mp3}"
+		# echo "${to_convert/$1/testing}"
+	    done
+	else 
+	    echo "to convert all videos to mp3"
+	    echo "eg: this_ flv"
+    fi
+}
+
+lowercase(){
+    # if[ $1 ]
+	# then
+    # c=$1
+    # a=${c,,}
+    # echo $a
+    # else
+	echo "a=A"
+	echo "b=${a,,}"
+	echo "> b=a"
+}
+
+uppercase(){
+    res_=$1
+    let "res_=${res_^^}"
+    #string could not be a value of return
+    return res_
+}
+
+
+#studying the return function
+st_ret(){
+    a=$1
+    b=$2
+    let res=$a+$b
+    return $res
+    #tip #important
+    #it is not possible to do this next technics
+    #this will differentiate bash from the others language
+    #	to execute a fonction which return a value, do the next few lines
+    #	>$ st_rel 5 8
+    #	>$ var_=$?
+    #
+    #	the value which is just after return should not be  
+    #	    higher than 256
+}
+
+# to test to return a very big value from a function.
+st_ret01(){
+    var_=$1
+    # this variable will be visible in all the system
+    # #tip
+    # therefore, be aware with the name of variable
+}
+
+#not done
+
+#not done
+#try to test some conditions inside [[ ]]
+# testaaaaa(){
+#     # if [[ $1 ]]
+#     if [[ $1 & $2 ]]
+# 	then
+# 	echo aaaaaaa
+# 	else :
+#     fi
+# }
+
+#this will move all all files which contains flv, mp3, ... in another folder
+mv_all_1_in_2() {
+    if [[ $1 ]] && [[ $2 ]] && [[ $3 ]]
+	then
+	for a in *.$2 
+	    do
+	    b=${a,,}
+	    if [[ "$b" =~ "$1" ]]
+		then
+		echo "$a"
+		mv "$a" $3
+	    else :
+	    fi
+	    done
+	#end_for
+    else 
+	echo 'to move all file in the $PWD which contain patt$1 with the extension$2 to folder$3'
+	echo 'eg:   this_ test mp3 /path/target/'
+    fi
+}
+
+#important
+#to list all installed package and sort their size, biggest is the last
+ls_installed_pkg_b_size(){
+    dpkg-query -Wf '${Installed-Size}\t${Status}\t${Package}\n' | sort -n | grep installed
+}
+
+# to search pattern in ALL pdf inside $PWD
+pdf_srch_inFold(){
+    if1
+	for i in *.pdf; do echo --------$i-------; echo; pdftotext $i - | grep -i $1; done
+    else
+	echo 'to search a pattern$1 in $PWD'
+	echo 'eg:   this_ patternToSearch'
+    fi
+}
+
+# to search a pattern$1 in file$2
+pdf_srch_inFile(){
+    if2
+	pdftotext $2 - | grep -i $1;
+    else
+	echo 'to research a pattern$1 inside a file$2'
+	echo 'eg:   this_ patt00 file00.pdf'
+    fi
+}
+
+pdf_conv_img_toPdf(){
+    convert {1..12}.png MyMultiPageFile.pdf
+}
+
+# to search in google
+function google { 
+    if [[ $1 ]]
+	then
+	Q="$@"; 
+	GOOG_URL='https://www.google.de/search?tbs=li:1&q='; 
+	AGENT="Mozilla/4.0"; 
+	stream=$(curl -A "$AGENT" -skLm 10 "${GOOG_URL}${Q//\ /+}" | grep -oP '\/url\?q=.+?&amp' | sed 's|/url?q=||; s|&amp||'); 
+        echo -e "${stream//\%/\x}"; 
+	else 
+	    echo 'to search in google'
+	    echo 'eg: >$ google "script linux" '
+    fi
+}
+
+# to show the installation date of the operating system
+alias os_creation="sudo tune2fs -l $(df -h / |(read; awk '{print $1; exit}')) | grep -i created"
+
+
+# to count all human all over the world
+#alias count_all_human='curl -s http://www.census.gov/popclock/data/population/world | python -c \'import json,sys;obj=json.load(sys.stdin);print obj["world"]["population"]\''
+
+# and will list the command will delete the files which contain the $1
+del_txt_w1() {
+    if1
+	grep -r -Z -l "$1" . | xargs -0 echo rm
+	else
+	    echo 'to search in file and the file which contains the $1 can be removed by the result of this command'
+	    echo 'eg: this_ bad_word'
+    fi
+}
+
+#use this to get more info about an ip an ip
+locate_ip() {
+    if1
+        curl ipinfo.io/$1
+    else
+	echo 'to get some information about the ip$1'
+	echo 'eg:   this_ 192.168.2.5'
+    fi
+}
+
+#useful #grep_important
+#instead of doing research line by line, this display the paragraph which contains the pattern to research
+grepp() { 
+    if [[ "$1" ]] && [[ "$2" ]]
+	then
+	    [ $# -eq 1 ] && perl -00ne "print if /$1/i" || perl -00ne "print if /$1/i" < "$2";
+	else
+	    echo 'to grep in file$2 the pattern$1 and the result of the research will be shown as paragraph but not line by line'
+	fi
+}
+
+#to print how times patt$1 occur in file$2
+count_occur(){
+    if2
+        a=$(grep -or $1 $2 | wc -l)
+	echo "word:$1 appears $a times in $2"
+	else
+	    echo 'to print how many times patt$1 occur in file$2'
+	    echo 'eg: this_ linux /home/user00/path00'
+    fi
+}
+
+gmail_check_unread_mails(){
+    if2	    
+	curl -u $1:$2 --silent "https://mail.google.com/mail/feed/atom" | tr -d '\n' | awk -F '<entry>' '{for (i=2; i<=NF; i++) {print $i}}' | sed -n "s/<title>\(.*\)<\/title.*name>\(.*\)<\/name>.*/\2 - \1/p"
+    else
+        echo "to display some unread mail in gmail"
+        echo "eg: this_ solofomamitiana0@gmail.com my_code"
+    fi
+}
+
+# to run a command$1 with only one CPU
+exe_oneCPU() {
+    if2
+	taskset -c 0 "$1"
+    else 
+	echo 'use this to execute some command by only one cpu'
+	echo 'eg: this_ ls'
+    fi
+}
+
+# to hear the pronunciation of a word from translate.google
+say() { 
+    if1
+	wget -q -U Mozilla -O output.mp3 "http://translate.google.com/translate_tts?tl=en&q=$1"; 
+	mplayer "output.mp3";
+	rm "output.mp3"
+    else
+	echo "to hear the pronunciation of some word from google"
+    fi
+}
+
+# to find in which pkg a file/prg belongs to
+which_pkg () {
+    if1
+	dpkg -S $(which "$1")
+    else
+	echo 'to find in which a file belongs to'
+	echo 'eg: this_ ls'
+    fi
+}
+
+# aptitude install package_name00 is too long
+inst_pkg() {
+    if1
+	sudo aptitude install "$1"
+    else
+	echo 'to install a package'
+	echo 'eg: this_ pack00'
+    fi
+}
+
+function ytmp3() {
+    if1
+    while (($#));
+    do (cd ~/Music; echo "Extracting mp3 from $(youtube-dl -e $1)";
+    youtube-dl -q -t --extract-audio --audio-format mp3 $1); shift; done ; 
+    else
+	echo "to dl a some url from you tube and to extract the mp3"
+	echo "eg: this_ \"url00\" \"url01\" ... \"urlN\" "
+    fi
+}
+
+wget_site () {
+    if1
+        wget --random-wait -r -p -e robots=off -U mozilla "$1"
+    else
+	echo 'to dl an entire site'
+	echo 'eg: this_ commandlinefu.com'
+    fi
+}
+
+# to replace all $1 by $2 which are in the current folder
+repl_1_by2 () {
+    if2
+
+	for file in *; do mv "$file" `echo $file | tr $1 $2` ; done
+	
+	# for a in * 
+	#     do
+	#     b=${a,,}
+	#     if [[ "$b" =~ "$1" ]]
+	# 	then
+	# 	mv "$a" "${a/$1/$2}"
+	# 	# echo ${b/$1/$2} 
+	#     else :
+	#     fi
+	#     done
+	# end_for
+	# unset a
+    else
+	echo 'to replace all the name of the files in $PWD which contains $1 by $2'
+	echo 'eg: this_ .flv .mp3'
+	echo '	so all flv_files will be renamed by .mp3_files'
+    fi
+}
+
+#to translate from english to french on google
+google_transl_tofr () {
+    if1
+    trs {en=fr} "$1"
+    else
+	echo 'to translate from translate.google.com'
+	echo 'eg: this_ "this text will translated"'
+    fi
+}
+
+google_transl_toen () {
+    if1
+    trs {fr=en} "$1"
+    else
+	echo 'to translate from translate.google.com to english'
+	echo 'eg: this_ "ce txt sera traduit en anglais"'
+	u
+    fi
+}
+
+
+#to check how about the memo used by a command
+memo_used () {
+    if1
+	ps h -o pmem -C "$1" |  awk '{sum+=$1} END {print sum}'
+    else
+	echo "to Show total cumulative memory usage of a process that spawns multiple instances of itself"
+	echo 'eg: this_ firefox'
+    fi
+}
+
+asciiviewr () {
+    if1
+        asciiview "$1" -driver curses
+    else
+	echo "to view a pic on terminal"
+	echo "eg: this_ pic00.jpg"
+    fi
+}
+
+dl_apt () {
+    if1
+	# this one will dl the source(.c, .h) of the package
+	#	apt-get --download-only source "$1"
+	# this one will dl the .deb of pack
+	apt-get download "$1"
+    else
+	echo 'do dl source of aptitude/apt-get'
+	echo "eg: this_ apt-offline"
+	echo 'eg: this_ vim'
+    fi
+}
+
+alias ffy='nohup firefox youtube.com &'
+
+unrar_list() {
+    if1
+	unrar l "$1"
+    else
+	echo 'to list the content of rarfile'
+
+	echo 'eg: this_ file00.rar'
+    fi
+}
+
+unrar_test() {
+    if1
+	unrar t "$1"
+    else
+	echo 'to test if a rar file is ok'
+	echo "eg: this_ file00.rar"
+    fi
+}
+
+rar_create_rar () {
+    if2 
+	rar a "$2" "$1"
+    else
+	echo 'to create a rarFile$2 and from the file00$1 '
+	echo 'eg:   this_ fileToRar newFile.rar'
+    fi
+}
+
+rar_del_file () {
+    if2
+	rar d "$2" "$1"
+    else
+	echo 'to delete onefile$1 on rar_file$2'
+	echo 'eg: this_ file_to_del rarfile.rar'
+    fi
+}
+
+rar_add_file () {
+    if2
+	rar u "$2" "$1"
+    else
+	echo 'to add a file$2 to rar_file$1'
+	echo 'eg: this_ fileToAdd rarFileToAdd.rar'
+    fi
+}
+
+calc_ () {
+    if1
+	echo "$(($1))"
+    else
+	echo "to do a very basic calculation"
+	echo "eg: this_ 3+5"
+    fi
+}
+
+ff () {
+    if1
+	nohup firefox "$1" &
+    else
+	echo 'to open media(mostly video) w/ ff'
+	echo 'eg: this_ file00.flv'
+    fi
+}
+
+f_ () {
+    if1 
+	ls | grep -i "$1"	
+    else
+	echo 'to do a research in $PWD'
+	echo "eg: this_ metallica"
+    fi
+}
+
+#rsync
+
+rsync_remote2local () {
+    if3
+	rsync -arvz "$1":"$2" "$3"
+    else
+	echo 'to synchronize remotely$3 to locally$1'
+	echo 'eg:   this_ user00@ip00 /path/srcRemote/ /path/destLocal/'
+    fi
+}
+
+rsync_ignExisting_locally () {
+    if1
+	rsync -av "$1" "$2"
+    else
+	echo 'to synchronize locally only'
+	echo 'ex:   this_ dir01/* dir02/'
+    fi
+}
+
+rsync_ignExisting_remote () {
+    if3
+	rsync -arvz  --ignore-existing "$1" "$2":"$3"
+    else
+	echo 'to synchronize locally$1 to remotely$3 in pc$2,'
+	echo 'and ignore file which already exist in remote$3'
+	echo 'eg:   this_ /path/src/ user00@ip00 /path/target/'
+    fi
+}
+
+rsync_local2remote () {
+   # rsync -avz /root/temp/ thegeekstuff@192.168.200.10:/home/thegeekstuff/temp/ 
+   #	http://www.thegeekstuff.com/2010/09/rsync-command-examples/
+    if3 
+	rsync -arvz --progress "$1" "$2":"$3"
+    else
+	echo 'to synchronize from local to remote'
+	echo 'eg:  this_  /path/src/ user00@ipPc /path/dest'
+	echo
+	echo 'looks like rsync_ignExisting is more efficient'
+    fi
+}
+
+rsync_normal () {
+    if2
+	rsync -arv --progress "$1" "$2"
+    else
+	echo 'to synchronize 2 folders'
+	echo 'stuffs in $1 will synchronised in $2'
+	echo 'eg:   this fold00 fold01'
+    fi
+}
+
+rsync_del () {
+    if2
+	rsync -arv --delete "$1" "$2"
+    else
+	echo 'to synchronize by deleting files in folder$1 and keep '
+	echo '	folder$2 intact'
+	echo 'eg:   this_ fold00 fold01'
+    fi
+}
+
+#rsync_end
+
+#os_tool2
+grep_no_cmt () {
+    if1
+	# grep -E -v '^([ ]*#|#)' "$1"
+	# sed -e '/^[ ]*#/d' -e '/^[ ]*;/d' -e '/^$/d' "$1"
+	sed -e '/^[ ]*#/d' -e '/^[ ]*;/d' -e '/^$/d' -e '/^[ ]*\//d' "$1"
+	#							^^ to delete comment which start with //
+	#
+    else
+	echo 'to display lines which are not commented in file$1'
+	echo 'eg:   this_ file00'
+    fi
+}
+
+#os_tool2
+# to read a file$1 line by line
+read_file_lnBln() { 
+    if1
+	while read line
+	    do
+	    echo -e "$line\n"
+	    done < "$1"
+    else
+	echo 'to read file$1 line by line'
+	echo "eg:   this_ file00"
+    fi
+}
+
+#os_tool2
+# to get info on all user who use the server/pc
+user_info () {
+    while IFS=: read user pass uid gid full home shell          
+    do          
+    echo -e "$full : 
+	Pseudo : $user
+	UID :\t $uid          
+	GID :\t $gid
+	Home :\t $home
+	Shell :\t $shell\n"          
+    done < /etc/passwd
+}
+
+#os_tool2
+read_file_charBychar () {
+    for line in $(cat "$1"); do echo "$line"; done
+}
+
+#os_tool2
+ln_nbr_ofAllFilesInPwd () {
+    for a in *
+	do
+	echo -e "$a:    $(cat $a|wc -l)lines"
+	done
+    echo 'to get all number of lines which are inside $PWD'
+    echo 'eg:   this_ foldR00'
+}
+
+scp_local2remote () {
+    if3
+	scp -r "$1" "$2":"$3"
+	# echo "scp $1 $2:$3"
+    else
+	echo 'to copy file$1 which is local to a remote pc'
+	echo
+	echo '$1:   the file to copy, normally should be in $PWD'
+	echo '$2:   user_inRemote_@_pcRemoteName'
+	echo '$3:   path in remotePc'
+	echo
+	echo 'eg:   this_ fileToCopy jack@192.168.21.2 /home/jack'
+    fi
+    if1
+	ping "192.168.$1"
+    else
+	echo 'to ping a host, and u have not to write all ip of the remotePc which is in ur local network'
+	echo ''
+    fi
+}
+
+pv () {
+    if2
+	pv "$1" >> "$2"
+    else
+	echo 'like mv but this shows a progess bar'
+	echo 'eg:   this_ bigFile00 copy00'
+    fi
+}
+
+sed_delLastLine () {
+    if1
+	sed '$d' "$1"
+    else
+	echo 'to delete the last line of a file$1'
+	echo 'eg:   this_ file00'
+    fi
+}
+
+sed_repl () {
+    if3
+	patt="s/$1/$2/"
+	echo "sed '$patt' "$3""
+    else
+	echo "here"
+    fi
+}
+
+h_port(){
+    echo 'this command must be run as root'
+    echo
+    echo 'this_ --simple 154.32.65.99'
+    echo '  to scan opening port in that ip'
+    echo '  to see a ip of a site'
+    echo '	nslookup testingsite.com'
+
+}
+
+
+# this should be run by root
+port_listening () {
+    if [ "$1" = "--simple" ] && [ "$2" ]
+	then
+	nmap -sS -Pn "$2"
+	
+    else
+	h_port
+    fi
+
+
+    # if1
+	# netstat -a | egrep 'Proto|LISTEN'
+    # else
+	# echo 'to check all ports which are listening'
+	# echo '$1 is non_sense'
+	# echo 'eg:   this_ nonSense'
+    # fi
+}
+
+port_using () {
+    if1
+	netstat -tulpn | grep :"$1"
+    else
+	echo 'to see which cmd/prg use port$1'
+	echo 'eg:   this_ 22'
+    fi
+}
+
+port_using () {
+    if1
+	netstat -tulpn | grep :"$1"
+    else
+	echo 'to see which cmd/prg use port$1'
+	echo 'eg:   this_ 22'
+    fi
+}
+
+wallpaper_change () {
+    if1
+	gsettings set org.gnome.desktop.background picture-uri file://"$1"	
+    else
+	echo 'to change the background of your desktop'
+	echo 'eg:   this_ /path/image00.png'
+    fi
+}
+
+#os_tool2
+users_ofSystem () {
+while getopts ':ih' option
+do
+case $option in
+    *	)
+	FICHIER_MOTS_DE_PASSE=/etc/passwd
+	n=1           # Nombre d'utilisateurs
+
+	for nom in $(awk 'BEGIN{FS=":"}{print $1}' < "$FICHIER_MOTS_DE_PASSE" )
+	# Champ séparateur = :  ^^^^^^
+	# Affiche le premier champ      ^^^^^^^^
+	# Obtient l'entrée à partir du fichier        ^^^^^^^^^^^^^^^^^^^^^^
+
+	do
+	    echo "user #$n = $nom"
+	    let "n += 1"	# will do incrementation when a user is found
+	done  
+
+	;;
+    h	)
+	echo this is an help of all user which are in the system
+	;;
+esac    
+done
+}
+
+#rename
+rename_rmAllExt() {
+    if1
+	rename "s/\.$1//" ./*
+    else
+	echo 'to remove the extension$1 of all files which are in $PWD'
+	echo 'eg:   this_ mp3'
+    fi
+}
+
+rename_add0 () {
+    if1
+	rename 's/\d+/sprintf("%02d",$&)/e' *
+    else
+	echo ' ######################################## '
+	echo ' ## till here############################ '
+	echo ' ## use only in videos dl from nptel #### '
+	echo ' ######################################## '
+	echo
+	echo 'to add 0 so the name of files will be normal/good/suit '
+	echo 'eg: this_ nonSensArgument'
+    fi
+}
+#rename_end
+#ls_function
+ls_help_useful() {
+    echo "to check the file and sort them by size, biggest will be in the last #useful"
+    echo "  ls -lSrh	# or"
+    echo "  ls -sSrh"
+    echo 
+    echo "to check files which have been modified today"
+    echo '  ls -al --time-style=+%D | grep `date +%D` '
+    echo
+    echo "to check files and sort by modification date"
+    echo "  ls -lrt"
+    echo
+    echo "to find file which are directories"
+    echo "  ls -d */"
+    echo
+    echo "to list only dotfiles"
+    echo "  ls -d .*"
+    echo ''
+    echo 'to print only the size of files'
+    echo '  ls -sh'
+    echo '	the -h- is set so it will be human readable'
+}
+
+lin_stuff() {
+    e '	to delete an alias which is already set'
+    e '	unalias editor'
+    e 'to show the content of a file'
+    e '	less	:the most used'
+    e '	more	:deprecated, replaced by less'
+    e '	head	:'
+    e
+    e 'to shutdown the computer NOW'
+    e '	sudo shutdown -h now'
+    e '	halt'
+    e ''
+    echo "to throw the normal output and the error of the cmd00 in the same file"
+    echo "  cmd00 >> err_norm00 2>&1"
+    echo
+    echo "those are the same:"
+    echo
+    echo "those are the same:"
+    echo "	cat one.file another.file > /tmp/cat.out    .    "
+    echo "					    	    |- cat one.file another.file | sort "
+    echo "	sort < /tmp/cat.out                         '    "
+
+}
+
+reading00() {
+    bar_
+    echo "#2013-12-28"
+    echo "#manakara_2013"
+    echo 'linux embarqué(book):'
+    echo "  that's a book which can help you to understand the use of linux and other devices"
+    echo "  as: industrial equipment, "
+    echo "  that book needs that you understand very well the bash script and programmiing language C"
+    bar_
+    echo "dpkg is a packet which is used to install/manage(extract, analyse, decompress, ...) the .deb_file"
+    bar_
+    echo "#2013-12-28"
+    echo "#manakara_2013"
+    echo "#log"
+    e "the logs have level"
+    e "	    emerg:  system is really damaged"
+    e "	    alert:  some actions have to be taken quickly"
+    e "	    crit:   conditions are in the limit"
+    e "	    warn:   warning"
+    e '	    notice: conditions are normal but there are kind of message which admin should read'
+    e "	    info:   informing msg"
+    e "	    debug:  msg for debug"
+    echo "#log_end"
+    e ''
+    e 'core file are files which are created when u did a mistakes which is very serious as: violation of memory space'
+    bar_ 
+}
+
+reading01 () {
+    e 'hwinfo is a prg which is used to check the config of the local computer'
+    e '	hwinfo is the abbreviation of hardware info'
+}
+
+ls_help_stuff(){
+    e 'to list files which are in ~/doc4lin/linux'
+    e '	ls ~/doc4lin/linux'
+    e
+    e "to sort by modification time"
+    e "	ls -t"
+    e
+    e 'to display files in a dir and to show if it is a file or a directory'
+    e "	ls -F"
+    e
+    echo "to display what is in the directory and display it in reverse"
+    echo "  ls -r"
+    echo 
+    echo "to display with size"
+    echo "  ls -s"
+    echo
+    echo "to display and sort with size"
+    echo "  ls -S"
+    echo ""
+    echo "explanation of 'ls -l'"
+    echo "owner	-   group   -	other"
+    echo "  d:	dir"
+    echo "  l:	link"
+    echo "  r:	read"
+    echo "  w:	write"
+    echo "  x:	executable"
+}    
+
+stuff_ls(){
+    echo 'ls -lrt'
+    echo '	to list file depending on date'
+    echo
+    echo 'ls -sSrh'
+    echo '	to list files depending on size'
+    echo ''
+    echo 'ls -d .*'
+    echo '	to list only dotfiles'
+    echo
+    echo 'ls -al --time-style=+%D | grep `date +%D`'
+}
+
+#	%063
+alias ls_off_color='ls --color=none'
+#ls_function_end
+
+dd_help_stuff(){
+    echo "use this to create an usb bootable from dd"
+    echo "  dd if=/debian.iso of=/dev/sdb"
+    echo "if=/path_of_debian_iso"
+    echo "of=, this is got by typing 'df' and search where is the usb"
+    echo ""
+}
+
+# cat_help_useful() {
+# 
+# }
+
+cat_help_stuff() {
+    echo "to display the content and the number of line"
+    echo "  cat -n file00"
+    echo
+    echo to not show the blank line in a file00:
+    echo "  cat -s file00"
+    echo to show the content and to number the non-blank lines:
+    echo "  cat -b file00"
+    echo to read from the keyboard and to display what is typed
+    echo '  cat $@'
+    echo
+    echo "to cut the list by its caracter"
+    echo '  cut -c1-5 file00'
+    echo '	abcde'
+    echo '	abcde'
+    echo '	abcde'
+    echo '  cat file00'
+    echo '	abcdefgh'
+    echo '	abcdefgh'
+    echo '	abcdefgh'
+}
+
+stuffed() {
+    echo "cat"
+    echo 'ls'
+    echo ''
+}
+
+# #important
+#   those are the cmd which are 
+usefulled() {
+    echo ls
+    echo cat
+}
+
+cut_help_useful() {
+    echo "cut -f1,3 -d: /etc/passwd" 
+    echo "  "
+}
+
+# wc_help_stuff() {
+# }
+
+# the name of the cmd explain all
+cut_help_stuff() {
+    echo 'echo coucou | cut -c1-4'
+    echo '  couc'
+    e
+    e 'echo 12345678 | cut --complement -c -2,4,6-'
+    e '35'
+}
+
+# the name of the cmd explain all
+sort_help_stuff() {
+    e 'to sort numerically'
+    e '	sort -n'
+    e '	eg: echo -e "30\n4" | sort -n'
+    e '	::'
+    e '	4'
+    e '	30'
+    e '	::'
+    echo "echo -e 'a\n c\nb' | sort"
+    echo '  a'
+    echo '  b'
+    echo '  c'
+    echo
+    echo 'cat liste00'
+    echo '  souris optique'
+    echo '  dur 30giga'
+    echo '  dur 70giga'
+    echo 'to sort this by the second column'
+    echo '  sort -k2 liste00'
+    echo
+    echo 'to sort numerically'
+    # echo -e '  echo \'7 \n4 \n9 \n1 \n6 \' | sort -n'
+    echo "  echo -e '7 \\n4 \\n9 \\n1 \\n6' | sort -n"
+}
+
+# the name of the cmd explain all 
+split_help_stuff() {
+    echo 'to split a big file to some little ones(250MO)'
+    echo '  split -b 250m big_file littlefile'
+    echo 'to rebuild the big_file'
+    echo '  cat littlefile* >> big_file'
+}
+
+# the name of the cmd explain all 
+# this is very long
+# it was been taken from: ........
+paste_help_stuff(){
+    bar_
+    echo -e 'cat t'
+    echo -e 'prix    quantities'
+    echo -e '30      15'
+    echo -e '100     30'
+    echo -e '150     30'
+    echo '12      30'
+    echo '10      30'
+    echo '150     20'
+    echo '300     20'
+    echo '500     20'
+    echo '45      30'
+    echo '55      30'
+    echo '45      30'
+    echo '145     30'
+    echo
+    e 'cat t0'
+    echo 'Produit         objet   ' 
+    echo 'souris          optique '
+    echo 'dur             30giga'
+    echo 'dur             70giga'
+    echo 'disque          zip'
+    echo 'disque          souple'
+    echo 'ecran           15'
+    echo 'ecran           17'
+    echo 'ecran           19'
+    echo 'clavier         105'
+    echo 'clavier         115'
+    echo 'carte           son'
+    echo 'carte           video'
+    echo
+    echo "  paste -d'  ' t0 t"
+    echo "Produit         objet     prix  quantities"
+    echo "souris          optique  30     15"
+    echo "dur             30giga   100    30"
+    echo "dur             70giga   150    30"
+    echo "disque          zip      12     30"
+    echo "disque          souple   10     30"
+    echo "ecran           15       150    20"
+    echo "ecran           17       300    20"
+    echo "ecran           19       500    20"
+    echo "clavier         105      45     30"
+    echo "clavier         115      55     30"
+    echo "carte           son      45     30"
+    echo "carte           video    145    30"
+    bar_
+}
+
+# the name of the cmd explain all
+tr_help_stuff() {
+    echo "explanation: use this to delete/change some char in a file, or datastream"
+    echo "  echo abcde | tr a f"
+    e '::fbcde::'
+    echo
+    bar_
+    echo "cat file00"
+    echo "  a"
+    echo "  b"
+    echo "  c"
+    echo "  d"
+    echo
+    echo "tr a f file00"
+    e '	::'
+    e "	f"
+    e "	b"
+    e '	...'
+    e "	::"
+    bar_
+}
+
+to_ask_irc() {
+    e '[ok]why some cmd as: gnome-terminal, clemetine, evince'
+    e '	are not executed by crontab ??'
+    e '	but cmd as touch, mplayer, ... are executed'
+    e 'looks like crontab is used for cmd in shell'
+    e '	instead of cron, use other prg for programming execution of prg which need gui'
+    e '	as kalarm,...'
+}
+
+# the name of the cmd explain all⎋
+at_help() {
+    echo 'this is to execute a cmd which will exe after Xmin'
+    e '	    at now +X minutes'
+    e '		you type all your cmd here and to stop it'
+    e '		    type: <ctrl-d>'
+}
+
+# the name of the cmd explain all
+cron_help_stuff() {
+    e 'cron is a prg which execute a cmd regularly as we/u/i programmed it'
+    e 'cmd used for cron'
+    e '	crontab -e  :to edit to manage crontab'
+    e '	crontab -l  :to view the file executed by crontab'
+    e '	crontab -r  :to remove the file which is executed by crontab'
+    e
+    e "stuff for cron"
+    e "	a b c d e cmd00"
+    e "	    a: min"
+    e "	    b: hour"
+    e "	    c: day of month"
+    e "	    d: month"
+    e "	    e: day of week"
+    e "	eg: 0 4 1 * * cmd00: all first day of all month at 4AM"
+    e "	eg: 0 0 * * 1 cmd00: all monday in the midnight"
+    e '	eg: */5 * * * * cmd00	:this is to execute the cmd each 5minutes'
+    e
+    e 'those cmd will not be executed by crontab:'
+    e '	clementine  evince  gnome-terminal  '
+    e
+    e 'value in crontab'
+    e '	*:  all the time'
+    e '	3,5,6:	exe the cmd00 when the field is 3 or 5 or 6'
+    e '	3-7  :	exe the cmd when the field is between 3 and 7'
+    e
+    
+}
+
+tar_help_stuff() {
+    e "to decompress a .tar.gz"
+    e "	gunzip file.tar.gz"
+    e "	    and you'll get a .tar"
+    e
+    e "to decompress a .tar"
+    e "	tar -xvf file00.tar"
+    e
+    e "to decompress .tgz_file"
+    e "	tar xzf file00.tgz"
+    e
+    e "compress a .tar"
+    e "tar -cvf folder00.tar folder00"
+}
+
+tar_help_theory() {
+    e "gzip and bzip are used to compress just one file"
+    e "in linux, to compress MANY files, you have to gather them first"
+    e "	after that you have to compress the packed file with bzip2 or gzip"
+    e
+    e "to gather all fileXX in file00.tar"
+    e "move all fileXX in folder file00"
+    e "and,"
+    e "	tar -cvf file00.tar file00"
+}
+
+# the name of the method explain all
+ping_help_stuff () {
+    e 'first thing to do if a computer is accesible(but the server has to allow icmp request)'
+    e ''
+    e 'to limit the number of echo that are sent in the other device to ping'
+    e "	ping -c3 localhost"
+}
+
+# the name of cmd explain everything
+#less
+less_help_stuff() {
+    e 'this is very used to view a file'
+    e '	less file_to_view'
+    e 
+    e '	h   :to show the help of less'
+    e '	v   :to edit the file which is viewed with your editor'
+    e ''
+    e "to view the content of a file00 and to scroll by 5lines when you type \'d\'"
+    e  '	less -n5 file00'
+    e '	and b to backward'
+}
+alias less='less -N'
+#less_end
+#hg
+hg_help_stuff() {
+    e 'when I installed vim, I used hg(mercurial)'
+    e '	hg clone https://vim.googlecode.com/hg/ vim'
+    e '	enter in vim/ and'
+    e '	    hg pull; hg update'
+    e ''
+    e 'to update to the last version of vim'
+    e '	hg update default'
+}
+#hg_end
+# lesson
+shell_philo () {
+    e 'kernel of linux is hided'
+    e 'and this kernel is hided behind the shell'
+}
+
+# only to give some lessons of compiling
+compil_help() {
+    e 'the compilation of packages depends on the package'
+    e 
+    e 'installation of install with .sh'
+    e '	# sh file00.sh'
+}
+
+# the non
+#	%028
+touch_wDate () {
+    if1
+	touch $1`date +%F_%T`
+    else
+	echo 'to create a file which the name will depends on the date'
+	echo 'eg:   this ss'
+	echo '	that ex will create sth like:	ss2014-06-11_19:55:06'
+    fi
+}
+
+#	%027
+# the name of cmd explain all
+ls_installedPackageWSize () {
+    dpkg-query --show --showformat='${Package;-50}\t${Installed-Size}\n' | sort -k 2 -n | grep -v deinstall | awk '{printf "%.3f MB \t %s\n", $2/(1024), $1}'
+}
+
+#    apt-cache search "$1" | awk '{print($1)}' | grep -E -e "$1" -e "$1"
+# }
+
+# to do a compilation and a executing a java program
+#java
+javaexe(){
+    echo "javac file00.java"
+    echo "java file00"
+    echo "  note that there is no file called file00 with file00.java"
+}
+
+#	%026
+#netbeans 
+# to start netbeans from the command line
+alias netb='/usr/local/netbeans-8.0/bin/netbeans'
+
+# to have history which will be shown step by step on the terminal
+#	%025
+hist_(){
+    tail -f /home/ms/.bash_history
+}
+
+#todo
+todo01() {
+    cd /media/__80G__/yt/n/math_matrix/
+    dl_youtube_webm https://www.youtube.com/playlist?list=PL05CD03A43A56AE66
+    echo "u went back in:"
+    cd -
+}
+
+todo02(){
+    echo "java heat movie to dl"
+    cd /media/__80G__/yt/stuff/
+    youtube-dl -f mp4  https://www.youtube.com/watch?v=ENjlSafh3Fg
+    cd -
+}
+
+todo03(){
+    echo 'to dl pll_ann of hugoLarochelle'
+    echo '  but it stopped on index=63 bcz of webm not available for the dl'
+    cd /media/__80G__/yt/huboL/ann/
+    dl_youtube_webm https://www.youtube.com/playlist?list=PL6Xpj9I5qXYEcOhn7TqghAJ6NAPrNmUBH
+    cd -
+}
+#todo_end
+recent_dl(){
+    cd /media/__80G__/yt/stuff/stuff/
+    ls|grep -i '5 etape'
+}
+
+# 
+#	%023:s
+imgur_cmd () 
+{ 
+    $@ | convert label:@- png:- | curl -F "image=@-" -F "key=1913b4ac473c692372d108209958fd15" http://api.imgur.com/2/upload.xml | grep -n --color=always -Eo "<original>(.)*</original>" | grep -n --color=always -Eo "http://i.imgur.com/[^<]*"
+}
+#	%023:e
+
+#	%024:s
+function imgur_onePic {
+  curl -s -F "image=@$1" -F "key=486690f872c678126a2c09a9e196ce1b" https://imgur.com/api/upload.xml | grep -E -o "<original_image>(.)*</original_image>" | grep -E -o "http://i.imgur.com/[^<]*"
+}
+#	%024:e
+
+#qmdsfj
+#

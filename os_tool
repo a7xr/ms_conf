@@ -92,14 +92,149 @@ home00=/root
 # to load a #session, #view of #vim in ~/.vim/nonicken/views			%081
 # to set the file #forOs00 quicker to get								%082
 # to define the #home #path of my #script								%083
+# to go to #doc4lin														%084
+# it is too long to write https://github.com/nonicken					%085
+# 	then it will be shorten by nong
+# to add a file, and ccomit the change a file immediately				%083
+# where i should work #todo												%087
+# to add file and commit that file immediately							%086
+# to go in #script for #kali											%088
+# #short	#wget_-c													%089
+# to run #torbrowser													%090
+# run #C																%091
+# #git #instaweb														%092
+# #vipy = vim file00.py + (chmod +x file00.py)							%093
+# studying about #telec													%094
+# #short pm-hibernate													%095
+# #short youtube-dl for #mp4											%096
+# #short tee -a to tee													%097
+# #short dvl where I set my development									%098
+# to control the sound from the terminal								%099
+# to #limit #bandwidth of firefox										%100
+# +++++++++++++++++++++      											%101
+# to start #firefox in #safe-mode										%102
+# #short	#meme														%103
+# to add and commit at the same time into git some very important file	%104
+# 	$all/netw.dia
+# 	$all/telec.dia
+# 	$all/all.txt
+#	$all/
+#	$os_tool
+#	$vimrc
+#	~/.vim
+#
+#	%104
+comImp(){
+	pwd01=$(pwd)
+	echo going to commit all of ur important files
+	sleep 3
+
+	echo
+	cd $all
+	git add netw.dia
+	git add telec01.dia all.txt engStudying.dia
+	git commit -m "commiting all important files $(date)"
+
+	cd
+	git add .vimrc
+	git commit -m "commiting all important files $(date)"
+
+	cd $home00/ms_conf/
+	git add .
+	git commit -m "commiting all important files $(date)"
+
+	cd $home00/.vim
+	git add .
+	git commit -m "commiting all important files $(date)"
+
+	cd $pwd01
+	unset pwd01
+
+	echo
+	echo "$(pwd)"
+}
+#
+#	%103
+export meme='/media/hdd_sda7/ms/Pictures/kilalao/meme'
+#	%102
+# firefox -safe-mode
+#
+#	%101
+# wondershape eth0 256 128
+# 	# eth0	: the interface
+# 	# 256	: for the downlink
+# 	# 128	: for the uplink
+#
+#	%100
+# trickle -u 8 -d 8 firefox
+# 	# -u 8	: for the uplink
+# 	# -d 8	: for the downlink
+#
+#	%099
+#alsamixer
+#
+#	%098
+export dvl='/root/dvl/'
+# 
+#	%097
+alias tee='tee -a'
+#
+#	%095
+alias hib='pm-hibernate'
 #
 #
+# 	%094
+export telecv='/media/FE0C41EF0C41A40D/videos/telec'
+#
+#	%093
+vipy(){
+	vim $1
+	chmod +x $1
+}
+#
+#	%092
+alias git_instaweb='git instaweb --httpd=webrick'
+#
+#	%091
+# echo 'just type the name of the programme which already compiled'
+#
+#	%090
+alias torb='/media/hdd_sda5/deb7/dldd/tor-browser-linux32-4.0.1_en-US/tor-browser_en-US/start-tor-browser'
+#
+#	%089
+alias dl='wget -c'
+#	%088
+export scr_lin_kl='/root/dvl/lin/kl'
+
+#	%087
+export v_kl='/media/hdd_sda6/yt/lin/kl'
+
+#	%086
+gitAddCo() {
+	if [[ -n "$1" ]] && [[ -n "$2" ]]
+	then
+		git add "$1"
+		git commit -m "$2"
+	else
+		echo 'to add a file$1 and commit it immediately'
+		echo '	$1:	the name of the file to edit, then u will commit the modif'
+		echo '	$2:	the commitComment'
+		echo 'ex	:	this. file00 commitComment'
+	fi
+}
+
+#	%085
+export nong='https://github.com/nonicken'
+
+#	%084
+export doc4lin='/media/hdd_sda7/ms/doc4lin'
 
 #	%083
 PATH=$PATH:$home00/dvl/lin/
+PATH=$PATH:$home00/dvl/lin/kl/
 
 # 	%082
-export forOs="$home00/doc/sctd/forOs00"
+export forOs00="$all/forOs00"
 
 #	%081
 alias vims='vim -S'
@@ -130,7 +265,7 @@ comp_runCpp(){
 		g++ -g -Wall "$1" -o ${1/.cpp/}
 		./${1/.cpp/}
 	else
-		echo 'to compile c program'
+		echo 'to compile cpp program'
 		echo ' 	ex : this_ cPPprog00.cpp'
 	fi
 }
@@ -407,6 +542,11 @@ dl_youtube_3gp() {
 }
 #	%008:e
 
+#	%096
+dl_youtube_mp4(){
+	youtube-dl -f mp4 "$1"
+}
+
 #youtube_end
 
 crypt_ssl(){
@@ -554,7 +694,7 @@ alias disconnect="pkill -KILL -u ms"
 # pour avoir plus de maniabilite avec info
 alias info="info --vi-keys"
 
-alias grep="grep --color=auto"
+alias grepn="grep --color=auto"
 
 # alias python='/usr/bin/python3.2'
 
@@ -635,7 +775,6 @@ export ipo='192.168.21.2'	    # ip of my otherPc
 
 #	%036
 export iuo='jack@192.168.21.2'	    # ip_userOther
-export forOs00="$all/forOs00"
 export os_tool='/root/ms_conf/os_tool'
 
 #	%037
@@ -2147,7 +2286,7 @@ less_help_stuff() {
     e  '	less -n5 file00'
     e '	and b to backward'
 }
-alias less='less -N'
+alias lessn='less -N'
 #less_end
 #hg
 hg_help_stuff() {

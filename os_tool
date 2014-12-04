@@ -115,6 +115,7 @@ home00=/root
 # to start #firefox in #safe-mode										%102
 # #short	#meme														%103
 # to add and commit at the same time into git some very important file	%104
+# 		#importantFiles
 # 	$all/netw.dia
 # 	$all/telec01.dia
 # 	$all/all.txt
@@ -123,17 +124,44 @@ home00=/root
 #	~/.vim
 #
 # to push all important files into github.com							%105
+# so you have to set only once the #pwd of #github
 #	$all/netw.dia
 #	$all/telec01.dia
 #	$all/all.txt
 #	$ms_conf
 #	~/.vim
 #
+# to see what is going on in your server @slashroot						%107
+# #short ls|grep -i 													%108
+#
+#	%108
+alias lg='ls | grep -i'
+#
+#	%107
+# tcpdump -i lo -s0 -n -A host 127.0.0.1
+# tcpdump -i eth0 -s0 -n -A host 192.168.0.104
+# 	eth0	the network interface
+# 		sometimes 	lo	or	wlan0
+# 	192.168.0.104	@ of client
+# 		sometimes	127.0.0.1 
+#
+#	%106
+git config --global credential.helper cache
+git config credential.helper 'cache --timeout=3600'
+
 #	%105
-# pushImp(){
-# 	cd $all
-# 	git 
-# }
+pushImp(){
+	pwd01=$(pwd)
+
+	cd $all
+	git add netw.dia telec01.dia all.txt
+	git commit -m "commit important files $(date)"
+	git pull origin master
+	git push origin master
+
+	cd
+	git add .vimrc
+}
 #
 #	%104
 comImp(){

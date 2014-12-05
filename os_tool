@@ -236,9 +236,7 @@ comImp(){
 	${pwds[3]}=$(pwd)
 
 	echo
-	echo 'here first'
 	cd $hdd01/save/pt
-	echo "here second"
 	git add 5
 	git commit -m "commiting all important files $(date)"
 	${pwds[4]}=$(pwd)
@@ -248,6 +246,7 @@ comImp(){
 	echo here
 	for cpt01 in ${pwds[@]}
 	do
+		echo aa
 		echo "commited: $cpt01"
 	done
 

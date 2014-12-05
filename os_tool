@@ -241,6 +241,8 @@ comImp(){
 	${pwds[4]}=$(pwd)
 
 ########Footer##########################
+	echo 
+	echo here
 	for cpt01 in ${pwds[*]}
 	do
 		echo "commited: ${pwds[cpt01]}"

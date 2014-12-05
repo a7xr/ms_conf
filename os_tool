@@ -247,10 +247,9 @@ comImp(){
 	echo here
 	for cpt01 in ${pwds[*]}
 	do
-		echo "commited: ${pwds[cpt01]}"
+		echo "commited: ${pwds[$cpt01]}"
 	done
 
-	# echo "commited: $pwd02"
 	# unset pwd02
 	# echo
 	# echo "commited: $pwd03"

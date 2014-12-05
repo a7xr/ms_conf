@@ -134,6 +134,11 @@ home00=/root
 # to see what is going on in your server @slashroot						%107
 # #short ls|grep -i 													%108
 #
+# #short vid															%109
+#
+#	%109
+export htb_v='/media/hdd_sda7/vid/htb'
+
 #	%108
 alias lg='ls | grep -i'
 #
@@ -159,8 +164,8 @@ pushImp(){
 	git pull origin master
 	git push origin master
 
-	cd
-	git add .vimrc
+	# cd
+	# git add .vimrc
 }
 #
 #	%104

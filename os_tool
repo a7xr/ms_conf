@@ -240,7 +240,7 @@ comImp(){
 	git add 5
 	git commit -m "commiting all important files $(date)"
 	${pwds[4]}=$(pwd)
-
+	echo ${pwds[4]}
 ########Footer##########################
 	echo 
 	echo here

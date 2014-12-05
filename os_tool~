@@ -188,10 +188,9 @@ alias lg='ls | grep -i'
 # 		sometimes	127.0.0.1 
 #
 #	%106
-if [ -e .git ] ; then
-	git config --global credential.helper cache
-	git config credential.helper 'cache --timeout=3600'
-fi
+git config --global credential.helper cache
+git config credential.helper 'cache --timeout=3600'
+
 #	%105
 pushImp(){
 ##########HEADER########################
@@ -203,7 +202,7 @@ pushImp(){
 	git commit -m "commit important files $(date)"
 	git pull origin master
 	git push origin master
-	pwds[0]=${pwds[0]/ /_}
+	pwds[1]=${pwds[0]/ /_}
 	
 	cd $hdd01/save/pt
 	git add 5/saves/exo01.pkt
@@ -239,7 +238,7 @@ comImp(){
 	echo
 	cd $all
 	git add netw.dia
-	git add telec01.dia all.txt engStudying.dia dbStudy.dia
+	git add telec01.dia all.txt engStudying.dia
 	git commit -m "commiting all important files $(date)"
 	pwds[0]=$(pwd)
 

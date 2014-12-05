@@ -174,27 +174,47 @@ comImp(){
 	echo going to commit all of ur important files
 	sleep 3
 
+#########BODY#####################	
 	echo
 	cd $all
 	git add netw.dia
 	git add telec01.dia all.txt engStudying.dia
 	git commit -m "commiting all important files $(date)"
+	pwd02=$(pwd)
 
 	cd
 	git add .vimrc
 	git commit -m "commiting all important files $(date)"
+	pwd03=$(pwd)
 
 	cd $home00/ms_conf/
 	git add .
 	git commit -m "commiting all important files $(date)"
+	pwd04=$(pwd)
 
 	cd $home00/.vim
 	git add .
 	git commit -m "commiting all important files $(date)"
+	pwd05=$(pwd)
+
+
+########Footer##########################
+	echo "commited: $pwd01"
+	unset pwd01
+	echo
+	echo "commited: $pwd02"
+	unset pwd02
+	echo
+	echo "commited: $pwd03"
+	unset pwd03
+	echo
+	echo "commited: $pwd04"
+	unset pwd04
+	echo
+	echo "commited: $pwd05"
+	unset pwd05
 
 	cd $pwd01
-	unset pwd01
-
 	echo
 	echo "$(pwd)"
 }

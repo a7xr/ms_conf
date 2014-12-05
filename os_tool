@@ -1,4 +1,5 @@
 home00=/root
+hdd01=/media/hdd_sda7
 ##########function which are used in general in this #########################
 # alias which repeat too #often when #programming #script			%001
 # to #extract mp3 from "flv|webm|........"					%002
@@ -135,7 +136,43 @@ home00=/root
 # #short ls|grep -i 													%108
 #
 # #short vid															%109
+# to list my #repo														%110
+#	#end_cmt
 #
+
+#	#repo_s
+repo_m='https://github.com/nonicken'
+
+declare -A repos			#lesson	#array	u have to declare it like that 
+	#	before you are going to give key=value
+repos["s_inf"]="$repo_m/some_info"
+repos["pt"]="$repo_m/pt"
+repos["c_hom"]="$repo_m/conf_home"
+repos["c_vim"]="$repo_m/conf_vim"
+repos["d_c_sv"]="$repo_m/dia_cnf_save"
+repos["mysqling"]="$repo_m/mysqling"
+repos["ms_conf"]="$repo_m/ms_conf"
+repos["c_irssi"]="$repo_m/conf_irssi"
+repos["c_bind"]="$repo_m/conf_bind"
+repos["dvl_py"]="$repo_m/dvl_py"
+
+# repo["scr_lin"]="$repo_m/scr_lin"
+#	#repo_e
+
+#	%110
+gh_ls(){
+	let cpt=0
+	repo_keys=(${!repos[@]})	#lesson to get the key, u set them in one var and
+						#	
+	for i in ${repos[@]}; 
+	do 
+		echo "repos[${repo_keys[$cpt]}]"
+		echo "    $i"; 
+		let cpt=cpt+1
+		echo
+	done
+}
+
 #	%109
 export htb_v='/media/hdd_sda7/vid/htb'
 
@@ -170,6 +207,7 @@ pushImp(){
 #
 #	%104
 comImp(){
+	declare -A pwds
 	pwd01=$(pwd)
 	echo going to commit all of ur important files
 	sleep 3
@@ -180,36 +218,45 @@ comImp(){
 	git add netw.dia
 	git add telec01.dia all.txt engStudying.dia
 	git commit -m "commiting all important files $(date)"
-	pwd02=$(pwd)
+	${pwds[0]}=$(pwd)
 
 	cd
 	git add .vimrc
 	git commit -m "commiting all important files $(date)"
-	pwd03=$(pwd)
+	${pwds[1]}=$(pwd)
 
 	cd $home00/ms_conf/
 	git add .
 	git commit -m "commiting all important files $(date)"
-	pwd04=$(pwd)
+	${pwds[2]}=$(pwd)
 
 	cd $home00/.vim
 	git add .
 	git commit -m "commiting all important files $(date)"
-	pwd05=$(pwd)
+	${pwds[3]}=$(pwd)
 
+	cd $hdd01/save/pt
+	git add 5
+	git commit -m "commiting all important files $(date)"
+	${pwds[4]}=$(pwd)
 
 ########Footer##########################
-	echo "commited: $pwd02"
-	unset pwd02
-	echo
-	echo "commited: $pwd03"
-	unset pwd03
-	echo
-	echo "commited: $pwd04"
-	unset pwd04
-	echo
-	echo "commited: $pwd05"
-	unset pwd05
+	for cpt01 in ${pwds[*]}
+	do
+		echo "commited: ${pwds[cpt01]}"
+	done
+
+	# echo "commited: $pwd02"
+	# unset pwd02
+	# echo
+	# echo "commited: $pwd03"
+	# unset pwd03
+	# echo
+	# echo "commited: $pwd04"
+	# unset pwd04
+	# echo
+	# echo "commited: $pwd05"
+	# unset pwd05
 
 	cd $pwd01
 	echo
@@ -2457,5 +2504,4 @@ function imgur_onePic {
 }
 #	%024:e
 
-#qmdsfj
 #

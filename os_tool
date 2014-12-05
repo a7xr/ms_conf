@@ -137,14 +137,25 @@ hdd01=/media/hdd_sda7
 #
 # #short vid															%109
 # to list my #repo														%110
+# testing cron															%111
+# to define all my #repos												%112
+# for the cmd to do then I have not to go in #mysql						%113
 #	#end_cmt
 #
+
+#	%113
+alias msql='mysql -u nonickn -p0000 -s db_study -e'
+#	%111
+t_cron(){
+	echo 'aaaa' | tee -a /root/t_cron
+}
 
 #	#repo_s
 repo_m='https://github.com/nonicken'
 
+#	%112
 declare -A repos			#lesson	#array	u have to declare it like that 
-	#	before you are going to give key=value
+#	before you are going to give key=value
 repos["s_inf"]="$repo_m/some_info"
 repos["pt"]="$repo_m/pt"
 repos["c_hom"]="$repo_m/conf_home"
@@ -244,7 +255,7 @@ comImp(){
 	pwds[0]=$(pwd)
 
 	cd
-	git add .vimrc
+	git add .vimrc 
 	git commit -m "commiting all important files $(date)"
 	pwds[1]=$(pwd)
 

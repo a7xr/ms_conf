@@ -199,9 +199,6 @@ comImp(){
 
 
 ########Footer##########################
-	echo "commited: $pwd01"
-	unset pwd01
-	echo
 	echo "commited: $pwd02"
 	unset pwd02
 	echo

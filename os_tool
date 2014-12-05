@@ -218,28 +218,28 @@ comImp(){
 	git add netw.dia
 	git add telec01.dia all.txt engStudying.dia
 	git commit -m "commiting all important files $(date)"
-	${pwds[0]}=$(pwd)
+	pwds[0]=$(pwd)
 
 	cd
 	git add .vimrc
 	git commit -m "commiting all important files $(date)"
-	${pwds[1]}=$(pwd)
+	pwds[1]=$(pwd)
 
 	cd $home00/ms_conf/
 	git add .
 	git commit -m "commiting all important files $(date)"
-	${pwds[2]}=$(pwd)
+	pwds[2]=$(pwd)
 
 	cd $home00/.vim
 	git add .
 	git commit -m "commiting all important files $(date)"
-	${pwds[3]}=$(pwd)
+	pwds[3]=$(pwd)
 
 	echo
 	cd $hdd01/save/pt
 	git add 5
 	git commit -m "commiting all important files $(date)"
-	${pwds[4]}=$(pwd)
+	pwds[4]=$(pwd)
 	echo ${pwds[4]}
 ########Footer##########################
 	echo 

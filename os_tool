@@ -243,8 +243,6 @@ comImp(){
 	echo ${pwds[4]}
 ########Footer##########################
 	echo 
-	echo here
-	echo ${pwds[*]}
 	for cpt01 in ${pwds[@]}
 	do
 		# echo aa

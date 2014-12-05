@@ -245,7 +245,7 @@ comImp(){
 ########Footer##########################
 	echo 
 	echo here
-	for cpt01 in ${pwds[*]}
+	for cpt01 in ${pwds[@]}
 	do
 		echo "commited: $cpt01"
 	done

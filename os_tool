@@ -268,13 +268,20 @@ comImp(){
 	git add .
 	git commit -m "commiting all important files $(date)"
 	pwds[3]=$(pwd)
-
 	echo
+
 	cd $hdd01/save/pt
 	git add 5
 	git commit -m "commiting all important files $(date)"
 	pwds[4]=$(pwd)
 	echo ${pwds[4]}
+	echo
+
+	cd $dvl/lin
+	git add .
+	git commit -m "commiting all important files $(date)"
+	pwds[5]=$(pwd)
+	echo
 
 ########Footer##########################
 	echo 

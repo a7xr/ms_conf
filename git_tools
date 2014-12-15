@@ -1,29 +1,31 @@
-# to #revert the last commit 							%001
-# git #instaweb									%002
-# some #stat of git								%003
+# to #revert the last commit 									%001
+# git #instaweb													%002
+# some #stat of git												%003
 # to get the #key, #commiter, #dateRel, #comment 				%004
-# to get the files #list which are #tracked by your git 			%005
+# to get the files #list which are #tracked by your git 		%005
 # to list files which are not #tracked #only					%006
-# to #unstage a file which is #staged						%007
-# to create a new branch of git							%008
-# to change the #last_comment #last_commit #comment #commit			%009
-# to #clone a repo in the #net							%010
+# to #unstage a file which is #staged							%007
+# to create a new branch of git									%008
+# to change the #last_comment #last_commit #comment #commit		%009
+# to #clone a repo in the #net									%010
 #	like %010 but will add a name to that #clone				%011
-# to #commit all #modified files and which are #staged				%012
-# to show files which are #modified and which are #staged			%013
-# some #help about #format of #log						%014
-# some #help about #log								%015
-# some #help in #general of git							%016
-# some #useful cmd								%017
-# to get the #remote url which will #push when u push ur repo			%018
-# to change the #remote #url of #push						%019
+# to #commit all #modified files and which are #staged			%012
+# to show files which are #modified and which are #staged		%013
+# some #help about #format of #log								%014
+# some #help about #log											%015
+# some #help in #general of git									%016
+# some #useful cmd												%017
+# to get the #remote url which will #push when u push ur repo	%018
+# to change the #remote #url of #push							%019
 # to #delete #remove an existing #remoteRepo					%020
-# to #add an url for #remoteRepo						%021
-# some #notes about git								%022
+# to #add an url for #remoteRepo								%021
+# some #notes about git											%022
+# #check if #modification #changes								%023
+#	#end_c
 
 
-
-
+#	%023
+alias no_chg='git diff-index --name-only HEAD --'
 
 #	%022
 # when u did a #remoteRepo, then it's not yet really in my hability to change 

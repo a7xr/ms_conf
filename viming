@@ -1,4 +1,11 @@
 " don_t know yet the use of recording then when I hit q it will quit
 
-"	%001
-nnoremap Q :q! <CR>
+"   %001
+" nnoremap Q :q! <CR>
+map Q :q! <CR>
+
+map <C-W>oa :echo 'Current time is ' . strftime('%c')<CR>
+
+map <C-w>retab :set expandtab ts=4 sw=4 ai<CR>:%retab<CR>:echo 'retab done'<CR>
+
+

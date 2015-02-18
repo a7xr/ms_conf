@@ -9,7 +9,7 @@ hdd01=/media/hdd_sda7
 # to #dl a link from #yt, #youtube, and convert it immediately to mp3		%006
 # to #dl a link from #yt #youtube, the format is webm				%007
 # to #dl a link from #yt #youtube, the format is 3gp				%008
-# to take a #picture from your #shell						%009
+# to take a #picture from your #shell								%009
 # to #print the #date with this form:	mm.dd.yyyy_hh:mn:ss			%010
 # to #print only #dotfiles in $PWD						%011
 # to #print files which are modified #today					%012
@@ -89,21 +89,19 @@ hdd01=/media/hdd_sda7
 # to #compile #cprogram													%078
 # to #compile #cppprogram												%079
 # to mount the $1 into $2
-# to make it easier to write on #vimrc									%080
+# to make it easier to write on #vimrc#short							%080
 # to load a #session, #view of #vim in ~/.vim/nonicken/views			%081
-# to set the file #forOs00 quicker to get								%082
+# to set the file #forOs00 quicker to get #short						%082
 # to define the #home #path of my #script								%083
-# to go to #doc4lin														%084
-# it is too long to write https://github.com/nonicken					%085
 # 	then it will be shorten by nong
 # to add a file, and ccomit the change a file immediately				%083
 # where i should work #todo												%087
 # to add file and commit that file immediately							%086
-# to go in #script for #kali											%088
+# to go in #script for #kali #short										%088
 # #short	#wget_-c													%089
 # to run #torbrowser													%090
 # run #C																%091
-# #git #instaweb														%092
+# #git #instaweb #short													%092
 # #vipy = vim file00.py + (chmod +x file00.py)							%093
 # studying about #telec													%094
 # #short pm-hibernate													%095
@@ -131,7 +129,7 @@ hdd01=/media/hdd_sda7
 #	$all/all.txt
 #	$ms_conf
 #	~/.vim
-#
+# #refr_bash will dele													%106
 # to see what is going on in your server @slashroot						%107
 # #short ls|grep -i 													%108
 #
@@ -140,8 +138,92 @@ hdd01=/media/hdd_sda7
 # testing cron															%111
 # to define all my #repos												%112
 # for the cmd to do then I have not to go in #mysql						%113
+# #git_init																%114
+# #git_end																%115
+# where I will set my #local #repo #git									%116
+# #short #no #first_line #1line											%117
+# #Grep by #paragraph instead of by line								%118
+# to get the length of vid/zik											%119
+# save my #tembo														%120
+# #short ms_conf														%121
+# #mplayer #playlist													%122
+# #msql	#function														%123
+# #mysql #dummy															%124
+# #mysql #prompt														%125
+# #java #home															%126
+# u need to add sth to $PATH as well									%126
+# the log of mysql                                                      %127
 #	#end_cmt
+
+# %127
+alias log_mysql='tail -f /var/log/mysql/mysql.log'
+
+#	%126
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk
+export PATH=$PATH:/usr/lib/jvm/java-7-openjdk/bin
+#	%125
+export MYSQL_PS1='-------------------------------------------------------------\nmysql> '
+
+#	%124
+alias mysql_='mysql -A db_study -u nonickn -p0000'
+
+#	%123
+msql(){
+	\mysql -u nonickn -p0000 -s db_study -e $1
+}
+
+#	%122
+export pl_z="$home00/pl_z"
+
+#	%121
+export ms_c="$home00/ms_conf"
 #
+
+#	%120
+m__(){
+	cd $all
+	echo "$(date)" >> $all/m
+}
+
+#	%119
+mmedia_length(){
+	find -type f -name "$1" -print0 | xargs -0  mplayer -vo dummy -ao dummy -identify 2>/dev/null | perl -nle '/ID_LENGTH=([0-9\.]+)/ && ($t +=$1) && printf "%02d:%02d:%02d\n",$t/3600,$t/60%60,$t%60' | tail -n 1
+}
+#	%118
+grepp() { 
+	[ $# -eq 1 ] && perl -00ne "print if /$1/i" || perl -00ne "print if /$1/i" < "$2";
+}
+
+#	%117
+alias no1='tail -n +1'
+
+#	%116
+out_repo_git="$dvl/lin/some_out/git_loc_repo"
+
+
+#	%115
+git_end(){
+###########HEADER#######################	
+
+###########BODY#########################	
+	rm -rf .git/
+	grep -Fv "$PWD" $os_tool >> $out_repo_git
+###########FOOTER#######################	
+}
+
+#	%114
+git_init(){
+#########HEADER#########################	
+
+#########BODY###########################	
+	git init
+	echo "$(pwd)" >> "$out_repo_git"
+	pwd01=$(pwd)
+	mysql -u nonickn -p0000 -s db_study -e "insert into git_repos (loc_rep) values ('$pwd01'); "
+
+#########FOOTER#########################	
+
+}
 
 #	%113
 alias msql='mysql -u nonickn -p0000 -s db_study -e'
@@ -157,16 +239,37 @@ repo_m='https://github.com/nonicken'
 declare -A repos			#lesson	#array	u have to declare it like that 
 #	before you are going to give key=value
 repos["s_inf"]="$repo_m/some_info"
-repos["pt"]="$repo_m/pt"
-repos["c_hom"]="$repo_m/conf_home"
-repos["c_vim"]="$repo_m/conf_vim"
-repos["d_c_sv"]="$repo_m/dia_cnf_save"
-repos["mysqling"]="$repo_m/mysqling"
-repos["ms_conf"]="$repo_m/ms_conf"
-repos["c_irssi"]="$repo_m/conf_irssi"
-repos["c_bind"]="$repo_m/conf_bind"
-repos["dvl_py"]="$repo_m/dvl_py"
+repos["s_inf_fold"]="$home00/doc/sctd"
 
+repos["pt"]="$repo_m/pt"
+repos["pt_fold"]="$hdda01/save/pt"
+
+repos["c_hom"]="$repo_m/conf_home"
+repos["c_hom_fold"]="$home00"
+
+repos["c_vim"]="$home00/.vim"
+repos["c_vim_fold"]="$repo_m/conf_vim"
+
+repos["d_c_sv"]='still_unknown'
+repos["d_c_sv_fold"]="$repo_m/dia_cnf_save"
+
+repos["mysqling"]="$repo_m/mysqling"
+repos["mysqling_fold"]="/etc/mysql"
+
+repos["ms_conf"]="$repo_m/ms_conf"
+repos["ms_conf_fold"]="$repo_m/ms_conf"
+
+repos["c_irssi"]="$home00/.irssi"
+repos["c_irssi_fold"]="$repo_m/conf_irssi"
+
+repos["c_bind"]="$repo_m/conf_bind"
+repos["c_bind_fold"]="/etc/bind"
+
+repos["dvl_py"]="$repo_m/dvl_py"
+repos["dvl_py_fold"]="$dvl/py"
+
+repos["scr_lin"]="$repo_m/scr_lin"
+repos["scr_lin_fold"]="$dvl/lin"
 # repo["scr_lin"]="$repo_m/scr_lin"
 #	#repo_e
 
@@ -177,7 +280,7 @@ gh_ls(){
 						#	
 	for i in ${repos[@]}; 
 	do 
-		echo "repos[${repo_keys[$cpt]}]"
+		echo "[${repo_keys[$cpt]}]"
 		echo "    $i"; 
 		let cpt=cpt+1
 		echo
@@ -206,6 +309,7 @@ fi
 #	%105
 pushImp(){
 ##########HEADER########################
+	# the paths which are pushed - commited
 	declare -A pwds
 
 ##########BODY##########################
@@ -215,16 +319,28 @@ pushImp(){
 	git pull origin master
 	git push origin master
 	pwds[0]=${pwds[0]/ /_}
-	
+	echo
+
 	cd $hdd01/save/pt
 	git add 5/saves/exo01.pkt
 	git commit -m "commit important files $(date)"
 	git pull origin master
-	git pull origin master
+	git push origin master
 	pwds[1]=$(git remote -v | tail -n 1)
 	pwds[1]=${pwds[1]/ /_}
+	echo
+
+	cd /etc/mysql
+	git add .
+	git commit -m "commit the db"
+	git pull origin master
+	git push origin master
+	pwds[2]=$(git remote -v | tail -n 1)
+	pwds[2]=${pwds[2]/ /_}
+	echo
 
 ##########FOOTER#######################
+	# trying to print the remote repos and the local repos
 	echo
 	echo
 	for cpt01 in ${pwds[@]}
@@ -346,7 +462,17 @@ alias git_instaweb='git instaweb --httpd=webrick'
 alias torb='/media/hdd_sda5/deb7/dldd/tor-browser-linux32-4.0.1_en-US/tor-browser_en-US/start-tor-browser'
 #
 #	%089
-alias dl='wget -c'
+dl(){
+  wget -c "$1"
+  newest_file=$(ls -1t | head -1)
+  path_newest_file=$(readlink -f $newest_file)
+  mysql -u nonickn -p0000 -s db_study -e "insert into files (path, descr, lnk) values ('$path_newest_file', 'dldd', '$1')"
+  echo "saved in db_study::table(files)
+  path: $path_newest_file
+  lnk : $1
+"
+}
+# alias dl='wget -c'
 #	%088
 export scr_lin_kl='/root/dvl/lin/kl'
 
@@ -371,7 +497,7 @@ gitAddCo() {
 export nong='https://github.com/nonicken'
 
 #	%084
-export doc4lin='/media/hdd_sda7/ms/doc4lin'
+export doc4lin='/root/doc4lin'
 
 #	%083
 PATH=$PATH:$home00/dvl/lin/
@@ -903,7 +1029,7 @@ alias grep='grep -n --color=always'
 alias gitloga='git log --all --oneline'
 
 
-alias msfconsole='/media/__80G__/opt/metasploit/metasploit347M/msfconsole'
+alias msfconsoleeee='/media/__80G__/opt/metasploit/metasploit347M/msfconsole'
 alias armitage="$metasp/armitage"
 
 alias txt2pdf='/home/ms/.vim/plugin/txt2pdfvim/newDl/txt2pdf-10.2/txt2pdf.pl'
@@ -2540,3 +2666,6 @@ function imgur_onePic {
 #	%024:e
 
 #
+####################################################################################################
+	#git_repo :: /root/dvl/lin/coucou
+

@@ -6,6 +6,22 @@ map Q :q! <CR>
 
 map <C-W>oa :echo 'Current time is ' . strftime('%c')<CR>
 
-map <C-w>retab :set expandtab ts=4 sw=4 ai<CR>:%retab<CR>:echo 'retab done'<CR>
+map <C-c> <nop>
+map <C-c><c-r> :set expandtab ts=4 sw=4 ai<CR>:%retab<CR>:echo 'retab done'<CR>
+" imap <C-c><c-r> :set expandtab ts=4 sw=4 ai<CR>:%retab<CR>:echo 'retab done'<CR>
 
+set showcmd
 
+map <c-c>sketch :call ToggleSketch() <CR>
+
+map <c-c>tagbar :TagbarToggle <cr>
+
+" map <up> <nop>
+" map <down> <nop>
+" map <left> <nop>
+" map <right> <nop>
+
+" imap <up> <nop>
+" imap <down> <nop>
+" imap <left> <nop>
+" imap <right> <nop>

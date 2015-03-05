@@ -162,10 +162,10 @@ alias log_mysql='tail -f /var/log/mysql/mysql.log'
 export JAVA_HOME=/usr/lib/jvm/java-7-openjdk
 export PATH=$PATH:/usr/lib/jvm/java-7-openjdk/bin
 #	%125
-export MYSQL_PS1='-------------------------------------------------------------\nmysql> '
+export MYSQL_PS1='-------------------------------------------------------------\n\R:\m:\s-\d> '
 
 #	%124
-alias mysql_='mysql -A db_study -u nonickn -p0000'
+alias db_study='mysql -A db_study -u nonickn -p0000'
 
 #	%123
 msql(){
@@ -2669,3 +2669,10 @@ function imgur_onePic {
 ####################################################################################################
 	#git_repo :: /root/dvl/lin/coucou
 
+asm_comp() {
+	nasm -f elf $1
+	ld -s -o ${1/.asm/} ${1/.asm/.o}
+	./${1/.asm/} 
+}
+
+alias inotify_here='inotifywait -m -q -e create,delete,move .'

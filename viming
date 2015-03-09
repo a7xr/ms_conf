@@ -12,9 +12,11 @@ map <C-c><c-r> :set expandtab ts=4 sw=4 ai<CR>:%retab<CR>:echo 'retab done'<CR>
 
 set showcmd
 
-map <c-c>sketch :call ToggleSketch() <CR>
+" for sketch
+map <c-c>skt :call ToggleSketch() <CR>
 
-map <c-c>tagbar :TagbarToggle <cr>
+" for tagbar
+map <c-c>tgb :TagbarToggle <cr>
 
 " map <up> <nop>
 " map <down> <nop>
@@ -25,3 +27,6 @@ map <c-c>tagbar :TagbarToggle <cr>
 " imap <down> <nop>
 " imap <left> <nop>
 " imap <right> <nop>
+
+iabbrev sop System.out.println("");<esc>hh
+

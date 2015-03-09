@@ -2676,3 +2676,8 @@ asm_comp() {
 }
 
 alias inotify_here='inotifywait -m -q -e create,delete,move .'
+
+java_c_r() {
+	javac "$1"
+	java "${1/.java/}"
+}

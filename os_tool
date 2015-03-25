@@ -1,243 +1,249 @@
 home00=/root
 hdd01=/media/hdd_sda7
 ##########function which are used in general in this #########################
-# alias which repeat too #often when #programming #script			%001
-# to #extract mp3 from "flv|webm|........"					%002
-# to view all #function in a confFile(ex: thisFile)				%003
-# to get the #size of #ALL files|folder in $PWD					%004
-# to #print sth in your terminal which look like s1 is #typing it, #spy		%005
-# to #dl a link from #yt, #youtube, and convert it immediately to mp3		%006
-# to #dl a link from #yt #youtube, the format is webm				%007
-# to #dl a link from #yt #youtube, the format is 3gp				%008
-# to take a #picture from your #shell								%009
-# to #print the #date with this form:	mm.dd.yyyy_hh:mn:ss			%010
-# to #print only #dotfiles in $PWD						%011
-# to #print files which are modified #today					%012
-# to get the #interface of network with their #ip				%013
-# to get the #interface of network with their #status				%014
-# to do a #grep in $PWD and the result will be played in #mplayer		%015
-# to do a #grep in $PWD and the result will be played in #gnome-mplayer	%016
-# to make going in the #parent folder easier #alias				%017
-# sth about the #clock								%018
-# to #print only folder in $PWD, without #dotfiles				%019
-# to #print folders in $PWD, with #dotfiles					%020
-# to #disconnect the current user(ms)						%021
-# some stuff about #alias							%022
-# to do a #cmd and upload the result to #imgur					%023
-#	the cmd with arg or option doesn't work
-# to upload a file(pic) to #imgur						%024
-# to #print(in live) what u did in the terminal one by one #history		%025
-# to start #netbeans from ur terminal						%026
-# to print the list of installed package with size				%027
-# to #create a file and add the #date in the name of #newFile			%028
-# to #grep and colorize the result of a cmd00					%029
-# to get the #ip of a site							%030
-# to #save all modification in $all						%031
-# some cmd which I #often exe when I start my computer				%032
-# to exe some cmd in #parallel							%033
-# to #print the #distro name							%034
-# to get the #ip of my other pc							%035
-# to get the #username and #ip of my other pc					%036
-# to go in the folder where my doc of cisco is					%037
-# to read some of my #important books quickly					%038
-# using #cat, u can display the #line_number					%039
-# to get some links from #google						%040
-# to find all #symlinks in $PWD							%041
-# to do a research of files with find and get absolultepat of files		%042
-# 	like %042 but u will be able to set the depth of the research		%043
-# if there are many mp3 and you want to get the size of all of them		%044
-# to #print sth in the terminal with #color #style #reverse			%045
-# to #refresh bash when u did a modif in bashConf				%046
-# to #extract a #tar #gz #tgz file						%047
-#	but it is better to use dtrx						%047
-# to create a new folder and setting a user to it immediately #mkdir		%048
-# to create a new folder and go inside it immediately	#mkdir			%057
-# u can do a #select on #mysql without going inside mysql			%049
-# to #load the #configuration of my #git #tools #gittools			%050
-# to #upload a #pic to #imgur							%051
-# to #upload file to #omploader.org						%052
-# to #count the number of #music which are in $PWD				%053	
-# #tip to create a #checkpoint a ur cmd						%054
-# #tip to type '*'(5times)							%058
-# #list #application which use internet						%055
-# -----#-------#--------#-------#-----						%056
-# and create a #newfolder and go inside inside it immediately			%057
-# #tip to print some car quicker						%058
-# to set some #function #fct of #rsync						%059
-# to set some #fct of #mplayer							%060
-# when u did a modif in ur conf of #rxvt and u want to #refresh the rxvt	%061
-#	conf of rxvt is ~/.Xdefaults/.Xresources
-# when u want to get all #hashtags in file00					%062
+# alias which repeat too #often when #programming #script           %001
+# to #extract mp3 from "flv|webm|........"                  %002
+# to view all #function in a confFile(ex: thisFile)             %003
+# to get the #size of #ALL files|folder in $PWD                 %004
+# to #print sth in your terminal which look like s1 is #typing it, #spy     %005
+# to #dl a link from #yt, #youtube, and convert it immediately to mp3       %006
+# to #dl a link from #yt #youtube, the format is webm               %007
+# to #dl a link from #yt #youtube, the format is 3gp                %008
+# to take a #picture from your #shell                               %009
+# to #print the #date with this form:   mm.dd.yyyy_hh:mn:ss         %010
+# to #print only #dotfiles in $PWD                      %011
+# to #print files which are modified #today                 %012
+# to get the #interface of network with their #ip               %013
+# to get the #interface of network with their #status               %014
+# to do a #grep in $PWD and the result will be played in #mplayer       %015
+# to do a #grep in $PWD and the result will be played in #gnome-mplayer %016
+# to make going in the #parent folder easier #alias             %017
+# sth about the #clock                              %018
+# to #print only folder in $PWD, without #dotfiles              %019
+# to #print folders in $PWD, with #dotfiles                 %020
+# to #disconnect the current user(ms)                       %021
+# some stuff about #alias                           %022
+# to do a #cmd and upload the result to #imgur                  %023
+#   the cmd with arg or option doesn't work
+# to upload a file(pic) to #imgur                       %024
+# to #print(in live) what u did in the terminal one by one #history     %025
+# to start #netbeans from ur terminal                       %026
+# to print the list of installed package with size              %027
+# to #create a file and add the #date in the name of #newFile           %028
+# to #grep and colorize the result of a cmd00                   %029
+# to get the #ip of a site                          %030
+# to #save all modification in $all                     %031
+# some cmd which I #often exe when I start my computer              %032
+# to exe some cmd in #parallel                          %033
+# to #print the #distro name                            %034
+# to get the #ip of my other pc                         %035
+# to get the #username and #ip of my other pc                   %036
+# to go in the folder where my doc of cisco is                  %037
+# to read some of my #important books quickly                   %038
+# using #cat, u can display the #line_number                    %039
+# to get some links from #google                        %040
+# to find all #symlinks in $PWD                         %041
+# to do a research of files with find and get absolultepat of files     %042
+#   like %042 but u will be able to set the depth of the research       %043
+# if there are many mp3 and you want to get the size of all of them     %044
+# to #print sth in the terminal with #color #style #reverse         %045
+# to #refresh bash when u did a modif in bashConf               %046
+# to #extract a #tar #gz #tgz file                      %047
+#   but it is better to use dtrx                        %047
+# to create a new folder and setting a user to it immediately #mkdir        %048
+# to create a new folder and go inside it immediately   #mkdir          %057
+# u can do a #select on #mysql without going inside mysql           %049
+# to #load the #configuration of my #git #tools #gittools           %050
+# to #upload a #pic to #imgur                           %051
+# to #upload file to #omploader.org                     %052
+# to #count the number of #music which are in $PWD              %053    
+# #tip to create a #checkpoint a ur cmd                     %054
+# #tip to type '*'(5times)                          %058
+# #list #application which use internet                     %055
+# -----#-------#--------#-------#-----                      %056
+# and create a #newfolder and go inside inside it immediately           %057
+# #tip to print some car quicker                        %058
+# to set some #function #fct of #rsync                      %059
+# to set some #fct of #mplayer                          %060
+# when u did a modif in ur conf of #rxvt and u want to #refresh the rxvt    %061
+#   conf of rxvt is ~/.Xdefaults/.Xresources
+# when u want to get all #hashtags in file00                    %062
 #todo
-#	%062
-# for #saving files which are important, bcz I'm going to play kali		%063
-# to turn off the #color of #ls							%064
-# to get the balise								%065
-# to #automount #auto_mount the iso of debian					%066
-# set debRepo into path								%067
-#	so i just type: cd $deb_repo
-# to #export txt to #pdf from #vim										%068
-# to run a #service in the #boot #starting								%069
-# to connect in jack via #ssh											%070
-# to go in folder where I set my #script								%071
-# to go in #sdz_doc immediately											%072
-# to #update ur repo bcz u added sth in ur #repo						%073
-# to show a #pop_up msg													%074
-# to warn that bash will run a cmd instead of simple echo				%075
-# to warn that the cmd above will not be run							%076
-# to repair broken package												%077
-# to #compile #cprogram													%078
-# to #compile #cppprogram												%079
+#   %062
+# for #saving files which are important, bcz I'm going to play kali     %063
+# to turn off the #color of #ls                         %064
+# to get the balise                             %065
+# to #automount #auto_mount the iso of debian                   %066
+# set debRepo into path                             %067
+#   so i just type: cd $deb_repo
+# to #export txt to #pdf from #vim                                      %068
+# to run a #service in the #boot #starting                              %069
+# to connect in jack via #ssh                                           %070
+# to go in folder where I set my #script                                %071
+# to go in #sdz_doc immediately                                         %072
+# to #update ur repo bcz u added sth in ur #repo                        %073
+# to show a #pop_up msg                                                 %074
+# to warn that bash will run a cmd instead of simple echo               %075
+# to warn that the cmd above will not be run                            %076
+# to repair broken package                                              %077
+# to #compile #cprogram                                                 %078
+# to #compile #cppprogram                                               %079
 # to mount the $1 into $2
-# to make it easier to write on #vimrc#short							%080
-# to load a #session, #view of #vim in ~/.vim/nonicken/views			%081
-# to set the file #forOs00 quicker to get #short						%082
-# to define the #home #path of my #script								%083
-# 	then it will be shorten by nong
-# to add a file, and ccomit the change a file immediately				%083
-# where i should work #todo												%087
-# to add file and commit that file immediately							%086
-# to go in #script for #kali #short										%088
-# #short	#wget_-c													%089
-# to run #torbrowser													%090
-# run #C																%091
-# #git #instaweb #short													%092
-# #vipy = vim file00.py + (chmod +x file00.py)							%093
-# studying about #telec													%094
-# #short pm-hibernate													%095
-# #short youtube-dl for #mp4											%096
-# #short tee -a to tee													%097
-# #short dvl where I set my development									%098
-# to control the sound from the terminal								%099
-# to #limit #bandwidth of firefox										%100
-# +++++++++++++++++++++      											%101
-# to start #firefox in #safe-mode										%102
-# #short	#meme														%103
-# to add and commit at the same time into git some very important file	%104
-# 		#importantFiles
-# 	$all/netw.dia
-# 	$all/telec01.dia
-# 	$all/all.txt
-#	$os_tool
-#	$vimrc
-#	~/.vim
+# to make it easier to write on #vimrc#short                            %080
+# to load a #session, #view of #vim in ~/.vim/nonicken/views            %081
+# to set the file #forOs00 quicker to get #short                        %082
+# to define the #home #path of my #script                               %083
+#   then it will be shorten by nong
+# to add a file, and ccomit the change a file immediately               %083
+# where i should work #todo                                             %087
+# to add file and commit that file immediately                          %086
+# to go in #script for #kali #short                                     %088
+# #short    #wget_-c                                                    %089
+# to run #torbrowser                                                    %090
+# run #C                                                                %091
+# #git #instaweb #short                                                 %092
+# #vipy = vim file00.py + (chmod +x file00.py)                          %093
+# studying about #telec                                                 %094
+# #short pm-hibernate                                                   %095
+# #short youtube-dl for #mp4                                            %096
+# #short tee -a to tee                                                  %097
+# #short dvl where I set my development                                 %098
+# to control the sound from the terminal                                %099
+# to #limit #bandwidth of firefox                                       %100
+# +++++++++++++++++++++                                                 %101
+# to start #firefox in #safe-mode                                       %102
+# #short    #meme                                                       %103
+# to add and commit at the same time into git some very important file  %104
+#       #importantFiles
+#   $all/netw.dia
+#   $all/telec01.dia
+#   $all/all.txt
+#   $os_tool
+#   $vimrc
+#   ~/.vim
 #
-# to push all important files into github.com							%105
+# to push all important files into github.com                           %105
 # so you have to set only once the #pwd of #github
-#	$all/netw.dia
-#	$all/telec01.dia
-#	$all/all.txt
-#	$ms_conf
-#	~/.vim
-# #refr_bash will dele													%106
-# to see what is going on in your server @slashroot						%107
-# #short ls|grep -i 													%108
+#   $all/netw.dia
+#   $all/telec01.dia
+#   $all/all.txt
+#   $ms_conf
+#   ~/.vim
+# #refr_bash will dele                                                  %106
+# to see what is going on in your server @slashroot                     %107
+# #short ls|grep -i                                                     %108
 #
-# #short vid															%109
-# to list my #repo														%110
-# testing cron															%111
-# to define all my #repos												%112
-# for the cmd to do then I have not to go in #mysql						%113
-# #git_init																%114
-# #git_end																%115
-# where I will set my #local #repo #git									%116
-# #short #no #first_line #1line											%117
-# #Grep by #paragraph instead of by line								%118
-# to get the length of vid/zik											%119
-# save my #tembo														%120
-# #short ms_conf														%121
-# #mplayer #playlist													%122
-# #msql	#function														%123
-# #mysql #dummy															%124
-# #mysql #prompt														%125
-# #java #home															%126
-# u need to add sth to $PATH as well									%126
+# #short vid                                                            %109
+# to list my #repo                                                      %110
+# testing cron                                                          %111
+# to define all my #repos                                               %112
+# for the cmd to do then I have not to go in #mysql                     %113
+# #git_init                                                             %114
+# #git_end                                                              %115
+# where I will set my #local #repo #git                                 %116
+# #short #no #first_line #1line                                         %117
+# #Grep by #paragraph instead of by line                                %118
+# to get the length of vid/zik                                          %119
+# save my #tembo                                                        %120
+# #short ms_conf                                                        %121
+# #mplayer #playlist                                                    %122
+# #msql #function                                                       %123
+# #mysql #dummy                                                         %124
+# #mysql #prompt                                                        %125
+# #java #home                                                           %126
+# u need to add sth to $PATH as well                                    %126
 # the log of mysql                                                      %127
-#	#end_cmt
+# before doing rm !(file0|file1), u have to set sth                     %128
+# compiling in java                                                     %129
+# compiling in asm                                                      %130
+# to do prolog, and loading the fact by default                         %131
+# to run eclipse everywhere                                             %132
+# to set the editor in the terminal                                     %133
+#   #end_cmt
 
 # %127
 alias log_mysql='tail -f /var/log/mysql/mysql.log'
 
-#	%126
+#   %126
 export JAVA_HOME=/usr/lib/jvm/java-7-openjdk
 export PATH=$PATH:/usr/lib/jvm/java-7-openjdk/bin
-#	%125
+#   %125
 export MYSQL_PS1='-------------------------------------------------------------\n\R:\m:\s-\d> '
 
-#	%124
+#   %124
 alias db_study='mysql -A db_study -u nonickn -p0000'
 
-#	%123
+#   %123
 msql(){
-	\mysql -u nonickn -p0000 -s db_study -e $1
+    \mysql -u nonickn -p0000 -s db_study -e $1
 }
 
-#	%122
+#   %122
 export pl_z="$home00/pl_z"
 
-#	%121
+#   %121
 export ms_c="$home00/ms_conf"
 #
 
-#	%120
+#   %120
 m__(){
-	cd $all
-	echo "$(date)" >> $all/m
+    cd $all
+    echo "$(date)" >> $all/m
 }
 
-#	%119
+#   %119
 mmedia_length(){
-	find -type f -name "$1" -print0 | xargs -0  mplayer -vo dummy -ao dummy -identify 2>/dev/null | perl -nle '/ID_LENGTH=([0-9\.]+)/ && ($t +=$1) && printf "%02d:%02d:%02d\n",$t/3600,$t/60%60,$t%60' | tail -n 1
+    find -type f -name "$1" -print0 | xargs -0  mplayer -vo dummy -ao dummy -identify 2>/dev/null | perl -nle '/ID_LENGTH=([0-9\.]+)/ && ($t +=$1) && printf "%02d:%02d:%02d\n",$t/3600,$t/60%60,$t%60' | tail -n 1
 }
-#	%118
+#   %118
 grepp() { 
-	[ $# -eq 1 ] && perl -00ne "print if /$1/i" || perl -00ne "print if /$1/i" < "$2";
+    [ $# -eq 1 ] && perl -00ne "print if /$1/i" || perl -00ne "print if /$1/i" < "$2";
 }
 
-#	%117
+#   %117
 alias no1='tail -n +1'
 
-#	%116
+#   %116
 out_repo_git="$dvl/lin/some_out/git_loc_repo"
 
 
-#	%115
+#   %115
 git_end(){
-###########HEADER#######################	
+###########HEADER#######################    
 
-###########BODY#########################	
-	rm -rf .git/
-	grep -Fv "$PWD" $os_tool >> $out_repo_git
-###########FOOTER#######################	
+###########BODY#########################    
+    rm -rf .git/
+    grep -Fv "$PWD" $os_tool >> $out_repo_git
+###########FOOTER#######################    
 }
 
-#	%114
+#   %114
 git_init(){
-#########HEADER#########################	
+#########HEADER#########################    
 
-#########BODY###########################	
-	git init
-	echo "$(pwd)" >> "$out_repo_git"
-	pwd01=$(pwd)
-	mysql -u nonickn -p0000 -s db_study -e "insert into git_repos (loc_rep) values ('$pwd01'); "
+#########BODY###########################    
+    git init
+    echo "$(pwd)" >> "$out_repo_git"
+    pwd01=$(pwd)
+    mysql -u nonickn -p0000 -s db_study -e "insert into git_repos (loc_rep) values ('$pwd01'); "
 
-#########FOOTER#########################	
+#########FOOTER#########################    
 
 }
 
-#	%113
+#   %113
 alias msql='mysql -u nonickn -p0000 -s db_study -e'
-#	%111
+#   %111
 t_cron(){
-	echo 'aaaa' | tee -a /root/t_cron
+    echo 'aaaa' | tee -a /root/t_cron
 }
 
-#	#repo_s
+#   #repo_s
 repo_m='https://github.com/nonicken'
 
-#	%112
-declare -A repos			#lesson	#array	u have to declare it like that 
-#	before you are going to give key=value
+#   %112
+declare -A repos            #lesson #array  u have to declare it like that 
+#   before you are going to give key=value
 repos["s_inf"]="$repo_m/some_info"
 repos["s_inf_fold"]="$home00/doc/sctd"
 
@@ -271,197 +277,197 @@ repos["dvl_py_fold"]="$dvl/py"
 repos["scr_lin"]="$repo_m/scr_lin"
 repos["scr_lin_fold"]="$dvl/lin"
 # repo["scr_lin"]="$repo_m/scr_lin"
-#	#repo_e
+#   #repo_e
 
-#	%110
+#   %110
 gh_ls(){
-	let cpt=0
-	repo_keys=(${!repos[@]})	#lesson to get the key, u set them in one var and
-						#	
-	for i in ${repos[@]}; 
-	do 
-		echo "[${repo_keys[$cpt]}]"
-		echo "    $i"; 
-		let cpt=cpt+1
-		echo
-	done
+    let cpt=0
+    repo_keys=(${!repos[@]})    #lesson to get the key, u set them in one var and
+                        #   
+    for i in ${repos[@]}; 
+    do 
+        echo "[${repo_keys[$cpt]}]"
+        echo "    $i"; 
+        let cpt=cpt+1
+        echo
+    done
 }
 
-#	%109
+#   %109
 export htb_v='/media/hdd_sda7/vid/htb'
 
-#	%108
+#   %108
 alias lg='ls | grep -i'
 #
-#	%107
+#   %107
 # tcpdump -i lo -s0 -n -A host 127.0.0.1
 # tcpdump -i eth0 -s0 -n -A host 192.168.0.104
-# 	eth0	the network interface
-# 		sometimes 	lo	or	wlan0
-# 	192.168.0.104	@ of client
-# 		sometimes	127.0.0.1 
+#   eth0    the network interface
+#       sometimes   lo  or  wlan0
+#   192.168.0.104   @ of client
+#       sometimes   127.0.0.1 
 #
-#	%106
+#   %106
 if [ -e .git ] ; then
-	git config --global credential.helper cache
-	git config credential.helper 'cache --timeout=3600'
+    git config --global credential.helper cache
+    git config credential.helper 'cache --timeout=3600'
 fi
-#	%105
+#   %105
 pushImp(){
 ##########HEADER########################
-	# the paths which are pushed - commited
-	declare -A pwds
+    # the paths which are pushed - commited
+    declare -A pwds
 
 ##########BODY##########################
-	cd $all
-	git add netw.dia telec01.dia all.txt
-	git commit -m "commit important files $(date)"
-	git pull origin master
-	git push origin master
-	pwds[0]=${pwds[0]/ /_}
-	echo
+    cd $all
+    git add netw.dia telec01.dia all.txt
+    git commit -m "commit important files $(date)"
+    git pull origin master
+    git push origin master
+    pwds[0]=${pwds[0]/ /_}
+    echo
 
-	cd $hdd01/save/pt
-	git add 5/saves/exo01.pkt
-	git commit -m "commit important files $(date)"
-	git pull origin master
-	git push origin master
-	pwds[1]=$(git remote -v | tail -n 1)
-	pwds[1]=${pwds[1]/ /_}
-	echo
+    cd $hdd01/save/pt
+    git add 5/saves/exo01.pkt
+    git commit -m "commit important files $(date)"
+    git pull origin master
+    git push origin master
+    pwds[1]=$(git remote -v | tail -n 1)
+    pwds[1]=${pwds[1]/ /_}
+    echo
 
-	cd /etc/mysql
-	git add .
-	git commit -m "commit the db"
-	git pull origin master
-	git push origin master
-	pwds[2]=$(git remote -v | tail -n 1)
-	pwds[2]=${pwds[2]/ /_}
-	echo
+    cd /etc/mysql
+    git add .
+    git commit -m "commit the db"
+    git pull origin master
+    git push origin master
+    pwds[2]=$(git remote -v | tail -n 1)
+    pwds[2]=${pwds[2]/ /_}
+    echo
 
 ##########FOOTER#######################
-	# trying to print the remote repos and the local repos
-	echo
-	echo
-	for cpt01 in ${pwds[@]}
-	do
-		if [ "$cpt01" != *"origin"* ] && [ "$cpt01" != *"(push)"* ] 
-			then
-			echo "pushed:	$cpt01"
-		fi
-	done
+    # trying to print the remote repos and the local repos
+    echo
+    echo
+    for cpt01 in ${pwds[@]}
+    do
+        if [ "$cpt01" != *"origin"* ] && [ "$cpt01" != *"(push)"* ] 
+            then
+            echo "pushed:   $cpt01"
+        fi
+    done
 
-	unset cpt01
-	unset pwds
+    unset cpt01
+    unset pwds
 }
 #
-#	%104
+#   %104
 comImp(){
-	declare -A pwds
-	pwd01=$(pwd)
-	echo going to commit all of ur important files
-	sleep 3
+    declare -A pwds
+    pwd01=$(pwd)
+    echo going to commit all of ur important files
+    sleep 3
 
-#########BODY#####################	
-	echo
-	cd $all
-	git add netw.dia
-	git add telec01.dia all.txt engStudying.dia dbStudy.dia
-	git commit -m "commiting all important files $(date)"
-	pwds[0]=$(pwd)
+#########BODY#####################  
+    echo
+    cd $all
+    git add netw.dia
+    git add telec01.dia all.txt engStudying.dia dbStudy.dia
+    git commit -m "commiting all important files $(date)"
+    pwds[0]=$(pwd)
 
-	cd
-	git add .vimrc 
-	git commit -m "commiting all important files $(date)"
-	pwds[1]=$(pwd)
+    cd
+    git add .vimrc 
+    git commit -m "commiting all important files $(date)"
+    pwds[1]=$(pwd)
 
-	cd $home00/ms_conf/
-	git add .
-	git commit -m "commiting all important files $(date)"
-	pwds[2]=$(pwd)
+    cd $home00/ms_conf/
+    git add .
+    git commit -m "commiting all important files $(date)"
+    pwds[2]=$(pwd)
 
-	cd $home00/.vim
-	git add .
-	git commit -m "commiting all important files $(date)"
-	pwds[3]=$(pwd)
-	echo
+    cd $home00/.vim
+    git add .
+    git commit -m "commiting all important files $(date)"
+    pwds[3]=$(pwd)
+    echo
 
-	cd $hdd01/save/pt
-	git add 5
-	git commit -m "commiting all important files $(date)"
-	pwds[4]=$(pwd)
-	echo ${pwds[4]}
-	echo
+    cd $hdd01/save/pt
+    git add 5
+    git commit -m "commiting all important files $(date)"
+    pwds[4]=$(pwd)
+    echo ${pwds[4]}
+    echo
 
-	cd $dvl/lin
-	git add .
-	git commit -m "commiting all important files $(date)"
-	pwds[5]=$(pwd)
-	echo
+    cd $dvl/lin
+    git add .
+    git commit -m "commiting all important files $(date)"
+    pwds[5]=$(pwd)
+    echo
 
 ########Footer##########################
-	echo 
-	for cpt01 in ${pwds[@]}
-	do
-		# echo aa
-		echo "commited: $cpt01"
-	done
+    echo 
+    for cpt01 in ${pwds[@]}
+    do
+        # echo aa
+        echo "commited: $cpt01"
+    done
 
-	cd $pwd01
-	echo
-	echo "$(pwd)"
-	unset pwds
-	unset cpt01
+    cd $pwd01
+    echo
+    echo "$(pwd)"
+    unset pwds
+    unset cpt01
 }
 #
-#	%103
+#   %103
 export meme='/media/hdd_sda7/ms/Pictures/kilalao/meme'
-#	%102
+#   %102
 # firefox -safe-mode
 #
-#	%101
+#   %101
 # wondershape eth0 256 128
-# 	# eth0	: the interface
-# 	# 256	: for the downlink
-# 	# 128	: for the uplink
+#   # eth0  : the interface
+#   # 256   : for the downlink
+#   # 128   : for the uplink
 #
-#	%100
+#   %100
 # trickle -u 8 -d 8 firefox
-# 	# -u 8	: for the uplink
-# 	# -d 8	: for the downlink
+#   # -u 8  : for the uplink
+#   # -d 8  : for the downlink
 #
-#	%099
+#   %099
 #alsamixer
 #
-#	%098
+#   %098
 export dvl='/root/dvl/'
 # 
-#	%097
+#   %097
 alias tee='tee -a'
 #
-#	%095
+#   %095
 alias hib='pm-hibernate'
 #
 #
-# 	%094
+#   %094
 export telecv='/media/FE0C41EF0C41A40D/videos/telec'
 #
-#	%093
+#   %093
 vipy(){
-	vim $1
-	chmod +x $1
+    vim $1
+    chmod +x $1
 }
 #
-#	%092
+#   %092
 alias git_instaweb='git instaweb --httpd=webrick'
 #
-#	%091
+#   %091
 # echo 'just type the name of the programme which already compiled'
 #
-#	%090
+#   %090
 alias torb='/media/hdd_sda5/deb7/dldd/tor-browser-linux32-4.0.1_en-US/tor-browser_en-US/start-tor-browser'
 #
-#	%089
+#   %089
 dl(){
   wget -c "$1"
   newest_file=$(ls -1t | head -1)
@@ -473,207 +479,207 @@ dl(){
 "
 }
 # alias dl='wget -c'
-#	%088
+#   %088
 export scr_lin_kl='/root/dvl/lin/kl'
 
-#	%087
+#   %087
 export v_kl='/media/hdd_sda6/yt/lin/kl'
 
-#	%086
+#   %086
 gitAddCo() {
-	if [[ -n "$1" ]] && [[ -n "$2" ]]
-	then
-		git add "$1"
-		git commit -m "$2"
-	else
-		echo 'to add a file$1 and commit it immediately'
-		echo '	$1:	the name of the file to edit, then u will commit the modif'
-		echo '	$2:	the commitComment'
-		echo 'ex	:	this. file00 commitComment'
-	fi
+    if [[ -n "$1" ]] && [[ -n "$2" ]]
+    then
+        git add "$1"
+        git commit -m "$2"
+    else
+        echo 'to add a file$1 and commit it immediately'
+        echo '  $1: the name of the file to edit, then u will commit the modif'
+        echo '  $2: the commitComment'
+        echo 'ex    :   this. file00 commitComment'
+    fi
 }
 
-#	%085
+#   %085
 export nong='https://github.com/nonicken'
 
-#	%084
+#   %084
 export doc4lin='/root/doc4lin'
 
-#	%083
+#   %083
 PATH=$PATH:$home00/dvl/lin/
 PATH=$PATH:$home00/dvl/lin/kl/
 
-# 	%082
+#   %082
 export forOs00="$all/forOs00"
 
-#	%081
+#   %081
 alias vims='vim -S'
 
-#	%080
+#   %080
 export vimrc="$HOME/.vimrc"
 
 mount_bind(){
 
-	echo "read carefully, bcz u are still studying"
-	read
-	echo "are u sure that all files in $1 will replace all files in $2"
-	echo "	while the mount is on"
-	read -p "y/n" y_n
-	if [ "$y_n" = 'y' ]
-		then
-		echo	'yes'
-	else
-		echo 	'nada'
-	fi
-	# mount --bind "$1" "$2"
+    echo "read carefully, bcz u are still studying"
+    read
+    echo "are u sure that all files in $1 will replace all files in $2"
+    echo "  while the mount is on"
+    read -p "y/n" y_n
+    if [ "$y_n" = 'y' ]
+        then
+        echo    'yes'
+    else
+        echo    'nada'
+    fi
+    # mount --bind "$1" "$2"
 }
-# 	%079
+#   %079
 comp_runCpp(){
 # http://www.cyberciti.biz/faq/howto-compile-and-run-c-cplusplus-code-in-linux/
-	if [[ $1 ]]
-		then
-		g++ -g -Wall "$1" -o ${1/.cpp/}
-		./${1/.cpp/}
-	else
-		echo 'to compile cpp program'
-		echo ' 	ex : this_ cPPprog00.cpp'
-	fi
+    if [[ $1 ]]
+        then
+        g++ -g -Wall "$1" -o ${1/.cpp/}
+        ./${1/.cpp/}
+    else
+        echo 'to compile cpp program'
+        echo '  ex : this_ cPPprog00.cpp'
+    fi
 }
 
-# 	%078
+#   %078
 comp_runC() {
 # http://www.cyberciti.biz/faq/howto-compile-and-run-c-cplusplus-code-in-linux/
-	if [[ $1 ]]
-		then
-		cc -g -Wall "$1" -o ${1/.c/}
-		./${1/.c/}
-	else
-		echo 'to compile c program'
-		echo ' 	ex : this_ cprog00.c'
-	fi
+    if [[ $1 ]]
+        then
+        cc -g -Wall "$1" -o ${1/.c/}
+        ./${1/.c/}
+    else
+        echo 'to compile c program'
+        echo '  ex : this_ cprog00.c'
+    fi
 }
-# 	%077
+#   %077
 brk_pkg01(){
-	apt-get -f install
+    apt-get -f install
 }
 
-#	%076
+#   %076
 warn_notrun(){
-	echo 'the prev cmd will not be run'
-	read
+    echo 'the prev cmd will not be run'
+    read
 }
 
-#	%075
+#   %075
 warn_cmd(){
-	echo '.....cmd.....'
-	read
+    echo '.....cmd.....'
+    read
 }
 
-#	%074
+#   %074
 pop_up_info(){
-	if [[ "$1" ]] && [[ "$2" ]]
-		then
-		zenity --title "$1" --info "$2"
-	else
-		echo 'to show a pop up message'
-		echo '	ex : this_ title00 msg00'
-	fi
+    if [[ "$1" ]] && [[ "$2" ]]
+        then
+        zenity --title "$1" --info "$2"
+    else
+        echo 'to show a pop up message'
+        echo '  ex : this_ title00 msg00'
+    fi
 }
 
-#	%073
+#   %073
 up_repo(){
-	if [[ "$1" ]]
-		then
-		echo 'make sure that u are in the repo where u save all ur debFiles'
-		read
-		dpkg-scanpackages . /dev/null | gzip -9c > Packages.gz
-	else
-		echo 'to update the repo'
-		echo '	ex : this_	nonSense'
-	fi
+    if [[ "$1" ]]
+        then
+        echo 'make sure that u are in the repo where u save all ur debFiles'
+        read
+        dpkg-scanpackages . /dev/null | gzip -9c > Packages.gz
+    else
+        echo 'to update the repo'
+        echo '  ex : this_  nonSense'
+    fi
 }
 
-#	%072
+#   %072
 export sdz='/media/hdd_sda7/ms/doc4lin/sdz'
 
-# 	%071
+#   %071
 export scr_lin='/root/dvl/lin'
 
-#	%070
+#   %070
 ssh_jack(){
-	ssh jack@192.168.1.5
+    ssh jack@192.168.1.5
 }
 
-#	%069
+#   %069
 srvcOnBoot(){
-	if [[ $1 ]]
-		then
-		chkconfig --level 345 "$1" on
-	else 
-		echo 'add service in $1'
-		echo 'ex:	this_ mysql'
-	fi
+    if [[ $1 ]]
+        then
+        chkconfig --level 345 "$1" on
+    else 
+        echo 'add service in $1'
+        echo 'ex:   this_ mysql'
+    fi
 }
 
-#	%068
+#   %068
 vim2pdf(){
-	echo 'inside ur vim: '
-	echo '	:hardcopy >/tmp/filename.ps'
-	echo '$ps2pdf /tmp/filename.ps'
+    echo 'inside ur vim: '
+    echo '  :hardcopy >/tmp/filename.ps'
+    echo '$ps2pdf /tmp/filename.ps'
 }
 
-#	%067
+#   %067
 deb_repo='/media/hdd_sda5/deb7/packages/i686'
 
-#	%066
+#   %066
 alias repo_up='/root/dvl/lin/repo-up.sh'
-#	%065
+#   %065
 get_balise(){
-	echo '<>'
+    echo '<>'
 }
 
-#	%063
-export t_conf="/media/HDD0/mmt/save/conf"
-export t_mmedia="/media/HDD0/mmt/save/mmedia"
-export t_opt="/media/HDD0/mmt/save/otp"
-export t_doc="/media/HDD0/mmt/save/doc"
-export t_dvl="/media/HDD0/mmt/save/dvl"
-export t_save="/media/HDD0/mmt/save/save"
-#	%060
+#   %063
+# export t_conf="/media/HDD0/mmt/save/conf"
+# export t_mmedia="/media/HDD0/mmt/save/mmedia"
+# export t_opt="/media/HDD0/mmt/save/otp"
+# export t_doc="/media/HDD0/mmt/save/doc"
+# export t_dvl="/media/HDD0/mmt/save/dvl"
+# export t_save="/media/HDD0/mmt/save/save"
+#   %060
 alias src_mplayer='source /home/ms/ms_conf/mplayer.fct'
 
-#	%059
+#   %059
 alias src_rsync='source /home/ms/ms_conf/rsync.fct'
 
-#	%058
+#   %058
 # this is just a tip
 # if u want to print '*' 5times
-#	<alt-5>-	<enter>
-#	
+#   <alt-5>-    <enter>
+#   
 
-# #	%057
+# # %057
 # mkdircd(){
-# 	if1
-# 		mkdir $1
-# 		cd $1
-# 	else
-# 		echo 'to create a new folder and go inside of that folder'
-# 		echo '	immediately u will be set inside that newfolder'
-# 		echo '		ex :	this_ newFolder00'
-# 	fi
+#   if1
+#       mkdir $1
+#       cd $1
+#   else
+#       echo 'to create a new folder and go inside of that folder'
+#       echo '  immediately u will be set inside that newfolder'
+#       echo '      ex :    this_ newFolder00'
+#   fi
 # }
 
-#	%056
+#   %056
 alias apps_use_net01='ss -p'
 
-# 	%054
+#   %054
 # this is a just a tip
-#	type some cmd in ur terminal
-# 		that was cmd wasnt right but u will need it later
-#	
+#   type some cmd in ur terminal
+#       that was cmd wasnt right but u will need it later
+#   
 
 
-#	%053
+#   %053
 #http://www.commandlinefu.com/commands/view/13017/count-music-files-in-each-directory
 #this is how to count music, 
 count_music() {
@@ -681,39 +687,39 @@ count_music() {
 }
 
 
-#	%051
+#   %051
 upl-imgur() {
 curl -# -F image=@"$1" -F "key=1913b4ac473c692372d108209958fd15" \
 http://api.imgur.com/2/upload.xml | grep -Eo "<original>(.)*</original>" \
 | grep -Eo "http://i.imgur.com/[^<]*"
 }
 
-#	%052
+#   %052
 # http://www.commandlinefu.com/commands/view/4004
 upl-ompldr() {
 curl -u# -F file1=@"$1" http://ompldr.org/upload|awk '/File:/' | cut -d\> -f5- | cut -d\/ -f1-4
 }
 
-#	%050
+#   %050
 alias src_git='source /home/ms/ms_conf/git_tools'
 
-#	%001:e
+#   %001:e
 alias echoe="echo -e"
 alias if2='if [[ $1 ]] && [[ $2 ]] ; then  '
 alias if1='if [[ $1 ]] ; then '
 alias err='2>'
 alias if3='if [[ $1 ]] && [[ $3 ]] && [[ $3 ]] ; then '
-#	%001:e
+#   %001:e
 
 
 e(){
     echo "$1"
     # this will work only if you set $1 inside "".
     # therefore, 
-    #	>$ e this is a test
-    #	will display 
-    #	    this
-    #	only
+    #   >$ e this is a test
+    #   will display 
+    #       this
+    #   only
 }
 
 bar_(){
@@ -723,98 +729,98 @@ bar_(){
 #########end_____function which are used in general in thi______end##############
 
 #to extract mp3 from 'flv\|webm\|...'
-#	%002:s
+#   %002:s
 ffmpeg_extr_mp3() {
     if [ "$1" ]  && [ "$2" ]
     then
          avconv -y -i "$1" -vn -acodec libmp3lame "$2"
     else
-	 echo 'to extract audio from flv, .... videos'
-	 e 'eg: ffmpeg_extr_mp3 video.flv video.mp3'
+     echo 'to extract audio from flv, .... videos'
+     e 'eg: ffmpeg_extr_mp3 video.flv video.mp3'
     fi
 }
-#	%002:e
+#   %002:e
 
 #os_dev00
 # in a conf file where there are functions, use this to get all the functions which are in the $1_file, 
 # #for_dev
-#	%003:s
+#   %003:s
 view_function () {
     if [ $1 ]
     then
-	cat $1 | grep \(\)
+    cat $1 | grep \(\)
     else
-	e 'explanation	:use this to view all functions(for programming) in file which is an extention of .bashrc'
-	e
-	e 'usage:   this_ filewithfunction'
-	e
-	e 'cmd:'
-	e ' $1 | grep \(\)'
+    e 'explanation  :use this to view all functions(for programming) in file which is an extention of .bashrc'
+    e
+    e 'usage:   this_ filewithfunction'
+    e
+    e 'cmd:'
+    e ' $1 | grep \(\)'
     fi
 }
-#	%003:e
+#   %003:e
 #this is to get the the size of all repertories in the $PWD
 
 
-#	%004:s
+#   %004:s
 du_sort_file_size() {
     du -hkx | egrep -v "\./.+/" | sort -n
 }
-#	%004:e
+#   %004:e
 
 #to print something in a fancy manner on you terminal
 #http://www.commandlinefu.com/commands/view/10236/echo-text-in-fancy-manner
-#	%005:s
+#   %005:s
 sayspeed() { 
     for i in $(seq 1 `echo "$1"|wc -c`); #this will go through $1
-	# |wc -c	    # count the number of caracter
-	# `cmd0`	    # so cmd0 will be performed
-	# seq 1 4	    # will display the number 1 till 4
-	# seq 1 2 10	    # to set the number of incrmentation
-	#   so here it is 2
+    # |wc -c        # count the number of caracter
+    # `cmd0`        # so cmd0 will be performed
+    # seq 1 4       # will display the number 1 till 4
+    # seq 1 2 10        # to set the number of incrmentation
+    #   so here it is 2
     
     do echo -n "`echo $1 |cut -c ${i}`"; 
     
     sleep 0.1s; done; echo "";
 }
-#	%005:e
+#   %005:e
 
 #youtube
 #this is to extract only mp3 of some video on youtube
 #http://www.commandlinefu.com/commands/view/9701/convert-youtube-videos-to-mp3
-#	%006:s
+#   %006:s
 dl_youtube_mp3() {
     if1
-	youtube-dl -t --extract-audio --audio-format mp3 $1
+    youtube-dl -t --extract-audio --audio-format mp3 $1
     
     else
-	echo 'to extract audio from youtube'
-	echo 'ex;   this_ linkFromYt'
+    echo 'to extract audio from youtube'
+    echo 'ex;   this_ linkFromYt'
     fi
 }
-#	%006:e
+#   %006:e
 
 # to dl from youtube and the format is webm
-#	%007:s
+#   %007:s
 dl_youtube_webm() {
     # for a in "$@"
-	# do
-	    # youtube-dl -f webm $a
-	# done
+    # do
+        # youtube-dl -f webm $a
+    # done
     youtube-dl -f webm $1
 }
-#	%007:e
+#   %007:e
 
-#	%008:s
+#   %008:s
 dl_youtube_3gp() {
     youtube-dl -f 3gp $1
     
 }
-#	%008:e
+#   %008:e
 
-#	%096
+#   %096
 dl_youtube_mp4(){
-	youtube-dl -f mp4 "$1"
+    youtube-dl -f mp4 "$1"
 }
 
 #youtube_end
@@ -830,17 +836,17 @@ dcrypt_ssl(){
 
 #to take pic from the shell
 #http://www.commandlinefu.com/commands/view/11774/press-enter-and-take-a-webcam-picture.
-#	%009:s
+#   %009:s
 pic_webcam(){
     if1
-	# read && ffmpeg -y -r 1 -t 3 -f video4linux2 -vframes 1 -s sxga -i /dev/video0 ~/webcam-$(date +%m_%d_%Y_%H_%M).jpeg
-	read && ffmpeg -y -r 1 -t 3 -f video4linux2 -vframes 1 -s sxga -i /dev/video0 $1
+    # read && ffmpeg -y -r 1 -t 3 -f video4linux2 -vframes 1 -s sxga -i /dev/video0 ~/webcam-$(date +%m_%d_%Y_%H_%M).jpeg
+    read && ffmpeg -y -r 1 -t 3 -f video4linux2 -vframes 1 -s sxga -i /dev/video0 $1
     else
-	echo 'to take a pic from webcam'
-	echo 'eg: this_ coucou.jpg'
+    echo 'to take a pic from webcam'
+    echo 'eg: this_ coucou.jpg'
     fi
 }
-#	%009:e
+#   %009:e
 
 #to split mp3music and take just the sound after $1
 cut_mp(){
@@ -848,117 +854,117 @@ cut_mp(){
     avconv -ss 00:00:30 -i $1 -acodec copy $2
 }
 
-#	%010:s
+#   %010:s
 date_now(){
     date "+%m.%d.%Y_%H:%M:%S"
 }
-#	%010:e
+#   %010:e
 
-#	%011:s
+#   %011:s
 ls_dot_files(){
     if1
-	ls -d .*
+    ls -d .*
     else
-	echo 'to list only dot files'
-	echo 'ex:   this_ whatever00'
+    echo 'to list only dot files'
+    echo 'ex:   this_ whatever00'
     fi
 }
-#	%011:e
+#   %011:e
 
-#	%012:s
+#   %012:s
 ls_file_modified_today() {
     ls -al --time-style=+%D | grep `date +%D`
 }
-#	%012:e
+#   %012:e
 
 # to check interface if they are up or down
-#	%014:s
+#   %014:s
 netInterf_status() {
     for i in `ls /sys/class/net/`; do echo $i: `cat /sys/class/net/$i/operstate`; done
 }
-#	%014:e
+#   %014:e
 
 #to check each interface of network and each ip which is with
-#	%013:s
+#   %013:s
 netInterf_ip(){
     ip -o -4 addr show | awk -F '[ /]+' '/global/ {print $2, $4}'
 }
-#	%013:e
+#   %013:e
 
-#	%015:s
+#   %015:s
 pl_grepMpl() {
     if1
-	if [[ -e tmp_mpl ]]	# tmp_mpl is the file where the result of grep that u want to play is stored
-	then
-	    rm tmp_mpl
-	    ls|grep -i "$1" | grep -i "mp3\|webm\|flv\|avi\|mp4" >> tmp_mpl
-	    mplayer -loop 100 -shuffle -playlist tmp_mpl
-	    rm tmp_mpl
+    if [[ -e tmp_mpl ]] # tmp_mpl is the file where the result of grep that u want to play is stored
+    then
+        rm tmp_mpl
+        ls|grep -i "$1" | grep -i "mp3\|webm\|flv\|avi\|mp4" >> tmp_mpl
+        mplayer -loop 100 -shuffle -playlist tmp_mpl
+        rm tmp_mpl
 
-	else
-	    ls|grep -i "$1" | grep -i "mp3\|webm\|flv\|avi\|mp4" >> tmp_mpl
-	    mplayer -shuffle -loop 100 -playlist tmp_mpl
-	    rm tmp_mpl
-	fi
     else
-	echo 'to do a grep in $PWD, the result of the grep will be played in gnome-mplayer'
-	echo 'eg:   this_ metallica'
+        ls|grep -i "$1" | grep -i "mp3\|webm\|flv\|avi\|mp4" >> tmp_mpl
+        mplayer -shuffle -loop 100 -playlist tmp_mpl
+        rm tmp_mpl
+    fi
+    else
+    echo 'to do a grep in $PWD, the result of the grep will be played in gnome-mplayer'
+    echo 'eg:   this_ metallica'
     fi
 }
-#	%015:e
+#   %015:e
 
-#	%016:s
+#   %016:s
 pl_grepGmpl() {
     if1
-	if [[ -e tmp_mpl ]]	# tmp_mpl is the file where the result of research that u want to play is stored
-	then
-	    rm tmp_mpl
-	    ls|grep -i "$1" | grep -i "mp3\|webm\|flv\|avi\|mp4" >> tmp_mpl
-	    gnome-mplayer --random --loop --playlist tmp_mpl
-	    rm tmp_mpl
+    if [[ -e tmp_mpl ]] # tmp_mpl is the file where the result of research that u want to play is stored
+    then
+        rm tmp_mpl
+        ls|grep -i "$1" | grep -i "mp3\|webm\|flv\|avi\|mp4" >> tmp_mpl
+        gnome-mplayer --random --loop --playlist tmp_mpl
+        rm tmp_mpl
 
-	else
-	    ls|grep -i "$1" | grep -i "mp3\|webm\|flv\|avi\|mp4" >> tmp_mpl
-	    gnome-mplayer --random --loop --playlist tmp_mpl
-	    rm tmp_mpl
-	fi
     else
-	echo 'to do a research in $PWD, the result of the research will be played in gnome-mplayer'
-	echo 'eg:   this_ metallica'
+        ls|grep -i "$1" | grep -i "mp3\|webm\|flv\|avi\|mp4" >> tmp_mpl
+        gnome-mplayer --random --loop --playlist tmp_mpl
+        rm tmp_mpl
+    fi
+    else
+    echo 'to do a research in $PWD, the result of the research will be played in gnome-mplayer'
+    echo 'eg:   this_ metallica'
     fi
 }
-#	%016:e
+#   %016:e
 
 #alias
 # d amzai mlai b le navig
-#	%017:s
+#   %017:s
 alias ..="echo 'just to show that you can put many instr in an alias';cd .."
 alias ..2="cd ../../"
 alias ..3="cd ../../../"
 alias ..4="cd ../../../../"
 alias ..5="cd ../../../../../"
 alias ..6="cd ../../../../../../"
-#	%017:e
+#   %017:e
 
 #to display a clock in the terminal
-#	%018:s
+#   %018:s
 alias clock='watch -t -n1 "date +%T|figlet"'
 alias clock00="watch -t -n1 'date \"+%r %F %A\"'"
-#	%018:e
+#   %018:e
 alias mysql_connection_nbr='mysql -u root -p -BNe "select host,count(host) from processlist group by host;" information_schema'
 
 
 # alias findd="find -maxdepth 1 -iname '*' -type d" deprecated
 # use this to check all directories which are in the current position
-#	%019
+#   %019
 alias findd="ls -d */"
 
 # use this to check all direc
-#	%020
+#   %020
 alias findd_a="find -maxdepth 1 -iname '*' -type d"
 
 # pour deconnecter ms
-#	%021
+#   %021
 alias disconnect="pkill -KILL -u ms"
 
 # pour avoir plus de maniabilite avec info
@@ -969,7 +975,7 @@ alias grepn="grep --color=auto"
 # alias python='/usr/bin/python3.2'
 
 #stuff_alias
-#	%022:s
+#   %022:s
 #pastebinit
 alias pastebinit='pastebinit -b http://sprunge.us'
 alias lsnew='ls -al --time-style=+%D | grep `date +%D`'
@@ -983,22 +989,22 @@ alias stuff_check_shells="cat /etc/shells"
 alias stuff_check_users="cat /etc/passwd | cut -d: -f1"
 
 alias lsf='ls -F'
-#	%022:e
+#   %022:e
 
 cat_n() {
     if [ "$1" ]
     then
-	$1 | cat -n
+    $1 | cat -n
     else
-	echo "explanation: this is to display the content of something and display the line number "
-	echo ""
-	echo "usage: cat_n cmd_ive_done"
+    echo "explanation: this is to display the content of something and display the line number "
+    echo ""
+    echo "usage: cat_n cmd_ive_done"
     fi
 }
 alias pc_model='sudo dmidecode | grep Product'
 alias purge_unused_conf="sudo aptitude purge '~c'"
 
-#	%061
+#   %061
 alias xrdb_refr='xrdb -merge /home/ms/.Xdefaults/.Xresources'
 
 alias serve_PWD='echo "check on http://0.0.0.0:8000"; python -m SimpleHTTPServer; '
@@ -1020,7 +1026,7 @@ alias thunderbird='/optms/thunderbird/thunderbird-24.3.0/thunderbird/thunderbird
 alias firefox='/opt/firefox/firefox'
 
 
-#	%034
+#   %034
 alias os_distro_name='cat /etc/issue'
 
 alias pl_shf='mplayer -shuffle -playlist'
@@ -1040,17 +1046,17 @@ alias eclipse='/home/ms/Downloads/androidSDK/adt-bundle-linux-x86-20140321/eclip
 
 #export
 
-#	%035
-export ipo='192.168.21.2'	    # ip of my otherPc
+#   %035
+export ipo='192.168.21.2'       # ip of my otherPc
 
-#	%036
-export iuo='jack@192.168.21.2'	    # ip_userOther
+#   %036
+export iuo='jack@192.168.21.2'      # ip_userOther
 export os_tool='/root/ms_conf/os_tool'
 
-#	%037
+#   %037
 export cisco='/media/__80G__/yt/cisco/'
 
-#	%038
+#   %038
 export book_uml='/home/ms/doc4lin/uml/uml2analyseetconception.pdf'
 export book_java='/home/ms/doc4lin/j2se/Programmer_en_Java_5-6Edition_816p.pdf'
 export dia_uml="$all/umlCourse.dia"
@@ -1059,19 +1065,19 @@ export dia_uml="$all/umlCourse.dia"
 
 #function
 
-#	%039
+#   %039
 cat_n() {
     if [ "$1" ]
     then
-	$1 | cat -n
+    $1 | cat -n
     else
-	echo "explanation: this is to display the content of something and display the line number "
-	echo ""
-	echo "usage: cat_n cmd_ive_done"
+    echo "explanation: this is to display the content of something and display the line number "
+    echo ""
+    echo "usage: cat_n cmd_ive_done"
     fi
 }
 
-#	%040
+#   %040
 #google.com
 #to do research on google from shell and it will open firefox
 google() { gg="https://www.google.com/search?q="; ff="firefox"; if [[ $1 ]]; then "$ff" -new-tab "$gg"$(echo ${1//[^a-zA-Z0-9]/+}); else echo 'Usage: google "[seach term]"'; fi }
@@ -1096,59 +1102,59 @@ auth_me() {
 #gen_function_end
 
 #find_function
-#	041
+#   041
 find_symlinks () {
     if1
-	find ./ -maxdepth 1 -type l -ls | grep -i ' '
-	# find ./ -type l -print0 | xargs -0 ls -plah | grep -i "$1" # this is one ok too
+    find ./ -maxdepth 1 -type l -ls | grep -i ' '
+    # find ./ -type l -print0 | xargs -0 ls -plah | grep -i "$1" # this is one ok too
     else
-	echo 'to do a research of all _symlinks_'
-	echo 'eg:   this_ bash'
-	echo 'to list all symlinks in $PWD'
-	echo "eg:   this_ whatever00"
+    echo 'to do a research of all _symlinks_'
+    echo 'eg:   this_ bash'
+    echo 'to list all symlinks in $PWD'
+    echo "eg:   this_ whatever00"
     fi
 }
 
-#	%042
+#   %042
 # so the research with #find will give the absolute path
 find_abs() {
     # if [ $1 ]
     # then
     if1
-	find . -iname "*$1*" -exec readlink -m {} \;
+    find . -iname "*$1*" -exec readlink -m {} \;
     else
-	error_arg
-	echo "explanation: use this to find ONE file and to get the absolute path of the file"
-	echo
-	echo "usage: find_abs file00"
+    error_arg
+    echo "explanation: use this to find ONE file and to get the absolute path of the file"
+    echo
+    echo "usage: find_abs file00"
     fi
 }
 
 
-#	%043
+#   %043
 find_abs_maxdepth() {
     # if [ $2 ] && [ $1 ]
     if2
-		find ./ -maxdepth "$2" -iname  "*$1*" -exec readlink -m {} \;
+        find ./ -maxdepth "$2" -iname  "*$1*" -exec readlink -m {} \;
     else
-		error_arg
-		echo "explanation: this is to find ONE file and to get the absolute path of the file which is searched. "
-		echo -e "\tyou have to set the name of file which is searched and the depth of the research into the directories"
-		echo
-		echo "usage: find_abs_maxdepth file_searched00 nb_depth"
-		echo "ex: find_abs_maxdepth file00 3"
+        error_arg
+        echo "explanation: this is to find ONE file and to get the absolute path of the file which is searched. "
+        echo -e "\tyou have to set the name of file which is searched and the depth of the research into the directories"
+        echo
+        echo "usage: find_abs_maxdepth file_searched00 nb_depth"
+        echo "ex: find_abs_maxdepth file00 3"
     fi
 }
 
 # search() { cd /home/ms/doc4lin/linux || return 1; find . -name "$1"; }
 
-#	%044
+#   %044
 find_cal_size(){
     if1
-	find . -maxdepth 1 -name "*$1*" -type f -exec du -ch {} + | tail -n1
+    find . -maxdepth 1 -name "*$1*" -type f -exec du -ch {} + | tail -n1
     else
-	echo 'to research some files and doing the sum of the size'
-	echo '	ex: this_ mp3'
+    echo 'to research some files and doing the sum of the size'
+    echo '  ex: this_ mp3'
     fi
 }
 
@@ -1156,7 +1162,7 @@ find_cal_size(){
 
 
 
-#	%045:s
+#   %045:s
 #echo_fct
 echo_color_blue(){
     echo -e "\e[34m$1\e[0m"
@@ -1178,7 +1184,7 @@ echo_rev(){
 }
 
 #echo_fct_end
-#	%045:e
+#   %045:e
 
 refr_bash () {
     # this is to refresh bash when you've made a modif in ~/.bashrc and you want that your modification will work without restarting your shell
@@ -1186,69 +1192,69 @@ refr_bash () {
     exec -l bash
 }
 
-#	%046:s
+#   %046:s
 tar_dec_tar() {
     if [ $1 ]
     then
-	tar -zxvf $1
+    tar -zxvf $1
     else
-	error_arg
-	echo "explanation: use this to decompress a .tar_file"
-	echo
-	echo "usage: tar_dec_tar file00.tar"
-	echo
-	echo 'cmd: tar xvzf $1'
-	auth_me
+    error_arg
+    echo "explanation: use this to decompress a .tar_file"
+    echo
+    echo "usage: tar_dec_tar file00.tar"
+    echo
+    echo 'cmd: tar xvzf $1'
+    auth_me
     fi
 }
 
 tar_dec_gz() {
     if [ $1 ]
     then
-	# tar -zxvf $1
-	gunzip $1
+    # tar -zxvf $1
+    gunzip $1
     else
-	error_arg
-	echo "explanation: use this to decompress a .gz_file"
-	echo
-	echo "usage: tar_dec_gz file00.gz"
-	echo
-	# echo 'cmd: tar -zxvf $1'
-	echo "cmd: gunzip $1"
-	auth_me
+    error_arg
+    echo "explanation: use this to decompress a .gz_file"
+    echo
+    echo "usage: tar_dec_gz file00.gz"
+    echo
+    # echo 'cmd: tar -zxvf $1'
+    echo "cmd: gunzip $1"
+    auth_me
     fi
 }
 
 tar_dec_tgz() {
     if [ $1 ]
     then
-	tar xzf $1
+    tar xzf $1
     else
-	error_arg
-	echo "explanation: use this to unzip a .tgz_file"
-	echo
-	echo "usage: tar_dec_tgz file00.tgz"
-	echo
-	echo 'cmd: tar xzf $1'
-	auth_me
+    error_arg
+    echo "explanation: use this to unzip a .tgz_file"
+    echo
+    echo "usage: tar_dec_tgz file00.tgz"
+    echo
+    echo 'cmd: tar xzf $1'
+    auth_me
     fi
 }
 
-#	%047:e
+#   %047:e
 
 #stuff_function
 #
 dhclient_release() {
     if [ $1 ]
     then
-	dhclient -r $1
+    dhclient -r $1
     else
-	root_need
-	error_arg
-	echo 'explanation: this is to release the ip of an interface network'
-	echo
-	echo 'usage: this_ eth0'
-	auth_me
+    root_need
+    error_arg
+    echo 'explanation: this is to release the ip of an interface network'
+    echo
+    echo 'usage: this_ eth0'
+    auth_me
     fi
 }
 
@@ -1275,24 +1281,24 @@ esac
 
 
 
-#	%048
+#   %048
 # to create a folder00 with an owner of that folder00
 mkdiru(){
     mkdir "$2"
     chown -R "$1". "$2"
 }
 
-#	%049
+#   %049
 mysql__selWithoutEntering(){
     echo 'mysql -u nom_utilisateur -pmot_de_passe -s base_donnee -e "select * from nom_table;"'
 }
 
-#	%033:s
+#   %033:s
 pll_cmd(){
     for cmd in "$@"; do {
-  	echo "Process \"$cmd\" started";
-  	$cmd & pid=$!
-  	PID_LIST+=" $pid";
+    echo "Process \"$cmd\" started";
+    $cmd & pid=$!
+    PID_LIST+=" $pid";
     } done
 
 trap "kill $PID_LIST" SIGINT
@@ -1304,11 +1310,11 @@ wait $PID_LIST
 echo
 echo "All processes have completed";
 }
-#	%033:e
+#   %033:e
 
-#	%032:s
+#   %032:s
 sw(){
-    #	netbeans:'/usr/local/netbeans-8.0/bin/netbeans' 
+    #   netbeans:'/usr/local/netbeans-8.0/bin/netbeans' 
     # dia_pentest='dia /home/ms/doc4lin/all/penTestStudy01.dia'
     # dia_mysql='dia /home/ms/doc4lin/autoDoc/all/mysqlStudy01.dia'
     # dia_dbstudy='dia /home/ms/doc4lin/autoDoc/all/dbStudy.dia '
@@ -1332,14 +1338,14 @@ sw(){
 
     # 
     # cmd01="$diacmd $okular_cmd "
-    # # cmd01="$cmd01 '/usr/local/netbeans-8.0/bin/netbeans'"	#adding netbeans
+    # # cmd01="$cmd01 '/usr/local/netbeans-8.0/bin/netbeans'"   #adding netbeans
 
     # pll_cmd "$cmd01"
 
     # the previous cmd is testing mode
     pll_cmd 'dia /home/ms/doc4lin/autoDoc/all/penTestStudy01.dia /home/ms/doc4lin/autoDoc/all/mysqlStudy01.dia /home/ms/doc4lin/autoDoc/all/dbStudy.dia /home/ms/doc4lin/autoDoc/all/engStudying.dia /home/ms/doc4lin/autoDoc/all/linuxShell.dia /home/ms/doc4lin/autoDoc/all/umlCourse.dia' 'okular /home/ms/doc4lin/sdz/464494-administrez-vos-bases-de-donnees-avec-mysql.pdf' 'okular /home/ms/doc4lin/j2se/Programmer_en_Java_5-6Edition_816p.pdf' 'okular /home/ms/doc4lin/sdz/119239-programmation-en-java-api.pdf'  'okular /home/ms/doc4lin/mysql/refman-5.0-fr.a4.pdf' 'okular /home/ms/doc4lin/.h/metasploitJul2011.pdf' 
 }
-#	%032:e
+#   %032:e
 
 
 h_svwork(){ #this is a static one, it will be used for svwork function ONLY
@@ -1347,13 +1353,13 @@ h_svwork(){ #this is a static one, it will be used for svwork function ONLY
     echo "$1"
     echo 
     echo --newcomment
-    echo '	ex: this_ --newcomment thisisthenewcommentforgit'
+    echo '  ex: this_ --newcomment thisisthenewcommentforgit'
     echo
     echo -h
-    echo '	to print this help'
+    echo '  to print this help'
     echo
     echo --amend
-    echo '	to redo the last commit'
+    echo '  to redo the last commit'
     echo '  '
     echo '-a'
     echo '  to do a default commit and adding the files which is actually:'
@@ -1361,108 +1367,108 @@ h_svwork(){ #this is a static one, it will be used for svwork function ONLY
     echo
     echo '-d'
     echo '  to git some documentation that I_read as: mysql, pentest, ...'
-    echo '	bcz there are some notes which I marked '
+    echo '  bcz there are some notes which I marked '
     echo ""
 }
 
 
-#	%031:s
+#   %031:s
 svwork(){
     files01="$all/all.txt $all/*.dia $all/forBash $all/forBtR3_00 $all/love_feel $all/*.sql"
     marked='/home/ms/doc4lin/marked'
     file02="$marked/*.pdf"
     if [ "$1" = '--amend' ]
-	then
-	mysqldump -u ms -p --opt dds_honey > ddsDb.sql
-	#git add $all/all.txt $all/*.dia $all/forBash $all/forBtR3_00 $all/love_feel $all/Study.sql $all/forOs00 $all/ddsDb.sql
-	git commit --amend -m "auto commit"
+    then
+    mysqldump -u ms -p --opt dds_honey > ddsDb.sql
+    #git add $all/all.txt $all/*.dia $all/forBash $all/forBtR3_00 $all/love_feel $all/Study.sql $all/forOs00 $all/ddsDb.sql
+    git commit --amend -m "auto commit"
     
     elif [ "$1" = '--newcomment' ]
-	then
-	if [ "$2" ]
-	    then
-	    mysqldump -u ms -p --opt dds_honey > ddsDb.sql
-	    #git add $all/all.txt $all/*.dia $all/forBash $all/forBtR3_00 $all/love_feel $all/Study.sql $all/forOs00 $all/ddsDb.sql
-	    git commit --amend -m "$2"
-	else
-	    echo 'u decided to set a _newcomment_ of the commit'
-	    echo '  but u didnt set any new comment'
-	    echo '  ex:	this_ --newcomment thisisthenewcomment'
-	fi
-	
+    then
+    if [ "$2" ]
+        then
+        mysqldump -u ms -p --opt dds_honey > ddsDb.sql
+        #git add $all/all.txt $all/*.dia $all/forBash $all/forBtR3_00 $all/love_feel $all/Study.sql $all/forOs00 $all/ddsDb.sql
+        git commit --amend -m "$2"
+    else
+        echo 'u decided to set a _newcomment_ of the commit'
+        echo '  but u didnt set any new comment'
+        echo '  ex: this_ --newcomment thisisthenewcomment'
+    fi
+    
     elif [ "$1" = '-h' ]
-	then
-	h_svwork 
+    then
+    h_svwork 
     elif [ "$1" =  '-a' ]
-	then
-	mysqldump -u ms -p --opt dds_honey > /home/ms/doc4lin/autoDoc/all/ddsDb.sql
-	mysqldump -u ms -p --opt Study > /home/ms/doc4lin/autoDoc/all/Study.sql
-	cd /home/ms/doc4lin/autoDoc/all/
-	git add $files01
-	git commit -m "auto commit $(date)"
-	cd -
+    then
+    mysqldump -u ms -p --opt dds_honey > /home/ms/doc4lin/autoDoc/all/ddsDb.sql
+    mysqldump -u ms -p --opt Study > /home/ms/doc4lin/autoDoc/all/Study.sql
+    cd /home/ms/doc4lin/autoDoc/all/
+    git add $files01
+    git commit -m "auto commit $(date)"
+    cd -
     elif [ "$1" = '-d' ]
-	then
-	if [ "$PWD" = '/home/ms/doc4lin/marked' ]
-	    then
-	    git add  "$file02"
-	    git commit -m "auto commit"
-	else
-	    echo "u are not in $marked"
-	    echo
-	    cd "$marked"
-	    git add "$file02"
-	    git commit -m "auto commit"
-	    cd -
-	    echo 'gitted ur documentation which are marked in $marked and now '
-	    echo "  u_re actually in: $PWD"
-	fi
+    then
+    if [ "$PWD" = '/home/ms/doc4lin/marked' ]
+        then
+        git add  "$file02"
+        git commit -m "auto commit"
+    else
+        echo "u are not in $marked"
+        echo
+        cd "$marked"
+        git add "$file02"
+        git commit -m "auto commit"
+        cd -
+        echo 'gitted ur documentation which are marked in $marked and now '
+        echo "  u_re actually in: $PWD"
+    fi
 
     else
-	# mysqldump -u ms -p --opt dds_honey > ddsDb.sql
-	# git add $all/all.txt $all/*.dia $all/forBash $all/forBtR3_00 $all/love_feel $all/Study.sql $all/forOs00 $all/ddsDb.sql
-	# git commit -m "auto commit"
-	h_svwork
+    # mysqldump -u ms -p --opt dds_honey > ddsDb.sql
+    # git add $all/all.txt $all/*.dia $all/forBash $all/forBtR3_00 $all/love_feel $all/Study.sql $all/forOs00 $all/ddsDb.sql
+    # git commit -m "auto commit"
+    h_svwork
     fi
 }
-#	%031:e
+#   %031:e
 testing(){
     if1
-	echo param01
-	if [ "$1" = '-a' ]
-	    then
-	    echo -a is the param
-	elif [ "$1" = 'a' ]
-	    then
-	    echo without minus
-	else
-	    echo nada inside
-	fi
+    echo param01
+    if [ "$1" = '-a' ]
+        then
+        echo -a is the param
+    elif [ "$1" = 'a' ]
+        then
+        echo without minus
+    else
+        echo nada inside
+    fi
     else 
-	echo nada
+    echo nada
     fi
 
 }
 
-#	%030:s
+#   %030:s
 ip_ns(){
     if [ "$1" ]
-	then
-	nslookup "$1"
+    then
+    nslookup "$1"
     else
-	echo 'use this to get the ip of a site'
-	echo '	ex: this_ testing.com'
+    echo 'use this to get the ip of a site'
+    echo '  ex: this_ testing.com'
     fi
 }
-#	%030:e
+#   %030:e
 
 
 
-#	%029:s
+#   %029:s
 grep_col_patt(){
-	egrep --color "\b$1|$"
+    egrep --color "\b$1|$"
 }
-#	%029:e
+#   %029:e
 #function_end
 
 #path
@@ -1477,29 +1483,29 @@ lssize(){
 # use this to convert video to mp3
 conv_all_vid_toMp3() {
     if [ $1 ]
-	then
-	# for to_convert in /media/2b023182-a68c-480f-8f7f-e4925fe84c7f/ms/Music/songs/*.$1
-	for to_convert in *.$1
-	    do
-		ffmpeg_extr_mp3 "$to_convert" "${to_convert/$1/mp3}"
-		# echo "${to_convert/$1/testing}"
-	    done
-	else 
-	    echo "to convert all videos to mp3"
-	    echo "eg: this_ flv"
+    then
+    # for to_convert in /media/2b023182-a68c-480f-8f7f-e4925fe84c7f/ms/Music/songs/*.$1
+    for to_convert in *.$1
+        do
+        ffmpeg_extr_mp3 "$to_convert" "${to_convert/$1/mp3}"
+        # echo "${to_convert/$1/testing}"
+        done
+    else 
+        echo "to convert all videos to mp3"
+        echo "eg: this_ flv"
     fi
 }
 
 lowercase(){
     # if[ $1 ]
-	# then
+    # then
     # c=$1
     # a=${c,,}
     # echo $a
     # else
-	echo "a=A"
-	echo "b=${a,,}"
-	echo "> b=a"
+    echo "a=A"
+    echo "b=${a,,}"
+    echo "> b=a"
 }
 
 uppercase(){
@@ -1519,12 +1525,12 @@ st_ret(){
     #tip #important
     #it is not possible to do this next technics
     #this will differentiate bash from the others language
-    #	to execute a fonction which return a value, do the next few lines
-    #	>$ st_rel 5 8
-    #	>$ var_=$?
+    #   to execute a fonction which return a value, do the next few lines
+    #   >$ st_rel 5 8
+    #   >$ var_=$?
     #
-    #	the value which is just after return should not be  
-    #	    higher than 256
+    #   the value which is just after return should not be  
+    #       higher than 256
 }
 
 # to test to return a very big value from a function.
@@ -1542,30 +1548,30 @@ st_ret01(){
 # testaaaaa(){
 #     # if [[ $1 ]]
 #     if [[ $1 & $2 ]]
-# 	then
-# 	echo aaaaaaa
-# 	else :
+#   then
+#   echo aaaaaaa
+#   else :
 #     fi
 # }
 
 #this will move all all files which contains flv, mp3, ... in another folder
 mv_all_1_in_2() {
     if [[ $1 ]] && [[ $2 ]] && [[ $3 ]]
-	then
-	for a in *.$2 
-	    do
-	    b=${a,,}
-	    if [[ "$b" =~ "$1" ]]
-		then
-		echo "$a"
-		mv "$a" $3
-	    else :
-	    fi
-	    done
-	#end_for
+    then
+    for a in *.$2 
+        do
+        b=${a,,}
+        if [[ "$b" =~ "$1" ]]
+        then
+        echo "$a"
+        mv "$a" $3
+        else :
+        fi
+        done
+    #end_for
     else 
-	echo 'to move all file in the $PWD which contain patt$1 with the extension$2 to folder$3'
-	echo 'eg:   this_ test mp3 /path/target/'
+    echo 'to move all file in the $PWD which contain patt$1 with the extension$2 to folder$3'
+    echo 'eg:   this_ test mp3 /path/target/'
     fi
 }
 
@@ -1578,20 +1584,20 @@ ls_installed_pkg_b_size(){
 # to search pattern in ALL pdf inside $PWD
 pdf_srch_inFold(){
     if1
-	for i in *.pdf; do echo --------$i-------; echo; pdftotext $i - | grep -i $1; done
+    for i in *.pdf; do echo --------$i-------; echo; pdftotext $i - | grep -i $1; done
     else
-	echo 'to search a pattern$1 in $PWD'
-	echo 'eg:   this_ patternToSearch'
+    echo 'to search a pattern$1 in $PWD'
+    echo 'eg:   this_ patternToSearch'
     fi
 }
 
 # to search a pattern$1 in file$2
 pdf_srch_inFile(){
     if2
-	pdftotext $2 - | grep -i $1;
+    pdftotext $2 - | grep -i $1;
     else
-	echo 'to research a pattern$1 inside a file$2'
-	echo 'eg:   this_ patt00 file00.pdf'
+    echo 'to research a pattern$1 inside a file$2'
+    echo 'eg:   this_ patt00 file00.pdf'
     fi
 }
 
@@ -1602,15 +1608,15 @@ pdf_conv_img_toPdf(){
 # to search in google
 function google { 
     if [[ $1 ]]
-	then
-	Q="$@"; 
-	GOOG_URL='https://www.google.de/search?tbs=li:1&q='; 
-	AGENT="Mozilla/4.0"; 
-	stream=$(curl -A "$AGENT" -skLm 10 "${GOOG_URL}${Q//\ /+}" | grep -oP '\/url\?q=.+?&amp' | sed 's|/url?q=||; s|&amp||'); 
+    then
+    Q="$@"; 
+    GOOG_URL='https://www.google.de/search?tbs=li:1&q='; 
+    AGENT="Mozilla/4.0"; 
+    stream=$(curl -A "$AGENT" -skLm 10 "${GOOG_URL}${Q//\ /+}" | grep -oP '\/url\?q=.+?&amp' | sed 's|/url?q=||; s|&amp||'); 
         echo -e "${stream//\%/\x}"; 
-	else 
-	    echo 'to search in google'
-	    echo 'eg: >$ google "script linux" '
+    else 
+        echo 'to search in google'
+        echo 'eg: >$ google "script linux" '
     fi
 }
 
@@ -1624,10 +1630,10 @@ alias os_creation="sudo tune2fs -l $(df -h / |(read; awk '{print $1; exit}')) | 
 # and will list the command will delete the files which contain the $1
 del_txt_w1() {
     if1
-	grep -r -Z -l "$1" . | xargs -0 echo rm
-	else
-	    echo 'to search in file and the file which contains the $1 can be removed by the result of this command'
-	    echo 'eg: this_ bad_word'
+    grep -r -Z -l "$1" . | xargs -0 echo rm
+    else
+        echo 'to search in file and the file which contains the $1 can be removed by the result of this command'
+        echo 'eg: this_ bad_word'
     fi
 }
 
@@ -1636,8 +1642,8 @@ locate_ip() {
     if1
         curl ipinfo.io/$1
     else
-	echo 'to get some information about the ip$1'
-	echo 'eg:   this_ 192.168.2.5'
+    echo 'to get some information about the ip$1'
+    echo 'eg:   this_ 192.168.2.5'
     fi
 }
 
@@ -1645,27 +1651,27 @@ locate_ip() {
 #instead of doing research line by line, this display the paragraph which contains the pattern to research
 grepp() { 
     if [[ "$1" ]] && [[ "$2" ]]
-	then
-	    [ $# -eq 1 ] && perl -00ne "print if /$1/i" || perl -00ne "print if /$1/i" < "$2";
-	else
-	    echo 'to grep in file$2 the pattern$1 and the result of the research will be shown as paragraph but not line by line'
-	fi
+    then
+        [ $# -eq 1 ] && perl -00ne "print if /$1/i" || perl -00ne "print if /$1/i" < "$2";
+    else
+        echo 'to grep in file$2 the pattern$1 and the result of the research will be shown as paragraph but not line by line'
+    fi
 }
 
 #to print how times patt$1 occur in file$2
 count_occur(){
     if2
         a=$(grep -or $1 $2 | wc -l)
-	echo "word:$1 appears $a times in $2"
-	else
-	    echo 'to print how many times patt$1 occur in file$2'
-	    echo 'eg: this_ linux /home/user00/path00'
+    echo "word:$1 appears $a times in $2"
+    else
+        echo 'to print how many times patt$1 occur in file$2'
+        echo 'eg: this_ linux /home/user00/path00'
     fi
 }
 
 gmail_check_unread_mails(){
-    if2	    
-	curl -u $1:$2 --silent "https://mail.google.com/mail/feed/atom" | tr -d '\n' | awk -F '<entry>' '{for (i=2; i<=NF; i++) {print $i}}' | sed -n "s/<title>\(.*\)<\/title.*name>\(.*\)<\/name>.*/\2 - \1/p"
+    if2     
+    curl -u $1:$2 --silent "https://mail.google.com/mail/feed/atom" | tr -d '\n' | awk -F '<entry>' '{for (i=2; i<=NF; i++) {print $i}}' | sed -n "s/<title>\(.*\)<\/title.*name>\(.*\)<\/name>.*/\2 - \1/p"
     else
         echo "to display some unread mail in gmail"
         echo "eg: this_ solofomamitiana0@gmail.com my_code"
@@ -1675,41 +1681,41 @@ gmail_check_unread_mails(){
 # to run a command$1 with only one CPU
 exe_oneCPU() {
     if2
-	taskset -c 0 "$1"
+    taskset -c 0 "$1"
     else 
-	echo 'use this to execute some command by only one cpu'
-	echo 'eg: this_ ls'
+    echo 'use this to execute some command by only one cpu'
+    echo 'eg: this_ ls'
     fi
 }
 
 # to hear the pronunciation of a word from translate.google
 say() { 
     if1
-	wget -q -U Mozilla -O output.mp3 "http://translate.google.com/translate_tts?tl=en&q=$1"; 
-	mplayer "output.mp3";
-	rm "output.mp3"
+    wget -q -U Mozilla -O output.mp3 "http://translate.google.com/translate_tts?tl=en&q=$1"; 
+    mplayer "output.mp3";
+    rm "output.mp3"
     else
-	echo "to hear the pronunciation of some word from google"
+    echo "to hear the pronunciation of some word from google"
     fi
 }
 
 # to find in which pkg a file/prg belongs to
 which_pkg () {
     if1
-	dpkg -S $(which "$1")
+    dpkg -S $(which "$1")
     else
-	echo 'to find in which a file belongs to'
-	echo 'eg: this_ ls'
+    echo 'to find in which a file belongs to'
+    echo 'eg: this_ ls'
     fi
 }
 
 # aptitude install package_name00 is too long
 inst_pkg() {
     if1
-	sudo aptitude install "$1"
+    sudo aptitude install "$1"
     else
-	echo 'to install a package'
-	echo 'eg: this_ pack00'
+    echo 'to install a package'
+    echo 'eg: this_ pack00'
     fi
 }
 
@@ -1719,8 +1725,8 @@ function ytmp3() {
     do (cd ~/Music; echo "Extracting mp3 from $(youtube-dl -e $1)";
     youtube-dl -q -t --extract-audio --audio-format mp3 $1); shift; done ; 
     else
-	echo "to dl a some url from you tube and to extract the mp3"
-	echo "eg: this_ \"url00\" \"url01\" ... \"urlN\" "
+    echo "to dl a some url from you tube and to extract the mp3"
+    echo "eg: this_ \"url00\" \"url01\" ... \"urlN\" "
     fi
 }
 
@@ -1728,8 +1734,8 @@ wget_site () {
     if1
         wget --random-wait -r -p -e robots=off -U mozilla "$1"
     else
-	echo 'to dl an entire site'
-	echo 'eg: this_ commandlinefu.com'
+    echo 'to dl an entire site'
+    echo 'eg: this_ commandlinefu.com'
     fi
 }
 
@@ -1737,24 +1743,24 @@ wget_site () {
 repl_1_by2 () {
     if2
 
-	for file in *; do mv "$file" `echo $file | tr $1 $2` ; done
-	
-	# for a in * 
-	#     do
-	#     b=${a,,}
-	#     if [[ "$b" =~ "$1" ]]
-	# 	then
-	# 	mv "$a" "${a/$1/$2}"
-	# 	# echo ${b/$1/$2} 
-	#     else :
-	#     fi
-	#     done
-	# end_for
-	# unset a
+    for file in *; do mv "$file" `echo $file | tr $1 $2` ; done
+    
+    # for a in * 
+    #     do
+    #     b=${a,,}
+    #     if [[ "$b" =~ "$1" ]]
+    #   then
+    #   mv "$a" "${a/$1/$2}"
+    #   # echo ${b/$1/$2} 
+    #     else :
+    #     fi
+    #     done
+    # end_for
+    # unset a
     else
-	echo 'to replace all the name of the files in $PWD which contains $1 by $2'
-	echo 'eg: this_ .flv .mp3'
-	echo '	so all flv_files will be renamed by .mp3_files'
+    echo 'to replace all the name of the files in $PWD which contains $1 by $2'
+    echo 'eg: this_ .flv .mp3'
+    echo '  so all flv_files will be renamed by .mp3_files'
     fi
 }
 
@@ -1763,8 +1769,8 @@ google_transl_tofr () {
     if1
     trs {en=fr} "$1"
     else
-	echo 'to translate from translate.google.com'
-	echo 'eg: this_ "this text will translated"'
+    echo 'to translate from translate.google.com'
+    echo 'eg: this_ "this text will translated"'
     fi
 }
 
@@ -1772,9 +1778,9 @@ google_transl_toen () {
     if1
     trs {fr=en} "$1"
     else
-	echo 'to translate from translate.google.com to english'
-	echo 'eg: this_ "ce txt sera traduit en anglais"'
-	u
+    echo 'to translate from translate.google.com to english'
+    echo 'eg: this_ "ce txt sera traduit en anglais"'
+    u
     fi
 }
 
@@ -1782,10 +1788,10 @@ google_transl_toen () {
 #to check how about the memo used by a command
 memo_used () {
     if1
-	ps h -o pmem -C "$1" |  awk '{sum+=$1} END {print sum}'
+    ps h -o pmem -C "$1" |  awk '{sum+=$1} END {print sum}'
     else
-	echo "to Show total cumulative memory usage of a process that spawns multiple instances of itself"
-	echo 'eg: this_ firefox'
+    echo "to Show total cumulative memory usage of a process that spawns multiple instances of itself"
+    echo 'eg: this_ firefox'
     fi
 }
 
@@ -1793,21 +1799,21 @@ asciiviewr () {
     if1
         asciiview "$1" -driver curses
     else
-	echo "to view a pic on terminal"
-	echo "eg: this_ pic00.jpg"
+    echo "to view a pic on terminal"
+    echo "eg: this_ pic00.jpg"
     fi
 }
 
 dl_apt () {
     if1
-	# this one will dl the source(.c, .h) of the package
-	#	apt-get --download-only source "$1"
-	# this one will dl the .deb of pack
-	apt-get download "$1"
+    # this one will dl the source(.c, .h) of the package
+    #   apt-get --download-only source "$1"
+    # this one will dl the .deb of pack
+    apt-get download "$1"
     else
-	echo 'do dl source of aptitude/apt-get'
-	echo "eg: this_ apt-offline"
-	echo 'eg: this_ vim'
+    echo 'do dl source of aptitude/apt-get'
+    echo "eg: this_ apt-offline"
+    echo 'eg: this_ vim'
     fi
 }
 
@@ -1815,74 +1821,74 @@ alias ffy='nohup firefox youtube.com &'
 
 unrar_list() {
     if1
-	unrar l "$1"
+    unrar l "$1"
     else
-	echo 'to list the content of rarfile'
+    echo 'to list the content of rarfile'
 
-	echo 'eg: this_ file00.rar'
+    echo 'eg: this_ file00.rar'
     fi
 }
 
 unrar_test() {
     if1
-	unrar t "$1"
+    unrar t "$1"
     else
-	echo 'to test if a rar file is ok'
-	echo "eg: this_ file00.rar"
+    echo 'to test if a rar file is ok'
+    echo "eg: this_ file00.rar"
     fi
 }
 
 rar_create_rar () {
     if2 
-	rar a "$2" "$1"
+    rar a "$2" "$1"
     else
-	echo 'to create a rarFile$2 and from the file00$1 '
-	echo 'eg:   this_ fileToRar newFile.rar'
+    echo 'to create a rarFile$2 and from the file00$1 '
+    echo 'eg:   this_ fileToRar newFile.rar'
     fi
 }
 
 rar_del_file () {
     if2
-	rar d "$2" "$1"
+    rar d "$2" "$1"
     else
-	echo 'to delete onefile$1 on rar_file$2'
-	echo 'eg: this_ file_to_del rarfile.rar'
+    echo 'to delete onefile$1 on rar_file$2'
+    echo 'eg: this_ file_to_del rarfile.rar'
     fi
 }
 
 rar_add_file () {
     if2
-	rar u "$2" "$1"
+    rar u "$2" "$1"
     else
-	echo 'to add a file$2 to rar_file$1'
-	echo 'eg: this_ fileToAdd rarFileToAdd.rar'
+    echo 'to add a file$2 to rar_file$1'
+    echo 'eg: this_ fileToAdd rarFileToAdd.rar'
     fi
 }
 
 calc_ () {
     if1
-	echo "$(($1))"
+    echo "$(($1))"
     else
-	echo "to do a very basic calculation"
-	echo "eg: this_ 3+5"
+    echo "to do a very basic calculation"
+    echo "eg: this_ 3+5"
     fi
 }
 
 ff () {
     if1
-	nohup firefox "$1" &
+    nohup firefox "$1" &
     else
-	echo 'to open media(mostly video) w/ ff'
-	echo 'eg: this_ file00.flv'
+    echo 'to open media(mostly video) w/ ff'
+    echo 'eg: this_ file00.flv'
     fi
 }
 
 f_ () {
     if1 
-	ls | grep -i "$1"	
+    ls | grep -i "$1"   
     else
-	echo 'to do a research in $PWD'
-	echo "eg: this_ metallica"
+    echo 'to do a research in $PWD'
+    echo "eg: this_ metallica"
     fi
 }
 
@@ -1890,62 +1896,62 @@ f_ () {
 
 rsync_remote2local () {
     if3
-	rsync -arvz "$1":"$2" "$3"
+    rsync -arvz "$1":"$2" "$3"
     else
-	echo 'to synchronize remotely$3 to locally$1'
-	echo 'eg:   this_ user00@ip00 /path/srcRemote/ /path/destLocal/'
+    echo 'to synchronize remotely$3 to locally$1'
+    echo 'eg:   this_ user00@ip00 /path/srcRemote/ /path/destLocal/'
     fi
 }
 
 rsync_ignExisting_locally () {
     if1
-	rsync -av "$1" "$2"
+    rsync -av "$1" "$2"
     else
-	echo 'to synchronize locally only'
-	echo 'ex:   this_ dir01/* dir02/'
+    echo 'to synchronize locally only'
+    echo 'ex:   this_ dir01/* dir02/'
     fi
 }
 
 rsync_ignExisting_remote () {
     if3
-	rsync -arvz  --ignore-existing "$1" "$2":"$3"
+    rsync -arvz  --ignore-existing "$1" "$2":"$3"
     else
-	echo 'to synchronize locally$1 to remotely$3 in pc$2,'
-	echo 'and ignore file which already exist in remote$3'
-	echo 'eg:   this_ /path/src/ user00@ip00 /path/target/'
+    echo 'to synchronize locally$1 to remotely$3 in pc$2,'
+    echo 'and ignore file which already exist in remote$3'
+    echo 'eg:   this_ /path/src/ user00@ip00 /path/target/'
     fi
 }
 
 rsync_local2remote () {
    # rsync -avz /root/temp/ thegeekstuff@192.168.200.10:/home/thegeekstuff/temp/ 
-   #	http://www.thegeekstuff.com/2010/09/rsync-command-examples/
+   #    http://www.thegeekstuff.com/2010/09/rsync-command-examples/
     if3 
-	rsync -arvz --progress "$1" "$2":"$3"
+    rsync -arvz --progress "$1" "$2":"$3"
     else
-	echo 'to synchronize from local to remote'
-	echo 'eg:  this_  /path/src/ user00@ipPc /path/dest'
-	echo
-	echo 'looks like rsync_ignExisting is more efficient'
+    echo 'to synchronize from local to remote'
+    echo 'eg:  this_  /path/src/ user00@ipPc /path/dest'
+    echo
+    echo 'looks like rsync_ignExisting is more efficient'
     fi
 }
 
 rsync_normal () {
     if2
-	rsync -arv --progress "$1" "$2"
+    rsync -arv --progress "$1" "$2"
     else
-	echo 'to synchronize 2 folders'
-	echo 'stuffs in $1 will synchronised in $2'
-	echo 'eg:   this fold00 fold01'
+    echo 'to synchronize 2 folders'
+    echo 'stuffs in $1 will synchronised in $2'
+    echo 'eg:   this fold00 fold01'
     fi
 }
 
 rsync_del () {
     if2
-	rsync -arv --delete "$1" "$2"
+    rsync -arv --delete "$1" "$2"
     else
-	echo 'to synchronize by deleting files in folder$1 and keep '
-	echo '	folder$2 intact'
-	echo 'eg:   this_ fold00 fold01'
+    echo 'to synchronize by deleting files in folder$1 and keep '
+    echo '  folder$2 intact'
+    echo 'eg:   this_ fold00 fold01'
     fi
 }
 
@@ -1954,14 +1960,14 @@ rsync_del () {
 #os_tool2
 grep_no_cmt () {
     if1
-	# grep -E -v '^([ ]*#|#)' "$1"
-	# sed -e '/^[ ]*#/d' -e '/^[ ]*;/d' -e '/^$/d' "$1"
-	sed -e '/^[ ]*#/d' -e '/^[ ]*;/d' -e '/^$/d' -e '/^[ ]*\//d' "$1"
-	#							^^ to delete comment which start with //
-	#
+    # grep -E -v '^([ ]*#|#)' "$1"
+    # sed -e '/^[ ]*#/d' -e '/^[ ]*;/d' -e '/^$/d' "$1"
+    sed -e '/^[ ]*#/d' -e '/^[ ]*;/d' -e '/^$/d' -e '/^[ ]*\//d' "$1"
+    #                           ^^ to delete comment which start with //
+    #
     else
-	echo 'to display lines which are not commented in file$1'
-	echo 'eg:   this_ file00'
+    echo 'to display lines which are not commented in file$1'
+    echo 'eg:   this_ file00'
     fi
 }
 
@@ -1969,13 +1975,13 @@ grep_no_cmt () {
 # to read a file$1 line by line
 read_file_lnBln() { 
     if1
-	while read line
-	    do
-	    echo -e "$line\n"
-	    done < "$1"
+    while read line
+        do
+        echo -e "$line\n"
+        done < "$1"
     else
-	echo 'to read file$1 line by line'
-	echo "eg:   this_ file00"
+    echo 'to read file$1 line by line'
+    echo "eg:   this_ file00"
     fi
 }
 
@@ -1985,11 +1991,11 @@ user_info () {
     while IFS=: read user pass uid gid full home shell          
     do          
     echo -e "$full : 
-	Pseudo : $user
-	UID :\t $uid          
-	GID :\t $gid
-	Home :\t $home
-	Shell :\t $shell\n"          
+    Pseudo : $user
+    UID :\t $uid          
+    GID :\t $gid
+    Home :\t $home
+    Shell :\t $shell\n"          
     done < /etc/passwd
 }
 
@@ -2001,58 +2007,58 @@ read_file_charBychar () {
 #os_tool2
 ln_nbr_ofAllFilesInPwd () {
     for a in *
-	do
-	echo -e "$a:    $(cat $a|wc -l)lines"
-	done
+    do
+    echo -e "$a:    $(cat $a|wc -l)lines"
+    done
     echo 'to get all number of lines which are inside $PWD'
     echo 'eg:   this_ foldR00'
 }
 
 scp_local2remote () {
     if3
-	scp -r "$1" "$2":"$3"
-	# echo "scp $1 $2:$3"
+    scp -r "$1" "$2":"$3"
+    # echo "scp $1 $2:$3"
     else
-	echo 'to copy file$1 which is local to a remote pc'
-	echo
-	echo '$1:   the file to copy, normally should be in $PWD'
-	echo '$2:   user_inRemote_@_pcRemoteName'
-	echo '$3:   path in remotePc'
-	echo
-	echo 'eg:   this_ fileToCopy jack@192.168.21.2 /home/jack'
+    echo 'to copy file$1 which is local to a remote pc'
+    echo
+    echo '$1:   the file to copy, normally should be in $PWD'
+    echo '$2:   user_inRemote_@_pcRemoteName'
+    echo '$3:   path in remotePc'
+    echo
+    echo 'eg:   this_ fileToCopy jack@192.168.21.2 /home/jack'
     fi
     if1
-	ping "192.168.$1"
+    ping "192.168.$1"
     else
-	echo 'to ping a host, and u have not to write all ip of the remotePc which is in ur local network'
-	echo ''
+    echo 'to ping a host, and u have not to write all ip of the remotePc which is in ur local network'
+    echo ''
     fi
 }
 
 pv () {
     if2
-	pv "$1" >> "$2"
+    pv "$1" >> "$2"
     else
-	echo 'like mv but this shows a progess bar'
-	echo 'eg:   this_ bigFile00 copy00'
+    echo 'like mv but this shows a progess bar'
+    echo 'eg:   this_ bigFile00 copy00'
     fi
 }
 
 sed_delLastLine () {
     if1
-	sed '$d' "$1"
+    sed '$d' "$1"
     else
-	echo 'to delete the last line of a file$1'
-	echo 'eg:   this_ file00'
+    echo 'to delete the last line of a file$1'
+    echo 'eg:   this_ file00'
     fi
 }
 
 sed_repl () {
     if3
-	patt="s/$1/$2/"
-	echo "sed '$patt' "$3""
+    patt="s/$1/$2/"
+    echo "sed '$patt' "$3""
     else
-	echo "here"
+    echo "here"
     fi
 }
 
@@ -2062,7 +2068,7 @@ h_port(){
     echo 'this_ --simple 154.32.65.99'
     echo '  to scan opening port in that ip'
     echo '  to see a ip of a site'
-    echo '	nslookup testingsite.com'
+    echo '  nslookup testingsite.com'
 
 }
 
@@ -2070,47 +2076,47 @@ h_port(){
 # this should be run by root
 port_listening () {
     if [ "$1" = "--simple" ] && [ "$2" ]
-	then
-	nmap -sS -Pn "$2"
-	
+    then
+    nmap -sS -Pn "$2"
+    
     else
-	h_port
+    h_port
     fi
 
 
     # if1
-	# netstat -a | egrep 'Proto|LISTEN'
+    # netstat -a | egrep 'Proto|LISTEN'
     # else
-	# echo 'to check all ports which are listening'
-	# echo '$1 is non_sense'
-	# echo 'eg:   this_ nonSense'
+    # echo 'to check all ports which are listening'
+    # echo '$1 is non_sense'
+    # echo 'eg:   this_ nonSense'
     # fi
 }
 
 port_using () {
     if1
-	netstat -tulpn | grep :"$1"
+    netstat -tulpn | grep :"$1"
     else
-	echo 'to see which cmd/prg use port$1'
-	echo 'eg:   this_ 22'
+    echo 'to see which cmd/prg use port$1'
+    echo 'eg:   this_ 22'
     fi
 }
 
 port_using () {
     if1
-	netstat -tulpn | grep :"$1"
+    netstat -tulpn | grep :"$1"
     else
-	echo 'to see which cmd/prg use port$1'
-	echo 'eg:   this_ 22'
+    echo 'to see which cmd/prg use port$1'
+    echo 'eg:   this_ 22'
     fi
 }
 
 wallpaper_change () {
     if1
-	gsettings set org.gnome.desktop.background picture-uri file://"$1"	
+    gsettings set org.gnome.desktop.background picture-uri file://"$1"  
     else
-	echo 'to change the background of your desktop'
-	echo 'eg:   this_ /path/image00.png'
+    echo 'to change the background of your desktop'
+    echo 'eg:   this_ /path/image00.png'
     fi
 }
 
@@ -2119,24 +2125,24 @@ users_ofSystem () {
 while getopts ':ih' option
 do
 case $option in
-    *	)
-	FICHIER_MOTS_DE_PASSE=/etc/passwd
-	n=1           # Nombre d'utilisateurs
+    *   )
+    FICHIER_MOTS_DE_PASSE=/etc/passwd
+    n=1           # Nombre d'utilisateurs
 
-	for nom in $(awk 'BEGIN{FS=":"}{print $1}' < "$FICHIER_MOTS_DE_PASSE" )
-	# Champ séparateur = :  ^^^^^^
-	# Affiche le premier champ      ^^^^^^^^
-	# Obtient l'entrée à partir du fichier        ^^^^^^^^^^^^^^^^^^^^^^
+    for nom in $(awk 'BEGIN{FS=":"}{print $1}' < "$FICHIER_MOTS_DE_PASSE" )
+    # Champ séparateur = :  ^^^^^^
+    # Affiche le premier champ      ^^^^^^^^
+    # Obtient l'entrée à partir du fichier        ^^^^^^^^^^^^^^^^^^^^^^
 
-	do
-	    echo "user #$n = $nom"
-	    let "n += 1"	# will do incrementation when a user is found
-	done  
+    do
+        echo "user #$n = $nom"
+        let "n += 1"    # will do incrementation when a user is found
+    done  
 
-	;;
-    h	)
-	echo this is an help of all user which are in the system
-	;;
+    ;;
+    h   )
+    echo this is an help of all user which are in the system
+    ;;
 esac    
 done
 }
@@ -2144,31 +2150,31 @@ done
 #rename
 rename_rmAllExt() {
     if1
-	rename "s/\.$1//" ./*
+    rename "s/\.$1//" ./*
     else
-	echo 'to remove the extension$1 of all files which are in $PWD'
-	echo 'eg:   this_ mp3'
+    echo 'to remove the extension$1 of all files which are in $PWD'
+    echo 'eg:   this_ mp3'
     fi
 }
 
 rename_add0 () {
     if1
-	rename 's/\d+/sprintf("%02d",$&)/e' *
+    rename 's/\d+/sprintf("%02d",$&)/e' *
     else
-	echo ' ######################################## '
-	echo ' ## till here############################ '
-	echo ' ## use only in videos dl from nptel #### '
-	echo ' ######################################## '
-	echo
-	echo 'to add 0 so the name of files will be normal/good/suit '
-	echo 'eg: this_ nonSensArgument'
+    echo ' ######################################## '
+    echo ' ## till here############################ '
+    echo ' ## use only in videos dl from nptel #### '
+    echo ' ######################################## '
+    echo
+    echo 'to add 0 so the name of files will be normal/good/suit '
+    echo 'eg: this_ nonSensArgument'
     fi
 }
 #rename_end
 #ls_function
 ls_help_useful() {
     echo "to check the file and sort them by size, biggest will be in the last #useful"
-    echo "  ls -lSrh	# or"
+    echo "  ls -lSrh    # or"
     echo "  ls -sSrh"
     echo 
     echo "to check files which have been modified today"
@@ -2185,20 +2191,20 @@ ls_help_useful() {
     echo ''
     echo 'to print only the size of files'
     echo '  ls -sh'
-    echo '	the -h- is set so it will be human readable'
+    echo '  the -h- is set so it will be human readable'
 }
 
 lin_stuff() {
-    e '	to delete an alias which is already set'
-    e '	unalias editor'
+    e ' to delete an alias which is already set'
+    e ' unalias editor'
     e 'to show the content of a file'
-    e '	less	:the most used'
-    e '	more	:deprecated, replaced by less'
-    e '	head	:'
+    e ' less    :the most used'
+    e ' more    :deprecated, replaced by less'
+    e ' head    :'
     e
     e 'to shutdown the computer NOW'
-    e '	sudo shutdown -h now'
-    e '	halt'
+    e ' sudo shutdown -h now'
+    e ' halt'
     e ''
     echo "to throw the normal output and the error of the cmd00 in the same file"
     echo "  cmd00 >> err_norm00 2>&1"
@@ -2206,9 +2212,9 @@ lin_stuff() {
     echo "those are the same:"
     echo
     echo "those are the same:"
-    echo "	cat one.file another.file > /tmp/cat.out    .    "
-    echo "					    	    |- cat one.file another.file | sort "
-    echo "	sort < /tmp/cat.out                         '    "
+    echo "  cat one.file another.file > /tmp/cat.out    .    "
+    echo "                              |- cat one.file another.file | sort "
+    echo "  sort < /tmp/cat.out                         '    "
 
 }
 
@@ -2227,13 +2233,13 @@ reading00() {
     echo "#manakara_2013"
     echo "#log"
     e "the logs have level"
-    e "	    emerg:  system is really damaged"
-    e "	    alert:  some actions have to be taken quickly"
-    e "	    crit:   conditions are in the limit"
-    e "	    warn:   warning"
-    e '	    notice: conditions are normal but there are kind of message which admin should read'
-    e "	    info:   informing msg"
-    e "	    debug:  msg for debug"
+    e "     emerg:  system is really damaged"
+    e "     alert:  some actions have to be taken quickly"
+    e "     crit:   conditions are in the limit"
+    e "     warn:   warning"
+    e '     notice: conditions are normal but there are kind of message which admin should read'
+    e "     info:   informing msg"
+    e "     debug:  msg for debug"
     echo "#log_end"
     e ''
     e 'core file are files which are created when u did a mistakes which is very serious as: violation of memory space'
@@ -2242,18 +2248,18 @@ reading00() {
 
 reading01 () {
     e 'hwinfo is a prg which is used to check the config of the local computer'
-    e '	hwinfo is the abbreviation of hardware info'
+    e ' hwinfo is the abbreviation of hardware info'
 }
 
 ls_help_stuff(){
     e 'to list files which are in ~/doc4lin/linux'
-    e '	ls ~/doc4lin/linux'
+    e ' ls ~/doc4lin/linux'
     e
     e "to sort by modification time"
-    e "	ls -t"
+    e " ls -t"
     e
     e 'to display files in a dir and to show if it is a file or a directory'
-    e "	ls -F"
+    e " ls -F"
     e
     echo "to display what is in the directory and display it in reverse"
     echo "  ls -r"
@@ -2265,28 +2271,28 @@ ls_help_stuff(){
     echo "  ls -S"
     echo ""
     echo "explanation of 'ls -l'"
-    echo "owner	-   group   -	other"
-    echo "  d:	dir"
-    echo "  l:	link"
-    echo "  r:	read"
-    echo "  w:	write"
-    echo "  x:	executable"
+    echo "owner -   group   -   other"
+    echo "  d:  dir"
+    echo "  l:  link"
+    echo "  r:  read"
+    echo "  w:  write"
+    echo "  x:  executable"
 }    
 
 stuff_ls(){
     echo 'ls -lrt'
-    echo '	to list file depending on date'
+    echo '  to list file depending on date'
     echo
     echo 'ls -sSrh'
-    echo '	to list files depending on size'
+    echo '  to list files depending on size'
     echo ''
     echo 'ls -d .*'
-    echo '	to list only dotfiles'
+    echo '  to list only dotfiles'
     echo
     echo 'ls -al --time-style=+%D | grep `date +%D`'
 }
 
-#	%063
+#   %063
 alias ls_off_color='ls --color=none'
 #ls_function_end
 
@@ -2315,13 +2321,13 @@ cat_help_stuff() {
     echo
     echo "to cut the list by its caracter"
     echo '  cut -c1-5 file00'
-    echo '	abcde'
-    echo '	abcde'
-    echo '	abcde'
+    echo '  abcde'
+    echo '  abcde'
+    echo '  abcde'
     echo '  cat file00'
-    echo '	abcdefgh'
-    echo '	abcdefgh'
-    echo '	abcdefgh'
+    echo '  abcdefgh'
+    echo '  abcdefgh'
+    echo '  abcdefgh'
 }
 
 stuffed() {
@@ -2357,12 +2363,12 @@ cut_help_stuff() {
 # the name of the cmd explain all
 sort_help_stuff() {
     e 'to sort numerically'
-    e '	sort -n'
-    e '	eg: echo -e "30\n4" | sort -n'
-    e '	::'
-    e '	4'
-    e '	30'
-    e '	::'
+    e ' sort -n'
+    e ' eg: echo -e "30\n4" | sort -n'
+    e ' ::'
+    e ' 4'
+    e ' 30'
+    e ' ::'
     echo "echo -e 'a\n c\nb' | sort"
     echo '  a'
     echo '  b'
@@ -2454,71 +2460,71 @@ tr_help_stuff() {
     echo "  d"
     echo
     echo "tr a f file00"
-    e '	::'
-    e "	f"
-    e "	b"
-    e '	...'
-    e "	::"
+    e ' ::'
+    e " f"
+    e " b"
+    e ' ...'
+    e " ::"
     bar_
 }
 
 to_ask_irc() {
     e '[ok]why some cmd as: gnome-terminal, clemetine, evince'
-    e '	are not executed by crontab ??'
-    e '	but cmd as touch, mplayer, ... are executed'
+    e ' are not executed by crontab ??'
+    e ' but cmd as touch, mplayer, ... are executed'
     e 'looks like crontab is used for cmd in shell'
-    e '	instead of cron, use other prg for programming execution of prg which need gui'
-    e '	as kalarm,...'
+    e ' instead of cron, use other prg for programming execution of prg which need gui'
+    e ' as kalarm,...'
 }
 
 # the name of the cmd explain all⎋
 at_help() {
     echo 'this is to execute a cmd which will exe after Xmin'
-    e '	    at now +X minutes'
-    e '		you type all your cmd here and to stop it'
-    e '		    type: <ctrl-d>'
+    e '     at now +X minutes'
+    e '     you type all your cmd here and to stop it'
+    e '         type: <ctrl-d>'
 }
 
 # the name of the cmd explain all
 cron_help_stuff() {
     e 'cron is a prg which execute a cmd regularly as we/u/i programmed it'
     e 'cmd used for cron'
-    e '	crontab -e  :to edit to manage crontab'
-    e '	crontab -l  :to view the file executed by crontab'
-    e '	crontab -r  :to remove the file which is executed by crontab'
+    e ' crontab -e  :to edit to manage crontab'
+    e ' crontab -l  :to view the file executed by crontab'
+    e ' crontab -r  :to remove the file which is executed by crontab'
     e
     e "stuff for cron"
-    e "	a b c d e cmd00"
-    e "	    a: min"
-    e "	    b: hour"
-    e "	    c: day of month"
-    e "	    d: month"
-    e "	    e: day of week"
-    e "	eg: 0 4 1 * * cmd00: all first day of all month at 4AM"
-    e "	eg: 0 0 * * 1 cmd00: all monday in the midnight"
-    e '	eg: */5 * * * * cmd00	:this is to execute the cmd each 5minutes'
+    e " a b c d e cmd00"
+    e "     a: min"
+    e "     b: hour"
+    e "     c: day of month"
+    e "     d: month"
+    e "     e: day of week"
+    e " eg: 0 4 1 * * cmd00: all first day of all month at 4AM"
+    e " eg: 0 0 * * 1 cmd00: all monday in the midnight"
+    e ' eg: */5 * * * * cmd00   :this is to execute the cmd each 5minutes'
     e
     e 'those cmd will not be executed by crontab:'
-    e '	clementine  evince  gnome-terminal  '
+    e ' clementine  evince  gnome-terminal  '
     e
     e 'value in crontab'
-    e '	*:  all the time'
-    e '	3,5,6:	exe the cmd00 when the field is 3 or 5 or 6'
-    e '	3-7  :	exe the cmd when the field is between 3 and 7'
+    e ' *:  all the time'
+    e ' 3,5,6:  exe the cmd00 when the field is 3 or 5 or 6'
+    e ' 3-7  :  exe the cmd when the field is between 3 and 7'
     e
     
 }
 
 tar_help_stuff() {
     e "to decompress a .tar.gz"
-    e "	gunzip file.tar.gz"
-    e "	    and you'll get a .tar"
+    e " gunzip file.tar.gz"
+    e "     and you'll get a .tar"
     e
     e "to decompress a .tar"
-    e "	tar -xvf file00.tar"
+    e " tar -xvf file00.tar"
     e
     e "to decompress .tgz_file"
-    e "	tar xzf file00.tgz"
+    e " tar xzf file00.tgz"
     e
     e "compress a .tar"
     e "tar -cvf folder00.tar folder00"
@@ -2527,12 +2533,12 @@ tar_help_stuff() {
 tar_help_theory() {
     e "gzip and bzip are used to compress just one file"
     e "in linux, to compress MANY files, you have to gather them first"
-    e "	after that you have to compress the packed file with bzip2 or gzip"
+    e " after that you have to compress the packed file with bzip2 or gzip"
     e
     e "to gather all fileXX in file00.tar"
     e "move all fileXX in folder file00"
     e "and,"
-    e "	tar -cvf file00.tar file00"
+    e " tar -cvf file00.tar file00"
 }
 
 # the name of the method explain all
@@ -2540,33 +2546,33 @@ ping_help_stuff () {
     e 'first thing to do if a computer is accesible(but the server has to allow icmp request)'
     e ''
     e 'to limit the number of echo that are sent in the other device to ping'
-    e "	ping -c3 localhost"
+    e " ping -c3 localhost"
 }
 
 # the name of cmd explain everything
 #less
 less_help_stuff() {
     e 'this is very used to view a file'
-    e '	less file_to_view'
+    e ' less file_to_view'
     e 
-    e '	h   :to show the help of less'
-    e '	v   :to edit the file which is viewed with your editor'
+    e ' h   :to show the help of less'
+    e ' v   :to edit the file which is viewed with your editor'
     e ''
     e "to view the content of a file00 and to scroll by 5lines when you type \'d\'"
-    e  '	less -n5 file00'
-    e '	and b to backward'
+    e  '    less -n5 file00'
+    e ' and b to backward'
 }
 alias lessn='less -N'
 #less_end
 #hg
 hg_help_stuff() {
     e 'when I installed vim, I used hg(mercurial)'
-    e '	hg clone https://vim.googlecode.com/hg/ vim'
-    e '	enter in vim/ and'
-    e '	    hg pull; hg update'
+    e ' hg clone https://vim.googlecode.com/hg/ vim'
+    e ' enter in vim/ and'
+    e '     hg pull; hg update'
     e ''
     e 'to update to the last version of vim'
-    e '	hg update default'
+    e ' hg update default'
 }
 #hg_end
 # lesson
@@ -2580,22 +2586,22 @@ compil_help() {
     e 'the compilation of packages depends on the package'
     e 
     e 'installation of install with .sh'
-    e '	# sh file00.sh'
+    e ' # sh file00.sh'
 }
 
 # the non
-#	%028
+#   %028
 touch_wDate () {
     if1
-	touch $1`date +%F_%T`
+    touch $1`date +%F_%T`
     else
-	echo 'to create a file which the name will depends on the date'
-	echo 'eg:   this ss'
-	echo '	that ex will create sth like:	ss2014-06-11_19:55:06'
+    echo 'to create a file which the name will depends on the date'
+    echo 'eg:   this ss'
+    echo '  that ex will create sth like:   ss2014-06-11_19:55:06'
     fi
 }
 
-#	%027
+#   %027
 # the name of cmd explain all
 ls_installedPackageWSize () {
     dpkg-query --show --showformat='${Package;-50}\t${Installed-Size}\n' | sort -k 2 -n | grep -v deinstall | awk '{printf "%.3f MB \t %s\n", $2/(1024), $1}'
@@ -2612,13 +2618,13 @@ javaexe(){
     echo "  note that there is no file called file00 with file00.java"
 }
 
-#	%026
+#   %026
 #netbeans 
 # to start netbeans from the command line
 alias netb='/usr/local/netbeans-8.0/bin/netbeans'
 
 # to have history which will be shown step by step on the terminal
-#	%025
+#   %025
 hist_(){
     tail -f /home/ms/.bash_history
 }
@@ -2652,32 +2658,62 @@ recent_dl(){
 }
 
 # 
-#	%023:s
+#   %023:s
 imgur_cmd () 
 { 
     $@ | convert label:@- png:- | curl -F "image=@-" -F "key=1913b4ac473c692372d108209958fd15" http://api.imgur.com/2/upload.xml | grep -n --color=always -Eo "<original>(.)*</original>" | grep -n --color=always -Eo "http://i.imgur.com/[^<]*"
 }
-#	%023:e
+#   %023:e
 
-#	%024:s
+#   %024:s
 function imgur_onePic {
   curl -s -F "image=@$1" -F "key=486690f872c678126a2c09a9e196ce1b" https://imgur.com/api/upload.xml | grep -E -o "<original_image>(.)*</original_image>" | grep -E -o "http://i.imgur.com/[^<]*"
 }
-#	%024:e
+#   %024:e
 
 #
 ####################################################################################################
-	#git_repo :: /root/dvl/lin/coucou
+    #git_repo :: /root/dvl/lin/coucou
 
+#   %130
 asm_comp() {
-	nasm -f elf $1
-	ld -s -o ${1/.asm/} ${1/.asm/.o}
-	./${1/.asm/} 
+    nasm -f elf $1
+    ld -s -o ${1/.asm/} ${1/.asm/.o}
+    ./${1/.asm/} 
 }
 
 alias inotify_here='inotifywait -m -q -e create,delete,move .'
 
+#   %129
 java_c_r() {
-	javac "$1"
-	java "${1/.java/}"
+    javac "$1"
+    java "${1/.java/}"
+}
+
+#   %128
+shopt -s extglob
+
+#   %131
+alias prol='swipl -f /root/dvl/prolog/lattice/fact_rule.pl'
+
+#   %132
+alias eclipse_luna='/srv/mmedia/eclipse-java-luna-SR2-linux-gtk/eclipse/eclipse'
+
+#   %133
+export EDITOR='vim'
+
+repl_yt(){
+    last_emplct="$(pwd)"
+    rename 's/ - YouTube //' *
+
+    for folder_ in */
+        do
+            cd ./"$folder_"
+            rename 's/ - YouTube //' *
+            echo "replaced \' - YouTube \' in $folder_"
+            echo ======================================== 
+            cd $last_emplct
+        done
+
+    cd $last_emplct
 }

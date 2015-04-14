@@ -1,3 +1,13 @@
+" so when u type Q in normal_mode u will quit vim                               %001
+" Add full file path to your existing statusline                                %002
+" to activate sketch                                                            %003
+" to show the cmd when u type it from normal_mode                               %004
+" if u want that arrows will be deactivated                                     %005
+" to activate tagbar                                                            %006
+" for java, System.out.println(");")                                            %007
+" to display the line_name persistantly                                         %008
+" end_cmt
+"
 " don_t know yet the use of recording then when I hit q it will quit
 
 "   %001
@@ -10,14 +20,17 @@ map <C-c> <nop>
 map <C-c><c-r> :set expandtab ts=4 sw=4 ai<CR>:%retab<CR>:echo 'retab done'<CR>
 " imap <C-c><c-r> :set expandtab ts=4 sw=4 ai<CR>:%retab<CR>:echo 'retab done'<CR>
 
+"   %004
 set showcmd
 
-" for sketch
+"   %003
 map <c-c>skt :call ToggleSketch() <CR>
 
+"   %006
 " for tagbar
 map <c-c>tgb :TagbarToggle <cr>
 
+"   %005
 " map <up> <nop>
 " map <down> <nop>
 " map <left> <nop>
@@ -28,5 +41,10 @@ map <c-c>tgb :TagbarToggle <cr>
 " imap <left> <nop>
 " imap <right> <nop>
 
+"   %007
 iabbrev sop System.out.println("");<esc>hh
+
+"   %008
+set laststatus=2
+set statusline+=%F
 

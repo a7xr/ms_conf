@@ -2717,3 +2717,13 @@ repl_yt(){
 
     cd $last_emplct
 }
+
+ins_if_miss () {
+    # if [ "$2" ]
+    #     then
+        if grep -- -w "$1" "$2" >> /dev/null ; then echo "$1" is already in "$2" ; else echo "$1" >> "$2" ; echo inserted one line in "$2" ; fi
+    # else
+    #     echo 'to insert a file_name($1) into playlist_file($2) only if $1 is not yet in $2 '
+    #     echo '  ex : this_ fullname_file file_playlist'
+    # fi
+}

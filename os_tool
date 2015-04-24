@@ -159,7 +159,49 @@ hdd01=/media/hdd_sda7
 # to do prolog, and loading the fact by default                         %131
 # to run eclipse everywhere                                             %132
 # to set the editor in the terminal                                     %133
+# to dl many files in only one line                                     %134
+# to dump db_study                                                      %135
+# push db_study                                                         %136
+# commit_math                                                           %137
+# commit&push_math                                                      %138
 #   #end_cmt
+
+#   %138
+commit_push_math(){
+    cd /root/dvl/math
+    git add .
+    git commit -m 'commited from bash_fct'
+    git push origin master
+    cd -
+}
+
+#   %137
+commit_math(){
+    cd /root/dvl/math
+    git add .
+    git commit -m 'commited from bash_fct'
+    cd -
+}
+
+#   %136
+push_db_study() {
+    cd /etc/mysql/
+    git push origin master
+    echo
+    echo 'u did a push of db_study'
+    cd -
+}
+
+#   %135
+dump_mysql() {
+    cd /etc/mysql
+    mysqldump -u nonickn -p0000 --opt db_study > db_study.sql
+    sleep 5
+    git add db_study.sql
+    git commit -m 'auto save and auto commit the db'
+    echo
+    cd -
+}
 
 # %127
 alias log_mysql='tail -f /var/log/mysql/mysql.log'
@@ -2703,27 +2745,53 @@ alias eclipse_luna='/srv/mmedia/eclipse-java-luna-SR2-linux-gtk/eclipse/eclipse'
 export EDITOR='vim'
 
 repl_yt(){
-    last_emplct="$(pwd)"
-    rename 's/ - YouTube //' *
+    if [ "$1" ]
+        then
+        last_emplct="$(pwd)"
+        rename "s/$1//" *
 
-    for folder_ in */
-        do
-            cd ./"$folder_"
-            rename 's/ - YouTube //' *
-            echo "replaced \' - YouTube \' in $folder_"
-            echo ======================================== 
-            cd $last_emplct
-        done
+        for folder_ in */
+            do
+                cd ./"$folder_"
+                rename "s/$1//" *
+                echo "replaced \'$1\' in $folder_"
+                echo ======================================== 
+                cd $last_emplct
+            done
 
-    cd $last_emplct
+        cd $last_emplct
+    else
+        echo 'to remove the $1'
+        echo '  ex: this_ .mp3'
+    fi
 }
 
 ins_if_miss () {
-    # if [ "$2" ]
-    #     then
-        if grep -- -w "$1" "$2" >> /dev/null ; then echo "$1" is already in "$2" ; else echo "$1" >> "$2" ; echo inserted one line in "$2" ; fi
-    # else
-    #     echo 'to insert a file_name($1) into playlist_file($2) only if $1 is not yet in $2 '
-    #     echo '  ex : this_ fullname_file file_playlist'
-    # fi
+    if [ "$2" ]
+        then
+        if grep -qxF -- "$1" "$2" ; then echo that file is already in "$2" ; else printf %s\\n "$1" >> "$2" ; echo inserted one line in "$2" ; fi
+    else
+        echo 'to insert a file_name($1) into playlist_file($2) only if $1 is not yet in $2 '
+        echo '  ex : this_ fullname_file file_playlist'
+    fi
+}
+
+ins_all_if_miss () {
+    # for file in 
+    echo there is sth todo here
+    echo ${@: -1}
+}
+
+dld_all (){
+    if [ "$1" ]
+        then
+        for i in "$@"
+            do
+                wget -c $i
+            done
+    else
+        echo 'this is to dl many file in only one line'
+        echo '  ex: this_ link01.pdf lin02.pdf' 
+    fi
+
 }
